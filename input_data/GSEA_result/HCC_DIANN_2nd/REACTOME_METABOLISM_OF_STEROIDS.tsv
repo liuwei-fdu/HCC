@@ -1,0 +1,71 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HSD17B4	hydroxysteroid 17-beta dehydrogenase 4 [Source:HGNC Symbol;Acc:HGNC:5213]	37	0.8548938035964966	0.022942914	Yes	
+row_1	ACOX2	acyl-CoA oxidase 2 [Source:HGNC Symbol;Acc:HGNC:120]	60	0.8035763502120972	0.04740371	Yes	
+row_2	CYP51A1	cytochrome P450 family 51 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2649]	61	0.7964626550674438	0.07658799	Yes	
+row_3	FASN	fatty acid synthase [Source:HGNC Symbol;Acc:HGNC:3594]	75	0.7702857255935669	0.10186791	Yes	
+row_4	CYP27A1	cytochrome P450 family 27 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2605]	79	0.7574195265769958	0.1289419	Yes	
+row_5	SLC27A5	solute carrier family 27 member 5 [Source:HGNC Symbol;Acc:HGNC:10999]	105	0.7203280329704285	0.14967263	Yes	
+row_6	SAR1B	secretion associated Ras related GTPase 1B [Source:HGNC Symbol;Acc:HGNC:10535]	114	0.7138471007347107	0.17401725	Yes	
+row_7	BAAT	bile acid-CoA:amino acid N-acyltransferase [Source:HGNC Symbol;Acc:HGNC:932]	130	0.7005621790885925	0.19628923	Yes	
+row_8	DHCR7	7-dehydrocholesterol reductase [Source:HGNC Symbol;Acc:HGNC:2860]	151	0.6692721843719482	0.2162819	Yes	
+row_9	MVK	mevalonate kinase [Source:HGNC Symbol;Acc:HGNC:7530]	172	0.6474679708480835	0.23547563	Yes	
+row_10	AKR1C4	aldo-keto reductase family 1 member C4 [Source:HGNC Symbol;Acc:HGNC:387]	189	0.625464677810669	0.2547693	Yes	
+row_11	IDI1	isopentenyl-diphosphate delta isomerase 1 [Source:HGNC Symbol;Acc:HGNC:5387]	202	0.616477906703949	0.2746399	Yes	
+row_12	FDPS	farnesyl diphosphate synthase [Source:HGNC Symbol;Acc:HGNC:3631]	203	0.6148021817207336	0.2971677	Yes	
+row_13	FDX1	ferredoxin 1 [Source:HGNC Symbol;Acc:HGNC:3638]	213	0.6040412187576294	0.31726223	Yes	
+row_14	AMACR	alpha-methylacyl-CoA racemase [Source:HGNC Symbol;Acc:HGNC:451]	257	0.5741816163063049	0.32855988	Yes	
+row_15	HSD17B2	hydroxysteroid 17-beta dehydrogenase 2 [Source:HGNC Symbol;Acc:HGNC:5211]	294	0.547385573387146	0.34046152	Yes	
+row_16	AKR1C2	aldo-keto reductase family 1 member C2 [Source:HGNC Symbol;Acc:HGNC:385]	298	0.5459132790565491	0.3597854	Yes	
+row_17	ACAT2	acetyl-CoA acetyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:94]	301	0.5414801239967346	0.37917343	Yes	
+row_18	FDXR	ferredoxin reductase [Source:HGNC Symbol;Acc:HGNC:3642]	305	0.5396661162376404	0.3982684	Yes	
+row_19	HSD17B7	hydroxysteroid 17-beta dehydrogenase 7 [Source:HGNC Symbol;Acc:HGNC:5215]	324	0.5255740880966187	0.41344875	Yes	
+row_20	PMVK	phosphomevalonate kinase [Source:HGNC Symbol;Acc:HGNC:9141]	325	0.5252358317375183	0.43269464	Yes	
+row_21	CYP8B1	cytochrome P450 family 8 subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:2653]	338	0.5154335498809814	0.44886273	Yes	
+row_22	ACACB	acetyl-CoA carboxylase beta [Source:HGNC Symbol;Acc:HGNC:85]	344	0.5126386284828186	0.46651426	Yes	
+row_23	SCP2	sterol carrier protein 2 [Source:HGNC Symbol;Acc:HGNC:10606]	356	0.5047739148139954	0.4825183	Yes	
+row_24	SCD	stearoyl-CoA desaturase [Source:HGNC Symbol;Acc:HGNC:10571]	357	0.5031454563140869	0.50095475	Yes	
+row_25	AKR1D1	aldo-keto reductase family 1 member D1 [Source:HGNC Symbol;Acc:HGNC:388]	420	0.4636133015155792	0.5038964	Yes	
+row_26	GPAM	glycerol-3-phosphate acyltransferase, mitochondrial [Source:HGNC Symbol;Acc:HGNC:24865]	438	0.4531177580356598	0.51664835	Yes	
+row_27	LSS	lanosterol synthase [Source:HGNC Symbol;Acc:HGNC:6708]	454	0.44311919808387756	0.529487	Yes	
+row_28	HSD3B7	hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid delta-isomerase 7 [Source:HGNC Symbol;Acc:HGNC:18324]	466	0.4366130232810974	0.5429934	Yes	
+row_29	HSD11B1	hydroxysteroid 11-beta dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:5208]	467	0.4365992546081543	0.5589915	Yes	
+row_30	ABCB11	ATP binding cassette subfamily B member 11 [Source:HGNC Symbol;Acc:HGNC:42]	480	0.42666423320770264	0.57190686	Yes	
+row_31	AKR1C3	aldo-keto reductase family 1 member C3 [Source:HGNC Symbol;Acc:HGNC:386]	506	0.4139443039894104	0.58141094	Yes	
+row_32	SEC23A	Sec23 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10701]	529	0.4062652885913849	0.59131336	Yes	
+row_33	DHCR24	24-dehydrocholesterol reductase [Source:HGNC Symbol;Acc:HGNC:2859]	534	0.40436142683029175	0.6052239	Yes	
+row_34	TM7SF2	transmembrane 7 superfamily member 2 [Source:HGNC Symbol;Acc:HGNC:11863]	535	0.40346473455429077	0.6200078	Yes	
+row_35	NSDHL	NAD(P) dependent steroid dehydrogenase-like [Source:HGNC Symbol;Acc:HGNC:13398]	562	0.3912079632282257	0.62845224	Yes	
+row_36	SEC24C	SEC24 homolog C, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10705]	578	0.3843046724796295	0.6391358	Yes	
+row_37	HSD17B11	hydroxysteroid 17-beta dehydrogenase 11 [Source:HGNC Symbol;Acc:HGNC:22960]	653	0.35924315452575684	0.63553447	No	
+row_38	CUBN	cubilin [Source:HGNC Symbol;Acc:HGNC:2548]	695	0.33454030752182007	0.6385042	No	
+row_39	ACOT8	acyl-CoA thioesterase 8 [Source:HGNC Symbol;Acc:HGNC:15919]	751	0.3150045573711395	0.63758636	No	
+row_40	MVD	mevalonate diphosphate decarboxylase [Source:HGNC Symbol;Acc:HGNC:7529]	859	0.268444687128067	0.62318176	No	
+row_41	ACACA	acetyl-CoA carboxylase alpha [Source:HGNC Symbol;Acc:HGNC:84]	898	0.25652316212654114	0.62397236	No	
+row_42	SQLE	squalene epoxidase [Source:HGNC Symbol;Acc:HGNC:11279]	962	0.23488102853298187	0.6183062	No	
+row_43	OSBP	oxysterol binding protein [Source:HGNC Symbol;Acc:HGNC:8503]	1001	0.22197096049785614	0.61783075	No	
+row_44	HMGCS1	3-hydroxy-3-methylglutaryl-CoA synthase 1 [Source:HGNC Symbol;Acc:HGNC:5007]	1006	0.22031289339065552	0.6249974	No	
+row_45	ABCC3	ATP binding cassette subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:54]	1189	0.1754942387342453	0.5901954	No	
+row_46	HSD17B12	hydroxysteroid 17-beta dehydrogenase 12 [Source:HGNC Symbol;Acc:HGNC:18646]	1344	0.14684134721755981	0.56068707	No	
+row_47	SEC24D	SEC24 homolog D, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10706]	1392	0.13413085043430328	0.554954	No	
+row_48	SEC24B	SEC24 homolog B, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10704]	1430	0.12712596356868744	0.5512298	No	
+row_49	STAR	steroidogenic acute regulatory protein [Source:HGNC Symbol;Acc:HGNC:11359]	1628	0.0904269814491272	0.5099125	No	
+row_50	FDFT1	farnesyl-diphosphate farnesyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:3629]	1636	0.08982142060995102	0.5116179	No	
+row_51	SEC24A	SEC24 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10703]	1695	0.0791335329413414	0.5013775	No	
+row_52	SLC27A2	solute carrier family 27 member 2 [Source:HGNC Symbol;Acc:HGNC:10996]	1823	0.058831389993429184	0.4747612	No	
+row_53	LBR	lamin B receptor [Source:HGNC Symbol;Acc:HGNC:6518]	2148	0.005984337069094181	0.40157765	No	
+row_54	NFYC	nuclear transcription factor Y subunit gamma [Source:HGNC Symbol;Acc:HGNC:7806]	2499	-0.04784644395112991	0.3240377	No	
+row_55	MED1	mediator complex subunit 1 [Source:HGNC Symbol;Acc:HGNC:9234]	2546	-0.05424641817808151	0.31560403	No	
+row_56	CARM1	coactivator associated arginine methyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:23393]	2604	-0.06268753111362457	0.30498758	No	
+row_57	GGPS1	geranylgeranyl diphosphate synthase 1 [Source:HGNC Symbol;Acc:HGNC:4249]	2650	-0.06999941170215607	0.2973577	No	
+row_58	CYP46A1	cytochrome P450 family 46 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2641]	2668	-0.07281702756881714	0.2961745	No	
+row_59	PTGIS	prostaglandin I2 synthase [Source:HGNC Symbol;Acc:HGNC:9603]	2825	-0.10029632598161697	0.2645075	No	
+row_60	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	2868	-0.10769283026456833	0.25893843	No	
+row_61	TBL1XR1	TBL1X receptor 1 [Source:HGNC Symbol;Acc:HGNC:29529]	3414	-0.20071379840373993	0.1428223	No	
+row_62	GC	GC vitamin D binding protein [Source:HGNC Symbol;Acc:HGNC:4187]	3564	-0.22845132648944855	0.117437065	No	
+row_63	LRP2	LDL receptor related protein 2 [Source:HGNC Symbol;Acc:HGNC:6694]	3683	-0.25341448187828064	0.099989645	No	
+row_64	AKR1B1	aldo-keto reductase family 1 member B [Source:HGNC Symbol;Acc:HGNC:381]	3772	-0.2774503529071808	0.09021952	No	
+row_65	RAN	RAN, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9846]	3873	-0.30554449558258057	0.07876021	No	
+row_66	OSBPL9	oxysterol binding protein like 9 [Source:HGNC Symbol;Acc:HGNC:16386]	4011	-0.3532753586769104	0.06066744	No	
+row_67	TSPO	translocator protein [Source:HGNC Symbol;Acc:HGNC:1158]	4038	-0.36695289611816406	0.06822312	No	
+row_68	UBE2I	ubiquitin conjugating enzyme E2 I [Source:HGNC Symbol;Acc:HGNC:12485]	4077	-0.38126707077026367	0.07358467	No	
+row_69	KPNB1	karyopherin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6400]	4294	-0.4958409368991852	0.04281825	No	

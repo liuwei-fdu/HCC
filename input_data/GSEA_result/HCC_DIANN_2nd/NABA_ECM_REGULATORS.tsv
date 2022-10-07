@@ -1,0 +1,61 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CTSD	cathepsin D [Source:HGNC Symbol;Acc:HGNC:2529]	444	0.4498107135295868	-0.07624344	No	
+row_1	F2	coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]	537	0.4022558927536011	-0.0754707	No	
+row_2	F7	coagulation factor VII [Source:HGNC Symbol;Acc:HGNC:3544]	539	0.40212321281433105	-0.05413545	No	
+row_3	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	565	0.3906920850276947	-0.038838077	No	
+row_4	F9	coagulation factor IX [Source:HGNC Symbol;Acc:HGNC:3551]	594	0.3790263831615448	-0.024844322	No	
+row_5	F12	coagulation factor XII [Source:HGNC Symbol;Acc:HGNC:3530]	690	0.3361820876598358	-0.028292483	No	
+row_6	CSTB	cystatin B [Source:HGNC Symbol;Acc:HGNC:2482]	1135	0.18746981024742126	-0.118602276	No	
+row_7	SERPINA4	serpin family A member 4 [Source:HGNC Symbol;Acc:HGNC:8948]	1199	0.1728247106075287	-0.123576164	No	
+row_8	ADAMTSL4	ADAMTS like 4 [Source:HGNC Symbol;Acc:HGNC:19706]	1225	0.16887159645557404	-0.1201725	No	
+row_9	AGT	angiotensinogen [Source:HGNC Symbol;Acc:HGNC:333]	1331	0.15060535073280334	-0.13583143	No	
+row_10	CTSA	cathepsin A [Source:HGNC Symbol;Acc:HGNC:9251]	1402	0.13196611404418945	-0.14457837	No	
+row_11	SERPIND1	serpin family D member 1 [Source:HGNC Symbol;Acc:HGNC:4838]	1407	0.1311662644147873	-0.13844958	No	
+row_12	BMP1	bone morphogenetic protein 1 [Source:HGNC Symbol;Acc:HGNC:1067]	1460	0.1225314512848854	-0.14363368	No	
+row_13	CTSZ	cathepsin Z [Source:HGNC Symbol;Acc:HGNC:2547]	1586	0.09874947369098663	-0.16659383	No	
+row_14	ITIH3	inter-alpha-trypsin inhibitor heavy chain 3 [Source:HGNC Symbol;Acc:HGNC:6168]	1613	0.0933241993188858	-0.16746697	No	
+row_15	AMBP	alpha-1-microglobulin/bikunin precursor [Source:HGNC Symbol;Acc:HGNC:453]	1689	0.08094192296266556	-0.18007995	No	
+row_16	LPA	lipoprotein(a) [Source:HGNC Symbol;Acc:HGNC:6667]	1813	0.05981479212641716	-0.20467566	No	
+row_17	KNG1	kininogen 1 [Source:HGNC Symbol;Acc:HGNC:6383]	1887	0.04871072620153427	-0.21856476	No	
+row_18	SERPINA5	serpin family A member 5 [Source:HGNC Symbol;Acc:HGNC:8723]	1918	0.043692655861377716	-0.22300322	No	
+row_19	PLG	plasminogen [Source:HGNC Symbol;Acc:HGNC:9071]	1949	0.037629783153533936	-0.22776675	No	
+row_20	HRG	histidine rich glycoprotein [Source:HGNC Symbol;Acc:HGNC:5181]	2119	0.011197763495147228	-0.26536706	No	
+row_21	SERPINB8	serpin family B member 8 [Source:HGNC Symbol;Acc:HGNC:8952]	2216	-0.00662816921249032	-0.28671148	No	
+row_22	SERPINF2	serpin family F member 2 [Source:HGNC Symbol;Acc:HGNC:9075]	2224	-0.007982270792126656	-0.2878658	No	
+row_23	CPN2	carboxypeptidase N subunit 2 [Source:HGNC Symbol;Acc:HGNC:2313]	2329	-0.02398192323744297	-0.31008804	No	
+row_24	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	2674	-0.07405722141265869	-0.3838749	No	
+row_25	HTRA1	HtrA serine peptidase 1 [Source:HGNC Symbol;Acc:HGNC:9476]	2823	-0.09975545108318329	-0.41198003	No	
+row_26	ITIH4	inter-alpha-trypsin inhibitor heavy chain 4 [Source:HGNC Symbol;Acc:HGNC:6169]	2869	-0.1078362837433815	-0.41636977	No	
+row_27	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	2939	-0.1189802810549736	-0.42558697	No	
+row_28	ITIH2	inter-alpha-trypsin inhibitor heavy chain 2 [Source:HGNC Symbol;Acc:HGNC:6167]	3051	-0.13567039370536804	-0.44340292	No	
+row_29	EGLN1	egl-9 family hypoxia inducible factor 1 [Source:HGNC Symbol;Acc:HGNC:1232]	3341	-0.18602819740772247	-0.49875385	No	
+row_30	F13A1	coagulation factor XIII A chain [Source:HGNC Symbol;Acc:HGNC:3531]	3371	-0.19143229722976685	-0.49504468	No	
+row_31	CTSH	cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535]	3648	-0.24555470049381256	-0.54426533	No	
+row_32	NGLY1	N-glycanase 1 [Source:HGNC Symbol;Acc:HGNC:17646]	3769	-0.27686023712158203	-0.55654526	No	
+row_33	ADAM10	ADAM metallopeptidase domain 10 [Source:HGNC Symbol;Acc:HGNC:188]	3847	-0.2989238500595093	-0.5579224	No	
+row_34	CSTA	cystatin A [Source:HGNC Symbol;Acc:HGNC:2481]	3979	-0.34020087122917175	-0.56929255	Yes	
+row_35	TGM2	transglutaminase 2 [Source:HGNC Symbol;Acc:HGNC:11778]	3999	-0.3482919931411743	-0.5549124	Yes	
+row_36	PLOD3	procollagen-lysine,2-oxoglutarate 5-dioxygenase 3 [Source:HGNC Symbol;Acc:HGNC:9083]	4035	-0.3656688332557678	-0.5432171	Yes	
+row_37	SERPINF1	serpin family F member 1 [Source:HGNC Symbol;Acc:HGNC:8824]	4046	-0.3695753216743469	-0.5256614	Yes	
+row_38	CST3	cystatin C [Source:HGNC Symbol;Acc:HGNC:2475]	4047	-0.3703676164150238	-0.5058028	Yes	
+row_39	A2M	alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7]	4058	-0.374849796295166	-0.48796427	Yes	
+row_40	SERPINA3	serpin family A member 3 [Source:HGNC Symbol;Acc:HGNC:16]	4095	-0.3865714967250824	-0.47537428	Yes	
+row_41	PLOD2	procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 [Source:HGNC Symbol;Acc:HGNC:9082]	4103	-0.38989511132240295	-0.45605093	Yes	
+row_42	SERPINA1	serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941]	4107	-0.3905176818370819	-0.43579003	Yes	
+row_43	SERPINE1	serpin family E member 1 [Source:HGNC Symbol;Acc:HGNC:8583]	4128	-0.4007319509983063	-0.41882414	Yes	
+row_44	ITIH1	inter-alpha-trypsin inhibitor heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:6166]	4177	-0.4251948595046997	-0.40687567	Yes	
+row_45	SERPINB9	serpin family B member 9 [Source:HGNC Symbol;Acc:HGNC:8955]	4196	-0.43132954835891724	-0.38781708	Yes	
+row_46	SERPINB6	serpin family B member 6 [Source:HGNC Symbol;Acc:HGNC:8950]	4241	-0.45750677585601807	-0.37323198	Yes	
+row_47	P4HA1	prolyl 4-hydroxylase subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:8546]	4263	-0.4702349901199341	-0.35276547	Yes	
+row_48	TIMP1	TIMP metallopeptidase inhibitor 1 [Source:HGNC Symbol;Acc:HGNC:11820]	4282	-0.4860084354877472	-0.33077508	Yes	
+row_49	P3H1	prolyl 3-hydroxylase 1 [Source:HGNC Symbol;Acc:HGNC:19316]	4286	-0.48965364694595337	-0.30519864	Yes	
+row_50	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	4353	-0.5552464723587036	-0.29034573	Yes	
+row_51	SERPINH1	serpin family H member 1 [Source:HGNC Symbol;Acc:HGNC:1546]	4356	-0.5571449995040894	-0.26092446	Yes	
+row_52	P4HA2	prolyl 4-hydroxylase subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:8547]	4385	-0.6064345836639404	-0.2347374	Yes	
+row_53	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	4398	-0.6240654587745667	-0.20398834	Yes	
+row_54	MMP8	matrix metallopeptidase 8 [Source:HGNC Symbol;Acc:HGNC:7175]	4400	-0.6261062622070312	-0.17064343	Yes	
+row_55	CTSC	cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528]	4409	-0.6417260766029358	-0.1380433	Yes	
+row_56	SERPINB1	serpin family B member 1 [Source:HGNC Symbol;Acc:HGNC:3311]	4417	-0.6625641584396362	-0.1040998	Yes	
+row_57	CTSG	cathepsin G [Source:HGNC Symbol;Acc:HGNC:2532]	4439	-0.7185289263725281	-0.070320114	Yes	
+row_58	PLOD1	procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 [Source:HGNC Symbol;Acc:HGNC:9081]	4444	-0.7420539855957031	-0.031436365	Yes	
+row_59	ELANE	elastase, neutrophil expressed [Source:HGNC Symbol;Acc:HGNC:3309]	4445	-0.7464905381202698	0.008589419	Yes	

@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DMD	dystrophin [Source:HGNC Symbol;Acc:HGNC:2928]	361	0.5897013545036316	0.027572261	No	
+row_1	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	514	0.5415748953819275	0.08114135	No	
+row_2	ATP2A2	ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2 [Source:HGNC Symbol;Acc:HGNC:812]	2211	0.26576900482177734	-0.14766937	No	
+row_3	TPM3	tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012]	2552	0.2236654907464981	-0.16916215	No	
+row_4	DAG1	dystroglycan 1 [Source:HGNC Symbol;Acc:HGNC:2666]	3048	0.1667497307062149	-0.22318432	No	
+row_5	ITGA6	integrin subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:6142]	3197	0.1504100263118744	-0.22495013	No	
+row_6	ITGA2B	integrin subunit alpha 2b [Source:HGNC Symbol;Acc:HGNC:6138]	3232	0.145086869597435	-0.20954174	No	
+row_7	ITGA5	integrin subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:6141]	3255	0.14190258085727692	-0.19270094	No	
+row_8	ITGB3	integrin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6156]	3455	0.11913364380598068	-0.2069654	No	
+row_9	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	4350	0.019859179854393005	-0.34477863	No	
+row_10	EMD	emerin [Source:HGNC Symbol;Acc:HGNC:3331]	4467	0.007250694558024406	-0.36199173	No	
+row_11	DES	desmin [Source:HGNC Symbol;Acc:HGNC:2770]	4933	-0.049380358308553696	-0.42808607	No	
+row_12	ITGA4	integrin subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:6140]	4945	-0.050602905452251434	-0.42257693	No	
+row_13	LMNA	lamin A/C [Source:HGNC Symbol;Acc:HGNC:6636]	4987	-0.057945821434259415	-0.42073718	No	
+row_14	ITGB5	integrin subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:6160]	5039	-0.06577195972204208	-0.41935104	No	
+row_15	SGCD	sarcoglycan delta [Source:HGNC Symbol;Acc:HGNC:10807]	5059	-0.06836101412773132	-0.4125599	No	
+row_16	ITGAV	integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150]	5431	-0.12628154456615448	-0.45286274	No	
+row_17	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	5660	-0.16702476143836975	-0.46483803	No	
+row_18	TPM1	tropomyosin 1 [Source:HGNC Symbol;Acc:HGNC:12010]	5940	-0.23908503353595734	-0.47452748	Yes	
+row_19	LAMA2	laminin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6482]	6118	-0.2982749342918396	-0.4597008	Yes	
+row_20	CACNA2D1	calcium voltage-gated channel auxiliary subunit alpha2delta 1 [Source:HGNC Symbol;Acc:HGNC:1399]	6189	-0.32817721366882324	-0.42376146	Yes	
+row_21	TPM4	tropomyosin 4 [Source:HGNC Symbol;Acc:HGNC:12013]	6279	-0.3951001763343811	-0.3812367	Yes	
+row_22	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	6293	-0.41428908705711365	-0.3240094	Yes	
+row_23	ACTG1	actin gamma 1 [Source:HGNC Symbol;Acc:HGNC:144]	6305	-0.4343719184398651	-0.26359415	Yes	
+row_24	ITGA3	integrin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6139]	6361	-0.562480628490448	-0.19177288	Yes	
+row_25	ITGB4	integrin subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:6158]	6373	-0.6670523285865784	-0.09806788	Yes	
+row_26	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6376	-0.6942473649978638	9.4391766E-4	Yes	

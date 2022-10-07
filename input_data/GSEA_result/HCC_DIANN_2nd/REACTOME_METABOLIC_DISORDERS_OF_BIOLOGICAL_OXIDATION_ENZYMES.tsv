@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAT1A	methionine adenosyltransferase 1A [Source:HGNC Symbol;Acc:HGNC:6903]	3	1.0542553663253784	0.11220459	Yes	
+row_1	GCLC	glutamate-cysteine ligase catalytic subunit [Source:HGNC Symbol;Acc:HGNC:4311]	23	0.8801313042640686	0.2021852	Yes	
+row_2	ACY1	aminoacylase 1 [Source:HGNC Symbol;Acc:HGNC:177]	38	0.8510837554931641	0.29017487	Yes	
+row_3	OPLAH	5-oxoprolinase, ATP-hydrolysing [Source:HGNC Symbol;Acc:HGNC:8149]	45	0.8296353220939636	0.3776586	Yes	
+row_4	CYP27A1	cytochrome P450 family 27 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2605]	79	0.7574195265769958	0.45136744	Yes	
+row_5	FMO3	flavin containing dimethylaniline monoxygenase 3 [Source:HGNC Symbol;Acc:HGNC:3771]	170	0.6484773755073547	0.50065476	Yes	
+row_6	FDX1	ferredoxin 1 [Source:HGNC Symbol;Acc:HGNC:3638]	213	0.6040412187576294	0.5559275	Yes	
+row_7	AHCY	adenosylhomocysteinase [Source:HGNC Symbol;Acc:HGNC:343]	239	0.5859673619270325	0.61306995	Yes	
+row_8	MAOA	monoamine oxidase A [Source:HGNC Symbol;Acc:HGNC:6833]	255	0.5766685009002686	0.67145497	Yes	
+row_9	UGT1A1	UDP glucuronosyltransferase family 1 member A1 [Source:HGNC Symbol;Acc:HGNC:12530]	296	0.545981764793396	0.72095907	Yes	
+row_10	UGT1A4	UDP glucuronosyltransferase family 1 member A4 [Source:HGNC Symbol;Acc:HGNC:12536]	302	0.5411286950111389	0.7777771	Yes	
+row_11	FDXR	ferredoxin reductase [Source:HGNC Symbol;Acc:HGNC:3642]	305	0.5396661162376404	0.83510995	Yes	
+row_12	TPMT	thiopurine S-methyltransferase [Source:HGNC Symbol;Acc:HGNC:12014]	811	0.2854668200016022	0.75264806	No	
+row_13	GSS	glutathione synthetase [Source:HGNC Symbol;Acc:HGNC:4624]	1803	0.06170716509222984	0.5374554	No	
+row_14	GCLM	glutamate-cysteine ligase modifier subunit [Source:HGNC Symbol;Acc:HGNC:4312]	2811	-0.09735062718391418	0.32249796	No	
+row_15	TBXAS1	thromboxane A synthase 1 [Source:HGNC Symbol;Acc:HGNC:11609]	4273	-0.48095759749412537	0.04700076	No	

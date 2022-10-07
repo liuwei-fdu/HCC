@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HADHA	hydroxyacyl-CoA dehydrogenase trifunctional multienzyme complex subunit alpha [Source:HGNC Symbol;Acc:HGNC:4801]	17	0.8338526487350464	0.086734064	Yes	
+row_1	ALDH9A1	aldehyde dehydrogenase 9 family member A1 [Source:HGNC Symbol;Acc:HGNC:412]	75	0.7303404211997986	0.15608527	Yes	
+row_2	ECHS1	enoyl-CoA hydratase, short chain 1 [Source:HGNC Symbol;Acc:HGNC:3151]	89	0.7146709561347961	0.23066923	Yes	
+row_3	DPYS	dihydropyrimidinase [Source:HGNC Symbol;Acc:HGNC:3013]	204	0.6435825228691101	0.2817631	Yes	
+row_4	ACADM	acyl-CoA dehydrogenase medium chain [Source:HGNC Symbol;Acc:HGNC:89]	219	0.6368504762649536	0.34784612	Yes	
+row_5	ALDH3A2	aldehyde dehydrogenase 3 family member A2 [Source:HGNC Symbol;Acc:HGNC:403]	268	0.6175125241279602	0.406514	Yes	
+row_6	UPB1	beta-ureidopropionase 1 [Source:HGNC Symbol;Acc:HGNC:16297]	364	0.587928295135498	0.45462576	Yes	
+row_7	DPYD	dihydropyrimidine dehydrogenase [Source:HGNC Symbol;Acc:HGNC:3012]	373	0.585488498210907	0.51614445	Yes	
+row_8	ALDH7A1	aldehyde dehydrogenase 7 family member A1 [Source:HGNC Symbol;Acc:HGNC:877]	450	0.5606938004493713	0.5643212	Yes	
+row_9	ALDH1B1	aldehyde dehydrogenase 1 family member B1 [Source:HGNC Symbol;Acc:HGNC:407]	586	0.5209389925003052	0.59896606	Yes	
+row_10	HIBCH	3-hydroxyisobutyryl-CoA hydrolase [Source:HGNC Symbol;Acc:HGNC:4908]	588	0.5208775401115417	0.654657	Yes	
+row_11	ALDH2	aldehyde dehydrogenase 2 family member [Source:HGNC Symbol;Acc:HGNC:404]	733	0.48984581232070923	0.6845541	Yes	
+row_12	ABAT	4-aminobutyrate aminotransferase [Source:HGNC Symbol;Acc:HGNC:23]	895	0.4605642855167389	0.7086408	Yes	
+row_13	EHHADH	enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:3247]	907	0.45749956369400024	0.7559653	Yes	
+row_14	MLYCD	malonyl-CoA decarboxylase [Source:HGNC Symbol;Acc:HGNC:7150]	1146	0.41474395990371704	0.76304173	Yes	
+row_15	SMS	spermine synthase [Source:HGNC Symbol;Acc:HGNC:11123]	2051	0.2845771014690399	0.65152717	No	
+row_16	SRM	spermidine synthase [Source:HGNC Symbol;Acc:HGNC:11296]	3007	0.17054645717144012	0.5197737	No	
+row_17	AOC3	amine oxidase copper containing 3 [Source:HGNC Symbol;Acc:HGNC:550]	5253	-0.09618379175662994	0.17737633	No	

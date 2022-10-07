@@ -1,0 +1,32 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	1617	0.3405754864215851	-0.20833962	No	
+row_1	COL2A1	collagen type II alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2200]	2010	0.28836947679519653	-0.23091245	No	
+row_2	DST	dystonin [Source:HGNC Symbol;Acc:HGNC:1090]	3043	0.16709782183170319	-0.370701	No	
+row_3	ITGA6	integrin subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:6142]	3197	0.1504100263118744	-0.37437293	No	
+row_4	COL18A1	collagen type XVIII alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2195]	3215	0.1476275622844696	-0.35701197	No	
+row_5	CTSL	cathepsin L [Source:HGNC Symbol;Acc:HGNC:2537]	4118	0.04636085033416748	-0.49272197	No	
+row_6	LOXL1	lysyl oxidase like 1 [Source:HGNC Symbol;Acc:HGNC:6665]	4691	-0.019608115777373314	-0.58011097	No	
+row_7	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	5008	-0.06082833558320999	-0.62160295	No	
+row_8	COL5A2	collagen type V alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2210]	5213	-0.09066292643547058	-0.6414132	Yes	
+row_9	COL6A1	collagen type VI alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2211]	5263	-0.09717089682817459	-0.63593847	Yes	
+row_10	COL5A1	collagen type V alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2209]	5358	-0.1131143644452095	-0.6353841	Yes	
+row_11	COL15A1	collagen type XV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2192]	5400	-0.11921083182096481	-0.6256584	Yes	
+row_12	COL6A3	collagen type VI alpha 3 chain [Source:HGNC Symbol;Acc:HGNC:2213]	5513	-0.13985247910022736	-0.62430865	Yes	
+row_13	COL6A2	collagen type VI alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2212]	5524	-0.14117072522640228	-0.60672206	Yes	
+row_14	LOX	lysyl oxidase [Source:HGNC Symbol;Acc:HGNC:6664]	5565	-0.1486031711101532	-0.59284955	Yes	
+row_15	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	5730	-0.18429872393608093	-0.59365356	Yes	
+row_16	COL14A1	collagen type XIV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2191]	5805	-0.2022746503353119	-0.577849	Yes	
+row_17	COL4A1	collagen type IV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2202]	5851	-0.21611158549785614	-0.5556008	Yes	
+row_18	PCOLCE	procollagen C-endopeptidase enhancer [Source:HGNC Symbol;Acc:HGNC:8738]	5991	-0.25098860263824463	-0.54341733	Yes	
+row_19	MMP7	matrix metallopeptidase 7 [Source:HGNC Symbol;Acc:HGNC:7174]	6035	-0.2668590247631073	-0.51396644	Yes	
+row_20	COL4A2	collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203]	6070	-0.2804085612297058	-0.48125958	Yes	
+row_21	COL4A3	collagen type IV alpha 3 chain [Source:HGNC Symbol;Acc:HGNC:2204]	6110	-0.2956767678260803	-0.44726756	Yes	
+row_22	COL12A1	collagen type XII alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2188]	6137	-0.30407214164733887	-0.41008943	Yes	
+row_23	PXDN	peroxidasin [Source:HGNC Symbol;Acc:HGNC:14966]	6139	-0.3060751259326935	-0.3687037	Yes	
+row_24	PLEC	plectin [Source:HGNC Symbol;Acc:HGNC:9069]	6160	-0.31343188881874084	-0.32931063	Yes	
+row_25	COL1A2	collagen type I alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2198]	6195	-0.33046555519104004	-0.2898096	Yes	
+row_26	COL1A1	collagen type I alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2197]	6267	-0.38180726766586304	-0.24916498	Yes	
+row_27	COL3A1	collagen type III alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2201]	6295	-0.4220089316368103	-0.19613689	Yes	
+row_28	LAMA3	laminin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6483]	6300	-0.42772966623306274	-0.13871144	Yes	
+row_29	LAMB3	laminin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6490]	6314	-0.447714626789093	-0.079990305	Yes	
+row_30	ITGB4	integrin subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:6158]	6373	-0.6670523285865784	0.0014168463	Yes	

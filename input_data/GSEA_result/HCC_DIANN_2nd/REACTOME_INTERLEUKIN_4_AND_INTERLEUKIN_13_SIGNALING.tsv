@@ -1,0 +1,35 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAOA	monoamine oxidase A [Source:HGNC Symbol;Acc:HGNC:6833]	255	0.5766685009002686	-0.007869964	No	
+row_1	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	914	0.2504071295261383	-0.13426964	No	
+row_2	MYC	MYC proto-oncogene, bHLH transcription factor [Source:HGNC Symbol;Acc:HGNC:7553]	939	0.242532879114151	-0.11887239	No	
+row_3	HSP90B1	heat shock protein 90 beta family member 1 [Source:HGNC Symbol;Acc:HGNC:12028]	1261	0.16310246288776398	-0.17702569	No	
+row_4	SAA1	serum amyloid A1 [Source:HGNC Symbol;Acc:HGNC:10513]	1480	0.11859507113695145	-0.2158482	No	
+row_5	HMOX1	heme oxygenase 1 [Source:HGNC Symbol;Acc:HGNC:5013]	2085	0.017732571810483932	-0.35005847	No	
+row_6	LBP	lipopolysaccharide binding protein [Source:HGNC Symbol;Acc:HGNC:6517]	2106	0.012713364325463772	-0.35346302	No	
+row_7	HSP90AA1	heat shock protein 90 alpha family class A member 1 [Source:HGNC Symbol;Acc:HGNC:5253]	2120	0.011188303120434284	-0.35542527	No	
+row_8	PIM1	Pim-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:8986]	2182	0.0010931560536846519	-0.36903945	No	
+row_9	CCL11	C-C motif chemokine ligand 11 [Source:HGNC Symbol;Acc:HGNC:10610]	2509	-0.05012598633766174	-0.43800095	No	
+row_10	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	2545	-0.05423496663570404	-0.44121695	No	
+row_11	VCAM1	vascular cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:12663]	2801	-0.09484542906284332	-0.49038994	No	
+row_12	STAT3	signal transducer and activator of transcription 3 [Source:HGNC Symbol;Acc:HGNC:11364]	2999	-0.1279556006193161	-0.52369094	No	
+row_13	ITGAX	integrin subunit alpha X [Source:HGNC Symbol;Acc:HGNC:6152]	3287	-0.17683568596839905	-0.57302654	No	
+row_14	F13A1	coagulation factor XIII A chain [Source:HGNC Symbol;Acc:HGNC:3531]	3371	-0.19143229722976685	-0.5752682	No	
+row_15	LAMA5	laminin subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:6485]	3646	-0.24527518451213837	-0.61581564	Yes	
+row_16	TWIST1	twist family bHLH transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:12428]	3744	-0.271024614572525	-0.61438054	Yes	
+row_17	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	3840	-0.2966635525226593	-0.61029816	Yes	
+row_18	IGHG4	immunoglobulin heavy constant gamma 4 (G4m marker) [Source:HGNC Symbol;Acc:HGNC:5528]	3882	-0.3094661831855774	-0.5929834	Yes	
+row_19	STAT6	signal transducer and activator of transcription 6 [Source:HGNC Symbol;Acc:HGNC:11368]	4034	-0.3656519651412964	-0.59557146	Yes	
+row_20	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	4054	-0.3741036057472229	-0.5677721	Yes	
+row_21	ICAM1	intercellular adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5344]	4115	-0.39472341537475586	-0.5474186	Yes	
+row_22	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	4127	-0.40042057633399963	-0.51556545	Yes	
+row_23	COL1A2	collagen type I alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2198]	4161	-0.41584524512290955	-0.48733395	Yes	
+row_24	TIMP1	TIMP metallopeptidase inhibitor 1 [Source:HGNC Symbol;Acc:HGNC:11820]	4282	-0.4860084354877472	-0.47263843	Yes	
+row_25	IL18	interleukin 18 [Source:HGNC Symbol;Acc:HGNC:5986]	4321	-0.5210688710212708	-0.4365105	Yes	
+row_26	LCN2	lipocalin 2 [Source:HGNC Symbol;Acc:HGNC:6526]	4336	-0.5360279679298401	-0.39370695	Yes	
+row_27	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	4353	-0.5552464723587036	-0.3497054	Yes	
+row_28	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	4388	-0.6091663241386414	-0.30512664	Yes	
+row_29	FSCN1	fascin actin-bundling protein 1 [Source:HGNC Symbol;Acc:HGNC:11148]	4423	-0.6760863065719604	-0.25481138	Yes	
+row_30	ITGB2	integrin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6155]	4426	-0.6797338128089905	-0.19699238	Yes	
+row_31	VIM	vimentin [Source:HGNC Symbol;Acc:HGNC:12692]	4436	-0.711483895778656	-0.13802475	Yes	
+row_32	ITGAM	integrin subunit alpha M [Source:HGNC Symbol;Acc:HGNC:6149]	4454	-0.7734814882278442	-0.07554029	Yes	
+row_33	ANXA1	annexin A1 [Source:HGNC Symbol;Acc:HGNC:533]	4476	-0.9546213150024414	0.0015730426	Yes	

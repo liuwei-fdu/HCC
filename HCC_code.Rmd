@@ -1,0 +1,1318 @@
+
+HCC_DIANN_clean data
+```{r HCC_DIANN_clean data }
+rm(list=ls())
+library(readxl)
+library(stringr)
+SampleInfo1<-read_excel("input_data/hcc_2ND_DIA_SWATH_sample_information_20200221_v5.xlsx",sheet=1)
+SampleInfo2<-read_excel("input_data/hcc_2ND_DIA_SWATH_sample_information_20200221_v5.xlsx",sheet="HCC patient information")
+names(SampleInfo2)<-gsub("Patient ID","patient_id",names(SampleInfo2))
+SampleInfo3<-merge(SampleInfo1,SampleInfo2,by="patient_id",all.x = T)
+SampleInfo4<-SampleInfo3[c(1:143),c(1,3,12,30,31)]
+sampleID<-data.frame(str_split_fixed(SampleInfo4$DIA_file,"DIA_",2))
+SampleInfo4$sampleID<-paste0(SampleInfo4$THpe,"_",sampleID$X2)
+SampleInfo4$sampleID<-gsub("A|B","",SampleInfo4$sampleID)
+DIANN_matrix<-read.table("input_data/diann_DIA_prot20200831.txt",sep = "\t",header = T)
+DIANN_matrix1<-DIANN_matrix[-grep("CON|iRT",DIANN_matrix$prot),]
+DIANN_matrix2<-DIANN_matrix1[grep("1/sp",DIANN_matrix1$prot),]
+DIANN_matrix3<-DIANN_matrix2[-grep("11/sp|31/sp",DIANN_matrix2$prot),]
+DIANN_matrix3$prot<-  gsub("\\|","/",DIANN_matrix3$prot)
+DIANN_matrix3$prot<-  gsub("1/sp/","",DIANN_matrix3$prot)
+DIANN_matrix3$prot<-  gsub("/","|",DIANN_matrix3$prot)
+DIANN_matrix4<-DIANN_matrix3[,-1]
+row.names(DIANN_matrix4)<-DIANN_matrix3$prot
+DIANN_matrix5<-data.frame(t(DIANN_matrix4),check.names = F)
+row.names(DIANN_matrix5)<-as.matrix(data.frame(str_split_fixed(row.names(DIANN_matrix5),"[.]",6))[5])
+DIANN_matrix5$DIA_file<-row.names(DIANN_matrix5)
+DIANN_matrix6<-merge(SampleInfo4,DIANN_matrix5,by.x="DIA_file",all=F)
+DIANN_matrix7<-aggregate(DIANN_matrix6[,c(7:ncol(DIANN_matrix6))],by=list(DIANN_matrix6$sampleID),mean,na.rm=T)
+names(DIANN_matrix7)<-gsub("Group.1","sampleID",names(DIANN_matrix7))
+DIANN_matrix8<-merge(data.frame(unique(DIANN_matrix6[,c(3:6)])),DIANN_matrix7,by="sampleID",all.x = F)
+DIANN_matrix9<-(DIANN_matrix8[,-c(1:4)])
+DIANN_matrix10<-data.frame(DIANN_matrix8[,c(1:4)],DIANN_matrix9,check.names = F)
+names(DIANN_matrix10)<-gsub("THpe","label",names(DIANN_matrix10))
+DIANN_matrix10$label<-paste0(as.matrix(data.frame(str_split_fixed(DIANN_matrix10$sampleID,"_",3))[1]),"_",as.matrix(data.frame(str_split_fixed(DIANN_matrix10$sampleID,"_",3))[2]))
+DIANN_matrix10<-DIANN_matrix10[grep("H|C|D",DIANN_matrix10$label),]
+DIANN_matrix10<-DIANN_matrix10[, colSums(is.na(DIANN_matrix10)) != nrow(DIANN_matrix10)]
+```
+HCC_Spec_clean data
+```{r HCC_Spec_clean data}
+library(readxl)
+library(stringr)
+library(clusterProfiler)
+library(org.Hs.eg.db)
+SampleInfo1<-read_excel("input_data/hcc_2ND_DIA_SWATH_sample_information_20200221_v5.xlsx",sheet=1)
+SampleInfo2<-read_excel("input_data/hcc_2ND_DIA_SWATH_sample_information_20200221_v5.xlsx",sheet="HCC patient information")
+names(SampleInfo2)<-gsub("Patient ID","patient_id",names(SampleInfo2))
+SampleInfo3<-merge(SampleInfo1,SampleInfo2,by="patient_id",all.x = T)
+SampleInfo4<-SampleInfo3[c(1:143),c(1,3,12,30,31)]
+sampleID<-data.frame(str_split_fixed(SampleInfo4$DIA_file,"DIA_",2))
+SampleInfo4$sampleID<-paste0(SampleInfo4$THpe,"_",sampleID$X2)
+SampleInfo4$sampleID<-gsub("A|B","",SampleInfo4$sampleID)
+Spec_matrix<-read.table("input_data/20200825_100832_sublib_C20181205yix_Report_DIAprot2020-08-25.txt",sep = "\t",header = T)
+Spec_matrix1<-Spec_matrix[-grep(":|;",Spec_matrix$prot),]
+Spec_matrix4<-Spec_matrix1[,-1]
+row.names(Spec_matrix4)<-Spec_matrix1$prot
+Spec_matrix5<-data.frame(t(Spec_matrix4),check.names = F)
+row.names(Spec_matrix5)<-as.matrix(data.frame(str_split_fixed(row.names(Spec_matrix5),"[.]",6))[4])
+Spec_matrix5$DIA_file<-row.names(Spec_matrix5)
+Spec_matrix5<-Spec_matrix5[-which(row.names(Spec_matrix5)=="C20181218yix_HCC_DIA_T_48B"),]
+Spec_matrix6<-merge(SampleInfo4,Spec_matrix5,by.x="DIA_file",all=F)
+Spec_matrix7<-aggregate(2^Spec_matrix6[,c(7:ncol(Spec_matrix6))],by=list(Spec_matrix6$sampleID),mean,na.rm=T)
+names(Spec_matrix7)<-gsub("Group.1","sampleID",names(Spec_matrix7))
+Spec_matrix8<-merge(data.frame(unique(Spec_matrix6[,c(3:6)])),Spec_matrix7,by="sampleID",all.x = F)
+Spec_matrix9<-(Spec_matrix8[,-c(1:4)])
+Spec_matrix10<-data.frame(Spec_matrix8[,c(1:4)],Spec_matrix9,check.names = F)
+names(Spec_matrix10)<-gsub("THpe","label",names(Spec_matrix10))
+Spec_matrix10$label<-paste0(as.matrix(data.frame(str_split_fixed(Spec_matrix10$sampleID,"_",3))[1]),"_",as.matrix(data.frame(str_split_fixed(Spec_matrix10$sampleID,"_",3))[2]))
+Spec_matrix10<-Spec_matrix10[grep("H|C|D",Spec_matrix10$label),]
+Spec_matrix10<-Spec_matrix10[, colSums(is.na(Spec_matrix10)) != nrow(Spec_matrix10)]
+```
+HCC_Encyo_clean data
+```{r HCC_Encyo_clean data}
+library(readxl)
+library(stringr)
+SampleInfo1<-read_excel("input_data/hcc_2ND_DIA_SWATH_sample_information_20200221_v5.xlsx",sheet=1)
+SampleInfo2<-read_excel("input_data/hcc_2ND_DIA_SWATH_sample_information_20200221_v5.xlsx",sheet="HCC patient information")
+names(SampleInfo2)<-gsub("Patient ID","patient_id",names(SampleInfo2))
+SampleInfo3<-merge(SampleInfo1,SampleInfo2,by="patient_id",all.x = T)
+SampleInfo4<-SampleInfo3[c(1:143),c(1,3,12,30,31)]
+sampleID<-data.frame(str_split_fixed(SampleInfo4$DIA_file,"DIA_",2))
+SampleInfo4$sampleID<-paste0(SampleInfo4$THpe,"_",sampleID$X2)
+SampleInfo4$sampleID<-gsub("A|B","",SampleInfo4$sampleID)
+
+Encyo_matrix<-read.table("input_data/quant_DIA_pfind.decoy.lib.elib.proteins.txt",sep = "\t",header = T)
+Encyo_matrix1<-Encyo_matrix[-grep("CON|iRT|;",Encyo_matrix$Protein),]
+Encyo_matrix3<-Encyo_matrix1
+Encyo_matrix3$Protein<-  gsub("\\|","/",Encyo_matrix3$Protein)
+Encyo_matrix3$Protein<-  gsub("sp/","",Encyo_matrix3$Protein)
+Encyo_matrix3$Protein<-  gsub("/","|",Encyo_matrix3$Protein)
+Encyo_matrix4<-Encyo_matrix3[,-c(1:3)]
+row.names(Encyo_matrix4)<-Encyo_matrix3$Protein
+Encyo_matrix5<-data.frame(t(Encyo_matrix4),check.names = F)
+row.names(Encyo_matrix5)<-as.matrix(data.frame(str_split_fixed(row.names(Encyo_matrix5),"[.]",2))[1])
+Encyo_matrix5$DIA_file<-row.names(Encyo_matrix5)
+Encyo_matrix6<-merge(SampleInfo4,Encyo_matrix5,by.x="DIA_file",all=F)
+Encyo_matrix7<-aggregate(Encyo_matrix6[,c(7:ncol(Encyo_matrix6))],by=list(Encyo_matrix6$sampleID),mean,na.rm=T)
+names(Encyo_matrix7)<-gsub("Group.1","sampleID",names(Encyo_matrix7))
+Encyo_matrix8<-merge(data.frame(unique(Encyo_matrix6[,c(3:6)])),Encyo_matrix7,by="sampleID",all.x = F)
+Encyo_matrix9<-(Encyo_matrix8[,-c(1:4)])
+Encyo_matrix10<-data.frame(Encyo_matrix8[,c(1:4)],Encyo_matrix9,check.names = F)
+names(Encyo_matrix10)<-gsub("THpe","label",names(Encyo_matrix10))
+Encyo_matrix10$label<-paste0(as.matrix(data.frame(str_split_fixed(Encyo_matrix10$sampleID,"_",3))[1]),"_",as.matrix(data.frame(str_split_fixed(Encyo_matrix10$sampleID,"_",3))[2]))
+Encyo_matrix10[Encyo_matrix10==0]<-NA
+Encyo_matrix10<-Encyo_matrix10[grep("H|C|D",Encyo_matrix10$label),]
+Encyo_matrix10<-Encyo_matrix10[, colSums(is.na(Encyo_matrix10)) != nrow(Encyo_matrix10)]
+```
+
+HCC_CCA_valid_clean data
+```{r HCC_DIANN second}
+library(stringr)
+DIANN_2nd_1<-read.table("input_data/20220419yix_DIANN_HCCC_validate_pro.txt",sep = "\t",header = T)
+sampleinfo<-read.table("input_data/NAME.txt",sep = "\t",header = T)
+sampleinfo$ID<-as.matrix(data.frame(str_split_fixed(sampleinfo$ID,"HCCC_",3))[2])
+sampleinfo$ID<-gsub("-","",sampleinfo$ID)
+DIANN_2nd_2<-DIANN_2nd_1[-grep(";",DIANN_2nd_1$prot),]
+DIANN_2nd_3<-DIANN_2nd_2[,-1]
+row.names(DIANN_2nd_3)<-DIANN_2nd_2$prot
+names(DIANN_2nd_3)<-as.matrix(data.frame(str_split_fixed(names(DIANN_2nd_3),"HCCC_",3))[2])
+names(DIANN_2nd_3)<-gsub("\\.","",names(DIANN_2nd_3))
+DIANN_2nd_4<-data.frame(t(DIANN_2nd_3))
+DIANN_2nd_4$ID<-row.names(DIANN_2nd_4)
+DIANN_2nd_5<-merge(sampleinfo,DIANN_2nd_4,by.x="ID",all=F)
+DIANN_2nd_6<-DIANN_2nd_5[,-c(1:2)]
+row.names(DIANN_2nd_6)<-paste0(DIANN_2nd_5$Type,"_",DIANN_2nd_5$ID)
+##aggregate bio-rep
+DIANN_2nd_6$lable <-row.names(DIANN_2nd_6)
+DIANN_2nd_6$lable<-gsub("_repA","",DIANN_2nd_6$lable)
+DIANN_2nd_7<-aggregate(DIANN_2nd_6[,-ncol(DIANN_2nd_6)],by=list(DIANN_2nd_6$lable),mean,na.rm=T)
+DIANN_2nd_8<-DIANN_2nd_7[,-1]
+row.names(DIANN_2nd_8)<-DIANN_2nd_7$Group.1
+####NA less than 90%
+DIANN_2nd_9<-DIANN_2nd_8[, apply(DIANN_2nd_8,2,function(x) {sum(is.na(x))/nrow(DIANN_2nd_8)}) < 0.9]
+```
+
+
+
+figureS1
+```{r  venn for proteotypic proteins peptides }
+###proteins
+library(Vennerable)  
+DIAnn<-DIANN_matrix10
+DIAnn1<-as.matrix(data.frame(str_split_fixed( names(DIAnn[,-c(1:4)]),"\\|",2))[1])
+Spec<-Spec_matrix10
+Spec1<-c(as.matrix(names(Spec[,-c(1:4)])))
+Encyo<-Encyo_matrix10
+Encyo1<-as.matrix(data.frame(str_split_fixed( names(Encyo[,-c(1:4)]),"\\|",2))[1])
+pdf("Proteotypic_protein_venn_3software_noweight.pdf")
+data<-Venn(list("DIANN"=DIAnn1,"Spectronaut"=Spec1,"EncyclopeDIA"=Encyo1))
+a<-plot(data,doWeight=F)
+dev.off()
+pdf("Proteotypic_protein_venn_3software_weight.pdf")
+data<-Venn(list("DIANN"=DIAnn1,"Spectronaut"=Spec1,"EncyclopeDIA"=Encyo1))
+a<-plot(data,doWeight=T)
+dev.off()
+
+###peptdide
+DIAnn_pept<-read.table("input_data/diann_DIA_pep20200831.txt",sep="\t",header = T)
+DIAnn_pept1<-DIAnn_pept[,-grep("C20181209yix_HCC_DIA_N_9A|C20181212yix_HCC_DIA_T_9A|C20181209yix_HCC_DIA_N_21A|C20181209yix_HCC_DIA_T_21A|C20181218yix_HCC_DIA_T_48B",names(DIAnn_pept))]
+DIAnn_pept2<-DIAnn_pept1[, colSums(is.na(DIAnn_pept1)) != nrow(DIAnn_pept1)]
+DIAnn_pept3<-c(DIAnn_pept2$pep)
+
+Spec_pept<-read.table("input_data/20200825_100832_C20181205yix_Report.txt",sep="\t",header = T)
+Spec_pept1<-Spec_pept[,-grep("C20181209yix_HCC_DIA_N_9A|C20181212yix_HCC_DIA_T_9A|C20181209yix_HCC_DIA_N_21A|C20181209yix_HCC_DIA_T_21A|C20181218yix_HCC_DIA_T_48B",names(Spec_pept))]
+Spec_pept2<-Spec_pept1[, colSums(is.na(Spec_pept1)) != nrow(Spec_pept1)]
+Spec_pept3<-c(Spec_pept2$EG.PrecursorId)
+Spec_pept4<-data.frame(str_split_fixed(Spec_pept3,"[.]",2))
+Spec_pept5<-unique(c(gsub("_","",Spec_pept4$X1)))
+
+
+Encyo_pept<-read.table("input_data/quant_pfind.decoy.lib.elib.peptides.txt",sep="\t",header = T)
+Encyo_pept1<-Encyo_pept[,-grep("C20181209yix_HCC_DIA_N_9A|C20181212yix_HCC_DIA_T_9A|C20181209yix_HCC_DIA_N_21A|C20181209yix_HCC_DIA_T_21A|C20181218yix_HCC_DIA_T_48B",names(Encyo_pept))]
+Encyo_pept2<-Encyo_pept1[, colSums(is.na(Encyo_pept1)) != nrow(Encyo_pept1)]
+Encyo_pept3<-c(Encyo_pept2$Peptide)
+Encyo_pept4<-gsub("\\[","(",Encyo_pept3)
+Encyo_pept4<-gsub("\\]",")",Encyo_pept4)
+Encyo_pept5<-c(unique(gsub("\\(.*\\)","", Encyo_pept4)))
+
+pdf("peptide_venn_3software_noweight.pdf")
+data<-Venn(list("DIANN"=DIAnn_pept3,"Spectronaut"=Spec_pept5,"EncyclopeDIA"=Encyo_pept5))
+a<-plot(data,doWeight=F)
+dev.off()
+pdf("peptide_venn_3software_weight.pdf")
+data<-Venn(list("DIANN"=DIAnn_pept3,"Spectronaut"=Spec_pept5,"EncyclopeDIA"=Encyo_pept5))
+a<-plot(data,doWeight=T)
+dev.off()
+
+```
+
+figure2c,d
+```{r}
+###Pearson corr
+library(vioplot)
+Encyo_violin<-Encyo_matrix6
+Encyo_violin[Encyo_violin==0]<-NA
+Encyo_violin1<-Encyo_violin[grep("H|C|D",Encyo_violin$THpe),]
+rep<- c(as.matrix(Encyo_violin1[grep("B",Encyo_violin1$DIA_file),6]))
+Encyo_corr<-c()
+for (i in rep) {
+Encyo_violin2<-t(log2(Encyo_violin1[Encyo_violin1$sampleID == i,-c(1:6)]))
+corr<-cor(Encyo_violin2,  Encyo_violin2, use = "pairwise.complete.obs")[1,2]
+Encyo_corr<-c(corr,Encyo_corr)
+}
+
+Spec_violin<-Spec_matrix6
+Spec_violin[Spec_violin==0]<-NA
+Spec_violin1<-Spec_violin[grep("H|C|D",Spec_violin$THpe),]
+rep<- c(as.matrix(Spec_violin1[grep("B",Spec_violin1$DIA_file),6]))
+Spec_corr<-c()
+for (i in rep) {
+Spec_violin2<-t(log2(Spec_violin1[Spec_violin1$sampleID == i,-c(1:6)]))
+corr<-cor(Spec_violin2,  Spec_violin2, use = "pairwise.complete.obs")[1,2]
+Spec_corr<-c(corr,Spec_corr)
+}
+
+DIANN_violin<-DIANN_matrix6
+DIANN_violin[DIANN_violin==0]<-NA
+DIANN_violin1<-DIANN_violin[grep("H|C|D",DIANN_violin$THpe),]
+rep<- c(as.matrix(DIANN_violin1[grep("B",DIANN_violin1$DIA_file),6]))
+DIANN_corr<-c()
+for (i in rep) {
+DIANN_violin2<-t(log2(DIANN_violin1[DIANN_violin1$sampleID == i,-c(1:6)]))
+corr<-cor(DIANN_violin2,  DIANN_violin2, use = "pairwise.complete.obs")[1,2]
+DIANN_corr<-c(corr,DIANN_corr)
+}
+
+pdf("Violin_3_softwares_techrep_pearson_corr.pdf")
+a<-vioplot(c(DIANN_corr),c(Spec_corr),c(Encyo_corr),
+        areaEqual=FALSE, col=c("seagreen4", "seagreen4","seagreen4"),
+      rectCol=c("seagreen4","seagreen4","seagreen4"),
+     lineCol=c("black", "black", "black"),
+    border=c("black","black", "black"),
+ names=c( "DIA-NN"  ,"Spectronaut","EncyclopeDIA"),
+      main="technical replicates", xlab="", ylab="Pearson correlation",plotCentre = "point")
+dev.off()
+
+###CV
+library(vioplot)
+Encyo_violin<-Encyo_matrix6
+Encyo_violin[Encyo_violin==0]<-NA
+Encyo_violin1<-Encyo_violin[grep("H|C|D",Encyo_violin$THpe),]
+rep<- c(as.matrix(Encyo_violin1[grep("B",Encyo_violin1$DIA_file),6]))
+Encyo_cv<-c()
+for (i in rep) {
+Encyo_violin2<-log2(Encyo_violin1[Encyo_violin1$sampleID == i,-c(1:6)])
+cv1<-apply(Encyo_violin2,2,function (x){ sd(x,na.rm=T)/mean(x,na.rm=T)})
+cv1<-as.numeric(cv1)
+Encyo_cv<-c(cv1,Encyo_cv)
+}
+
+Spec_violin<-Spec_matrix6
+Spec_violin1<-Spec_violin[grep("H|C|D",Spec_violin$THpe),]
+rep<- c(as.matrix(Spec_violin1[grep("B",Spec_violin1$DIA_file),6]))
+Spec_cv<-c()
+for (i in rep) {
+Spec_violin2<-Spec_violin1[Spec_violin1$sampleID == i,-c(1:6)]
+cv1<-apply(Spec_violin2,2,function (x){ sd(x,na.rm=T)/mean(x,na.rm=T)})
+cv1<-as.numeric(cv1)
+Spec_cv<-c(cv1,Spec_cv)
+}
+
+DIANN_violin<-DIANN_matrix6
+DIANN_violin1<-DIANN_violin[grep("H|C|D",DIANN_violin$THpe),]
+rep<- c(as.matrix(DIANN_violin1[grep("B",DIANN_violin1$DIA_file),6]))
+DIANN_cv<-c()
+for (i in rep) {
+DIANN_violin2<-log2(DIANN_violin1[DIANN_violin1$sampleID == i,-c(1:6)])
+cv1<-apply(DIANN_violin2,2,function (x){ sd(x,na.rm=T)/mean(x,na.rm=T)})
+cv1<-as.numeric(cv1)
+DIANN_cv<-c(cv1,DIANN_cv)
+}
+
+DIANN_cv1<-DIANN_cv[-which(is.na(DIANN_cv))]
+Spec_cv1<-Spec_cv[-which(is.na(Spec_cv))]
+Encyo_cv1<-Encyo_cv[-which(is.na(Encyo_cv))]
+pdf("Violin_3_softwares_techrep_cv.pdf")
+a<-vioplot(c(DIANN_cv1),c(Spec_cv1),c(Encyo_cv1),
+        areaEqual=FALSE, col=c("seagreen4", "seagreen4","seagreen4"),
+      rectCol=c("seagreen4","seagreen4","seagreen4"),
+     lineCol=c("black", "black", "black"),
+    border=c("black","black", "black"),
+ names=c( "DIA-NN"  ,"Spectronaut","EncyclopeDIA"),
+      main="technical replicates", xlab="model", ylab="CV",plotCentre = "point")
+dev.off()
+
+```
+
+figure2e,f
+```{r protein peptide matrix correlation }
+##protein mtrix
+library(VennDiagram)
+library(corrplot)
+library(reshape2)
+library(RColorBrewer)
+overlap=calculate.overlap(
+    x=list("DIANN"=DIAnn1,"Spectronaut"=Spec1,"EncyclopeDIA"=Encyo1)
+) 
+overlap_prot<-overlap[[1]]
+
+DIANN_matrix_corr<-DIANN_matrix10
+names(DIANN_matrix_corr)<-c(as.matrix(data.frame(str_split_fixed(names(DIANN_matrix_corr[,]),"\\|",2))[1]))
+Encyo_matrix_corr<-Encyo_matrix10
+names(Encyo_matrix_corr)<-c(as.matrix(data.frame(str_split_fixed( names(Encyo_matrix10[,]),"\\|",2))[1]))
+Spec_matrix_corr<-Spec_matrix10
+DIANN_matrix_corr1<-DIANN_matrix_corr[,names(DIANN_matrix_corr)%in% overlap_prot]
+DIANN_matrix_corr1$ID<-DIANN_matrix_corr$sampleID
+DIANN_matrix_corr2<-melt(DIANN_matrix_corr1, id.vars = c("ID"))
+DIANN_matrix_corr2$ID2<-paste0(DIANN_matrix_corr2$ID,"_",DIANN_matrix_corr2$variable)
+names(DIANN_matrix_corr2)<-gsub("value","DIANN",names(DIANN_matrix_corr2))
+
+Spec_matrix_corr1<-Spec_matrix_corr[,names(Spec_matrix_corr)%in% overlap_prot]
+Spec_matrix_corr1$ID<-Spec_matrix_corr$sampleID
+Spec_matrix_corr2<-melt(Spec_matrix_corr1, id.vars = c("ID"))
+Spec_matrix_corr2$ID2<-paste0(Spec_matrix_corr2$ID,"_",Spec_matrix_corr2$variable)
+names(Spec_matrix_corr2)<-gsub("value","Spec",names(Spec_matrix_corr2))
+
+Encyo_matrix_corr1<-Encyo_matrix_corr[,names(Encyo_matrix_corr)%in% overlap_prot]
+Encyo_matrix_corr1$ID<-Encyo_matrix_corr$sampleID
+Encyo_matrix_corr2<-melt(Encyo_matrix_corr1, id.vars = c("ID"))
+Encyo_matrix_corr2$ID2<-paste0(Encyo_matrix_corr2$ID,"_",Encyo_matrix_corr2$variable)
+names(Encyo_matrix_corr2)<-gsub("value","Encyo",names(Encyo_matrix_corr2))
+
+df<-merge(DIANN_matrix_corr2[,c(3:4)],Spec_matrix_corr2[,c(3:4)], by.x="ID2", all=T)
+df1<-merge(df,Encyo_matrix_corr2[,c(3:4)], by.x="ID2", all=T)
+
+res1<-cor(log2(df1[2:4]),  log2(df1[2:4]), use = "pairwise.complete.obs",method = "spearman")
+pdf("Protein_corrplot_3software_spearman.pdf")
+corrplot (res1,method="ellipse",tl.col = "black",tl.srt = 0,tl.cex=1,type = "upper",shade.lwd = 10,addgrid.col="white",col =c(brewer.pal(11,"RdYlGn")[1:9]),addCoef.col = "black",diag = FALSE)
+dev.off()
+
+
+####Peptide matrix
+
+overlap=calculate.overlap(
+    x=list("DIANN"=DIAnn_pept3,"Spectronaut"=Spec_pept5,"EncyclopeDIA"=Encyo_pept5))
+
+overlap_pept<-overlap[[1]]
+DIAnn_pept_corr<-DIAnn_pept2
+names(DIAnn_pept_corr)<-gsub("D..HCC.DIA.|.mzML","",names(DIAnn_pept_corr))
+DIAnn_pept_corr1<-DIAnn_pept_corr[DIAnn_pept_corr$pep %in%overlap_pept ,-2]
+DIAnn_pept_corr2<-melt(DIAnn_pept_corr1, id.vars = c("pep"))
+DIAnn_pept_corr2$ID2<-paste0(DIAnn_pept_corr2$pep,"_",DIAnn_pept_corr2$variable)
+names(DIAnn_pept_corr2)<-gsub("value","DIANN",names(DIAnn_pept_corr2))
+
+Spec_pept_corr<-Spec_pept2
+names(Spec_pept_corr)<-c(as.matrix(data.frame(str_split_fixed(names(Spec_pept_corr),"\\.",6))[4]))
+Spec_name<-data.frame(str_split_fixed(Spec_pept_corr[,1],"[.]",2))
+Spec_pept_corr[,1]<-c(gsub("_","",Spec_name$X1))
+Spec_pept_corr0.5<-aggregate(Spec_pept_corr[,-c(1:2)], by=list(Spec_pept_corr[,1]),mean, na.rm=T)
+Spec_pept_corr1<-Spec_pept_corr0.5[Spec_pept_corr0.5$Group.1 %in%overlap_pept ,]
+Spec_pept_corr2<-melt(Spec_pept_corr1, id.vars = c("Group.1"))
+Spec_pept_corr2$ID2<-paste0(Spec_pept_corr2$Group.1,"_",Spec_pept_corr2$variable)
+names(Spec_pept_corr2)<-gsub("value","Spec",names(Spec_pept_corr2))  
+  
+Encyo_pept_corr<-Encyo_pept2
+names(Encyo_pept_corr)<-gsub(".mzML","",names(Encyo_pept_corr))
+Encyo_pept_corr$Peptide<-gsub("\\[","(",Encyo_pept_corr$Peptide)
+Encyo_pept_corr$Peptide<-gsub("\\]",")",Encyo_pept_corr$Peptide)
+Encyo_pept_corr$Peptide<-c((gsub("\\(.*\\)","", Encyo_pept_corr$Peptide)))
+Encyo_pept_corr0.5<-aggregate(Encyo_pept_corr[,-c(1:3)], by=list(Encyo_pept_corr[,1]),mean, na.rm=T)
+Encyo_pept_corr1<-Encyo_pept_corr0.5[Encyo_pept_corr0.5$Group.1 %in%overlap_pept ,]
+Encyo_pept_corr2<-melt(Encyo_pept_corr1, id.vars = c("Group.1"))
+Encyo_pept_corr2$ID2<-paste0(Encyo_pept_corr2$Group.1,"_",Encyo_pept_corr2$variable)
+names(Encyo_pept_corr2)<-gsub("value","Encyo",names(Encyo_pept_corr2))
+df<-merge(DIAnn_pept_corr2[,c(3:4)],Spec_pept_corr2[,c(3:4)], by.x="ID2", all=T)
+df1<-merge(df,Encyo_pept_corr2[,c(3:4)], by.x="ID2", all=T)
+res1<-cor(log2(df1[2:4]),  log2(df1[2:4]), use = "pairwise.complete.obs",method = "spearman")
+pdf("Peptide_corrplot_3software_spearman.pdf")
+corrplot (res1,method="ellipse",tl.col = "black",tl.srt = 0,tl.cex=1,type = "upper",shade.lwd = 10,addgrid.col="white",col =c(brewer.pal(11,"RdYlGn")[1:9]),addCoef.col = "black",diag = FALSE)
+dev.off()
+```
+
+figure2g,h,i
+```{r new H C D pca }
+library(RColorBrewer)
+library(ggplot2)
+library(adegenet)
+
+color<-c("#7FC97F", "#16CBD8","grey","#FB8072", "#80B1D3", "#FDB462", "#C655E8")
+set.seed(2022)
+matrix<-list("DIANN_matrix10"=DIANN_matrix10,"Encyo_matrix10"=Encyo_matrix10,"Spec_matrix10"=Spec_matrix10)
+for (i in c("DIANN_matrix10","Encyo_matrix10","Spec_matrix10")) { 
+df<-matrix[[paste0(i)]]
+row.names(df)<-df$sampleID
+for (m in c("H_T|C_T|D_T|H_N|C_N|D_N") ) {
+df1<-df[grep(paste0(m),df$label),-c(1,3,4)]
+df1.5<-df1[, colSums(is.na(df1)) != nrow(df1)]
+df2<-log2(df1.5[,-1])
+df2$label<-df1.5$label
+df2[is.na(df2)]<-0
+new_PCA<-df2
+new_PCA1<-new_PCA
+### data normalization
+#colNormalization 
+new_PCA1<- data.frame(apply(new_PCA1[,colnames(new_PCA1)!='label'],2,function(v){(v-mean(v,na.rm=T))/sd(v,na.rm=T)}))
+##rowNormalization
+new_PCA1 <- data.frame(t(apply(new_PCA1[,colnames(new_PCA1)!='label'],1,function(v){(v-mean(v,na.rm=T))/sd(v,na.rm=T)})),stringsAsFactors=F)
+###perform pca
+new_PCA2<-prcomp(t(new_PCA1))
+###pca data
+new_PCA3<-data.frame(new_PCA2$rotation)[,c(1,2)]
+names(new_PCA3)<-c("x","y")
+new_PCA3$label<-new_PCA$label
+####k-means find center
+center0<-data.frame()
+for (t in unique(new_PCA3$label)) {
+  new_PCA4<-new_PCA3[new_PCA3$label==t,colnames(new_PCA3)!='label']
+  center <- kmeans(new_PCA4,1)
+  center1<-data.frame(center$centers)
+  row.names(center1)<-t
+  center0<-rbind(center0,center1)
+}
+names(center0)<-c("centerX","centerY")
+####prepare plot data
+center0$label<-row.names(center0)
+new_PCA5<-merge(new_PCA3,center0,by="label",all.y = T)
+##plot
+p<-ggplot(new_PCA5) + 
+geom_point(aes(x = x, y = y, color = label),cex=1)+
+geom_curve(aes(x = centerX, y = centerY, xend = x, yend = y, color = label),
+curvature = 0.3, angle = -45,arrow = arrow(length = unit(0,"cm"))) + 
+scale_colour_manual(values = color)+
+geom_point(aes(x =centerX , y = centerY,color="cluster center"),cex=3)+
+theme(legend.position = "bottom") +
+theme(legend.direction = 'horizontal',legend.position = 'top',legend.text = element_text(size = 15,color = "black"), legend.title =         element_text(size=15,color="black") ,panel.grid.major =element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = "black"))+ theme(panel.grid =element_blank())+
+theme(axis.text = element_text(size = 30,color = "black"))+ 
+theme(plot.subtitle=element_text(size=30, hjust=0, color="black"))+
+theme(axis.title.x=element_text(size=30, hjust=0.5, color="black"))+
+theme(axis.title.y=element_text(size=30, hjust=0.5, color="black"))
+n<-gsub("\\|","_",m)
+
+ggsave(plot = p,paste0("",i,"_",n,"_PCA.pdf"),device = NULL,width = 10,height = 10)
+}
+}
+```
+
+
+figure3a c
+```{r}
+######DIANN
+## HCC
+library(RColorBrewer)
+HCC_volcano<-DIANN_matrix10[which(DIANN_matrix10$label %in% c("H_N", "H_T" )),-c(2:4)]
+row.names(HCC_volcano)<-HCC_volcano$sampleID
+HCC_volcano<-HCC_volcano[,-1]
+
+####NA 小于90%
+HCC_volcano1<-HCC_volcano[, apply(HCC_volcano,2,function(x) {sum(is.na(x))/nrow(HCC_volcano)}) < 0.9]
+### volcano
+HCC_volcano1[is.na(HCC_volcano1)]<-0
+
+
+fd <- data.frame(apply(HCC_volcano1,2, function(x) log2((mean(na.omit(x[grep("H_T",row.names(HCC_volcano1))]))/mean(na.omit(x[grep("H_N",row.names(HCC_volcano1))]))))))
+
+pvalue<- data.frame(apply(HCC_volcano1,2, function(x)  t.test(x[grep("H_T",row.names(HCC_volcano1))],x[grep("H_N",row.names(HCC_volcano1))], paired = T, var.equal = F)$p.value ))
+
+vol<-cbind(fd,pvalue)
+names(vol)<-c("fd","P_value")
+HCC_volcano2<-data.frame(t(rbind(HCC_volcano1,t(vol))))
+HCC_volcano2$P_value_adjust<-p.adjust(HCC_volcano2$P_value, method="BH")
+nc1<- subset(HCC_volcano2, HCC_volcano2$P_value_adjust >= 0.05  )
+nc2<- subset(HCC_volcano2, HCC_volcano2$fd <= 0.5 & HCC_volcano2$fd >= -0.5 )
+nc<- unique(rbind(nc1,nc2))
+HCC_volcano2$fd[HCC_volcano2$fd > 10000]<-NA
+HCC_volcano2$fd[HCC_volcano2$fd < -10000]<-NA
+pdf("HCC_volcano2.pdf",width = 6,height = 6)
+plot(nc$fd, -log10(nc$P_value_adjust), col="#00000033", pch=1,cex=1,xlab=paste("log2(fold change)"),
+      ylab="-log10 adjusted p value",
+      main="H_T VS H_N",xlim=c(min(HCC_volcano2$fd,na.rm=T),max(HCC_volcano2$fd,na.rm=T)),ylim=c(min(-log10(HCC_volcano2$P_value_adjust),na.rm=T),max(-log10(HCC_volcano2$P_value_adjust),na.rm=T)))
+up <- subset(HCC_volcano2, HCC_volcano2$P_value_adjust < 0.05 & HCC_volcano2$fd > 0.5)
+down <- subset(HCC_volcano2, HCC_volcano2$P_value_adjust< 0.05 & HCC_volcano2$fd< -0.5)
+write.csv(up,file = "HCC_volcano_up.csv")
+write.csv(down,file = "HCC_volcano_down.csv")
+points(up$fd, -log10(up$P_value_adjust), col= brewer.pal(9, "YlOrRd")[6], pch=3, cex=1)
+points(down$fd, -log10(down$P_value_adjust), col = brewer.pal(11, "RdBu")[9], pch = 2,cex=1)
+ abline(h=1.3,v=c(-0.5,0.5),lty=2,lwd=1)
+dev.off()
+
+###CCA
+library(RColorBrewer)
+CCA_volcano<-DIANN_matrix10[which(DIANN_matrix10$label %in% c("C_N", "C_T" )),-c(2:4)]
+row.names(CCA_volcano)<-CCA_volcano$sampleID
+CCA_volcano<-CCA_volcano[,-1]
+
+####NA 小于70%
+CCA_volcano1<-CCA_volcano[, apply(CCA_volcano,2,function(x) {sum(is.na(x))/nrow(CCA_volcano)}) < 0.9]
+### volcano
+CCA_volcano1[is.na(CCA_volcano1)]<-0
+fd <- data.frame(apply(CCA_volcano1,2, function(x) log2((mean(na.omit(x[grep("C_T",row.names(CCA_volcano1))]))/mean(na.omit(x[grep("C_N",row.names(CCA_volcano1))]))))))
+
+pvalue<- data.frame(apply(CCA_volcano1,2, function(x)  t.test(x[grep("C_T",row.names(CCA_volcano1))],x[grep("C_N",row.names(CCA_volcano1))], paired = T, var.equal = F)$p.value ))
+
+vol<-cbind(fd,pvalue)
+names(vol)<-c("fd","P_value")
+
+CCA_volcano2<-data.frame(t(rbind(CCA_volcano1,t(vol))))
+CCA_volcano2$P_value_adjust<-p.adjust(CCA_volcano2$P_value, method="BH")
+
+nc1<- subset(CCA_volcano2, CCA_volcano2$P_value_adjust >= 0.05  )
+nc2<- subset(CCA_volcano2, CCA_volcano2$fd <= 0.5 & CCA_volcano2$fd >= -0.5 )
+nc<- unique(rbind(nc1,nc2))
+CCA_volcano2$fd[CCA_volcano2$fd > 10000]<-NA
+CCA_volcano2$fd[CCA_volcano2$fd < -10000]<-NA
+pdf("CCA_volcano2.pdf",width = 6,height = 6)
+plot(nc$fd, -log10(nc$P_value_adjust), col="#00000033", pch=1,cex=1,xlab=paste("log2(fold change)"),
+      ylab="-log10 adjusted p value",
+      main="C_T VS C_N",xlim=c(min(CCA_volcano2$fd,na.rm=T),max(CCA_volcano2$fd,na.rm=T)),ylim=c(min(-log10(CCA_volcano2$P_value_adjust),na.rm=T),max(-log10(CCA_volcano2$P_value_adjust),na.rm=T)))
+up <- subset(CCA_volcano2, CCA_volcano2$P_value_adjust < 0.05 & CCA_volcano2$fd > 0.5)
+down <- subset(CCA_volcano2, CCA_volcano2$P_value_adjust< 0.05 & CCA_volcano2$fd< -0.5)
+write.csv(up,file = "CCA_volcano_up.csv")
+write.csv(down,file = "CCA_volcano_down.csv")
+points(up$fd, -log10(up$P_value_adjust), col= brewer.pal(9, "YlOrRd")[6], pch=3, cex=1)
+points(down$fd, -log10(down$P_value_adjust), col = brewer.pal(11, "RdBu")[9], pch = 2,cex=1)
+ abline(h=1.3,v=c(-0.5,0.5),lty=2,lwd=1)
+dev.off()
+
+```
+
+
+figure S2a
+```{r}
+## H_C_mixed
+library(RColorBrewer)
+H_C_mixed_volcano<-DIANN_matrix10[which(DIANN_matrix10$label %in% c("D_N", "D_T" )),-c(2:4)]
+row.names(H_C_mixed_volcano)<-H_C_mixed_volcano$sampleID
+H_C_mixed_volcano<-H_C_mixed_volcano[,-1]
+####NA 小于70%
+H_C_mixed_volcano1<-H_C_mixed_volcano[, apply(H_C_mixed_volcano,2,function(x) {sum(is.na(x))/nrow(H_C_mixed_volcano)}) < 0.9]
+### volcano
+H_C_mixed_volcano1[is.na(H_C_mixed_volcano1)]<-0
+fd <- data.frame(apply(H_C_mixed_volcano1,2, function(x) log2((mean(na.omit(x[grep("D_T",row.names(H_C_mixed_volcano1))]))/mean(na.omit(x[grep("D_N",row.names(H_C_mixed_volcano1))]))))))
+
+pvalue<- data.frame(apply(H_C_mixed_volcano1,2, function(x)  t.test(x[grep("D_T",row.names(H_C_mixed_volcano1))],x[grep("D_N",row.names(H_C_mixed_volcano1))], paired = T, var.equal = F)$p.value ))
+
+vol<-cbind(fd,pvalue)
+names(vol)<-c("fd","P_value")
+
+H_C_mixed_volcano2<-data.frame(t(rbind(H_C_mixed_volcano1,t(vol))))
+H_C_mixed_volcano2$P_value_adjust<-p.adjust(H_C_mixed_volcano2$P_value, method="BH")
+
+nc1<- subset(H_C_mixed_volcano2, H_C_mixed_volcano2$P_value_adjust >= 0.05  )
+nc2<- subset(H_C_mixed_volcano2, H_C_mixed_volcano2$fd <= 0.5 & H_C_mixed_volcano2$fd >= -0.5 )
+nc<- unique(rbind(nc1,nc2))
+H_C_mixed_volcano2$fd[H_C_mixed_volcano2$fd > 10000]<-NA
+H_C_mixed_volcano2$fd[H_C_mixed_volcano2$fd < -10000]<-NA
+pdf("H_C_mixed_volcano_test.pdf",width = 6,height = 6)
+plot(nc$fd, -log10(nc$P_value_adjust), col="#00000033", pch=1,cex=1,xlab=paste("log2(fold change)"),
+      ylab="-log10 adjusted p value",
+      main="H_T VS H_N",xlim=c(min(H_C_mixed_volcano2$fd,na.rm=T),max(H_C_mixed_volcano2$fd,na.rm=T)),ylim=c(min(-log10(H_C_mixed_volcano2$P_value_adjust),na.rm=T),max(-log10(H_C_mixed_volcano2$P_value_adjust),na.rm=T)))
+up <- subset(H_C_mixed_volcano2, H_C_mixed_volcano2$P_value_adjust < 0.05 & H_C_mixed_volcano2$fd > 0.5)
+down <- subset(H_C_mixed_volcano2, H_C_mixed_volcano2$P_value_adjust< 0.05 & H_C_mixed_volcano2$fd< -0.5)
+write.csv(up,file = "H_C_mixed_volcano_up.csv")
+write.csv(down,file = "H_C_mixed_volcano_down.csv")
+points(up$fd, -log10(up$P_value_adjust), col= brewer.pal(9, "YlOrRd")[6], pch=3, cex=1)
+points(down$fd, -log10(down$P_value_adjust), col = brewer.pal(11, "RdBu")[9], pch = 2,cex=1)
+ abline(h=1.3,v=c(-0.5,0.5),lty=2,lwd=1)
+dev.off()
+
+```
+
+
+figure S3a
+```{r HCC_CCA tumor volcano}
+library(RColorBrewer)
+HCC_volcano<-DIANN_matrix10[which(DIANN_matrix10$label %in% c("H_T","C_T" )),-c(2:4)]
+row.names(HCC_volcano)<-HCC_volcano$sampleID
+HCC_volcano<-HCC_volcano[,-1]
+
+####NA 小于90%
+HCC_volcano1<-HCC_volcano[, apply(HCC_volcano,2,function(x) {sum(is.na(x))/nrow(HCC_volcano)}) < 0.9]
+### volcano
+HCC_volcano1[is.na(HCC_volcano1)]<-0
+
+fd <- data.frame(apply(HCC_volcano1,2, function(x) log2((mean(na.omit(x[grep("H_T",row.names(HCC_volcano1))]))/mean(na.omit(x[grep("C_T",row.names(HCC_volcano1))]))))))
+
+pvalue<- data.frame(apply(HCC_volcano1,2, function(x)  t.test(x[grep("H_T",row.names(HCC_volcano1))],x[grep("C_T",row.names(HCC_volcano1))], paired = F, var.equal = F)$p.value ))
+
+vol<-cbind(fd,pvalue)
+names(vol)<-c("fd","P_value")
+
+HCC_volcano2<-data.frame(t(rbind(HCC_volcano1,t(vol))))
+HCC_volcano2$P_value_adjust<-p.adjust(HCC_volcano2$P_value, method="BH")
+
+nc1<- subset(HCC_volcano2, HCC_volcano2$P_value_adjust >= 0.05  )
+nc2<- subset(HCC_volcano2, HCC_volcano2$fd <= 0.5 & HCC_volcano2$fd >= -0.5 )
+nc<- unique(rbind(nc1,nc2))
+HCC_volcano2$fd[HCC_volcano2$fd > 10000]<-NA
+HCC_volcano2$fd[HCC_volcano2$fd < -10000]<-NA
+
+pdf("HCC_CCA_tumor_volcano2.pdf",width = 6,height = 6)
+plot(nc$fd, -log10(nc$P_value_adjust), col="#00000033", pch=1,cex=1,xlab=paste("log2(fold change)"),
+      ylab="-log10 adjusted p value",
+      main="H_T VS C_T",xlim=c(min(HCC_volcano2$fd,na.rm=T),max(HCC_volcano2$fd,na.rm=T)),ylim=c(min(-log10(HCC_volcano2$P_value_adjust),na.rm=T),max(-log10(HCC_volcano2$P_value_adjust),na.rm=T)))
+
+up <- subset(HCC_volcano2, HCC_volcano2$P_value_adjust < 0.05 & HCC_volcano2$fd > 0.5)
+down <- subset(HCC_volcano2, HCC_volcano2$P_value_adjust< 0.05 & HCC_volcano2$fd< -0.5)
+write.csv(up,file = "HCC_CCA_tumor_volcano_up.csv")
+write.csv(down,file = "HCC_CCA_tumor_volcano__down.csv")
+
+points(up$fd, -log10(up$P_value_adjust), col= brewer.pal(9, "YlOrRd")[6], pch=3, cex=1)
+points(down$fd, -log10(down$P_value_adjust), col = brewer.pal(11, "RdBu")[9], pch = 2,cex=1)
+
+ abline(h=1.3,v=c(-0.5,0.5),lty=2,lwd=1)
+dev.off()
+```
+
+figure S3b
+```{r HCC_CCA diann 2nd tumor volcano}
+library(RColorBrewer)
+HCC_volcano1<-DIANN_2nd_9
+HCC_volcano1[is.na(HCC_volcano1)]<-0
+###for GSEA
+# write.csv(HCC_volcano1,"GSEA/HCC_CCA/HCC_CCA_allprot.csv")
+fd <- data.frame(apply(HCC_volcano1,2, function(x) log2((mean(na.omit(x[grep("H",row.names(HCC_volcano1))]))/mean(na.omit(x[grep("C",row.names(HCC_volcano1))]))))))
+pvalue<- data.frame(apply(HCC_volcano1,2, function(x)  t.test(x[grep("H",row.names(HCC_volcano1))],x[grep("C",row.names(HCC_volcano1))], paired = F, var.equal = F)$p.value ))
+vol<-cbind(fd,pvalue)
+names(vol)<-c("fd","P_value")
+
+HCC_volcano2<-data.frame(t(rbind(HCC_volcano1,t(vol))))
+HCC_volcano2$P_value_adjust<-p.adjust(HCC_volcano2$P_value, method="BH")
+nc1<- subset(HCC_volcano2, HCC_volcano2$P_value_adjust >= 0.05  )
+nc2<- subset(HCC_volcano2, HCC_volcano2$fd <= 0.5 & HCC_volcano2$fd >= -0.5 )
+nc<- unique(rbind(nc1,nc2))
+HCC_volcano2$fd[HCC_volcano2$fd > 10000]<-NA
+HCC_volcano2$fd[HCC_volcano2$fd < -10000]<-NA
+
+pdf("HCC_CCA_tumor_DIANN2nd.pdf",width = 6,height = 6)
+plot(nc$fd, -log10(nc$P_value_adjust), col="#00000033", pch=1,cex=1,xlab=paste("log2(fold change)"),
+      ylab="-log10 adjusted p value",
+      main="HCC  VS CCA",xlim=c(min(HCC_volcano2$fd,na.rm=T),max(HCC_volcano2$fd,na.rm=T)),ylim=c(min(-log10(HCC_volcano2$P_value_adjust),na.rm=T),max(-log10(HCC_volcano2$P_value_adjust),na.rm=T)))
+
+up <- subset(HCC_volcano2, HCC_volcano2$P_value_adjust < 0.05 & HCC_volcano2$fd > 0.5)
+down <- subset(HCC_volcano2, HCC_volcano2$P_value_adjust< 0.05 & HCC_volcano2$fd< -0.5)
+write.csv(up,file = "HCC_CCA_tumor_DIANN2nd_volcano_up.csv")
+write.csv(down,file = "HCC_CCA_tumor_DIANN2nd_volcano_down.csv")
+
+points(up$fd, -log10(up$P_value_adjust), col= brewer.pal(9, "YlOrRd")[6], pch=3, cex=1)
+points(down$fd, -log10(down$P_value_adjust), col = brewer.pal(11, "RdBu")[9], pch = 2,cex=1)
+abline(h=1.3,v=c(-0.5,0.5),lty=2,lwd=1)
+dev.off()
+```
+
+
+figure 4a 
+```{r liver cancer Cluster panel random forest select HCC, CCA , N protein}
+library(randomForest)
+library(RColorBrewer)
+library(pheatmap)
+library(org.Hs.eg.db)
+library(clusterProfiler)
+# write.csv(DIANN_mfuzz,"DIANN_mfuzz.csv",row.names = T)
+DIANN_mfuzz<-DIANN_matrix10
+DIANN_mfuzz$label[grep("N",DIANN_mfuzz$label)]<-"N"
+DIANN_mfuzz$label<-gsub("_T","",DIANN_mfuzz$label)
+DIANN_mfuzz<-DIANN_mfuzz[, apply(DIANN_mfuzz,2,function(x) {sum(is.na(x))/nrow(DIANN_mfuzz)}) < 0.9]
+DIANN_mfuzz[is.na(DIANN_mfuzz)]<-0
+RF<-DIANN_mfuzz[-which(DIANN_mfuzz$label=="D"),-c(1,3,4)]
+names(RF)<-gsub("\\|","_",names(RF))
+set.seed(2022)
+library(ROSE)
+RF_over <- ovun.sample(label ~., data = RF[RF$label %in% c("H","C"),], method = "over",N = 70, seed = 1)$data
+RF2<-rbind(RF_over,RF[RF$label %in% c("N"),])
+RF2.1<-RF2[,-1]
+RF2.2<-data.frame(t(RF2.1))
+RF2.2$UNIPROT<-as.matrix(data.frame(str_split_fixed(row.names(RF2.2),"_","3"))[1])
+prot_name<- bitr(RF2.2$UNIPROT, fromType="UNIPROT", toType="SYMBOL", OrgDb="org.Hs.eg.db")
+# write.csv(prot_name,"prot_name.csv")
+RF1<- randomForest(as.factor(label) ~ . ,data=RF2,importance=T,ntree=5000,nodesize=1)
+result_RF <- data.frame(importance(RF1,type=1))
+pdf("new_names_RandomForest_select_HCC_CCA_N.pdf")
+varImpPlot(RF1,n.var=73)
+dev.off()
+
+heatmap<-DIANN_mfuzz[-which(DIANN_mfuzz$label=="D"),-c(3,4)]
+names(heatmap)<-gsub("\\|","_",names(heatmap))
+heatmap1<-data.frame(row.names(result_RF),result_RF)
+heatmap1.1<-heatmap1[heatmap1$MeanDecreaseAccuracy>6,]
+heatmap2<-heatmap[,c(names(heatmap) %in% heatmap1.1$row.names.result_RF.)]
+heatmap3<-data.frame(heatmap[,c(1,2)],heatmap2)
+heatmap4<-heatmap3[,-1]
+row.names(heatmap4)<-heatmap3$sampleID
+heatmap5<-heatmap4[,]
+heatmap5<-heatmap5[order(heatmap5$label),]
+annotation_col<- data.frame(type = factor(heatmap5$label,levels = c("N", "H", "C")),row.names = row.names(heatmap5))
+type_color <- c( brewer.pal(8,"Set1")[1:3])
+names(type_color) <-  c("N", "H", "C")
+ann_colors <- list(type=type_color)
+colors0 = c( brewer.pal(11,"Blues")[9:4], brewer.pal(11,"Blues")[1],brewer.pal(11,"Reds")[2], brewer.pal(11,"Reds")[4:9])
+colors<-colorRampPalette(colors0)(10000)
+df2<-data.frame(t(heatmap5[,-1]),check.names = F)
+df3<-log2(df2)
+df3[df3<0]<-NA
+df3[is.na(df3)]<-min(df3,na.rm = T)
+
+df3$prot<-row.names(df3)
+names(heatmap1.1)<-c("prot","MeanDecreaseAccuracy")
+df4<-merge(heatmap1.1,df3, by="prot",all=F)
+
+df6<-df4[-c(1:2)]
+
+row.names(df6)<-as.matrix(df4$prot)
+
+# c("ward.D", "ward.D2", "single", "complete", "average", "mcquitty", "median" , "centroid" )
+
+for (i in c( "average" )) {
+a<-pheatmap(df6,scale="row",color = colors, annotation_col = annotation_col,annotation_colors = ann_colors, fontsize_col = 2, cluster_rows = T, cluster_cols = T,show_rownames =T, show_colnames =T ,clustering_method =i ,fontsize = 3,cellwidth=2,cellheight=4,filename = paste0("Heatmap_cluser_HCC_CCA_N_label_unsupervise",i,".pdf"))
+}
+```
+
+figure 5a
+
+```{r}
+library(randomForest)
+library(RColorBrewer)
+library(dplyr)
+library(randomForest)
+library(ROSE)
+library(caret)
+library(pROC)
+library(magrittr)
+library(tidyverse)
+library(stringr)
+library(org.Hs.eg.db)
+library(clusterProfiler)
+library(DMwR)
+source("input_data/RF_input/datamining_library_ge20200306.R")
+##prepare overlapped DEPs
+trainDEPup<-read.csv("input_data/RF_input/HCC_CCA_tumor_volcano_up.csv")
+trainDEPdown<-read.csv("input_data/RF_input/HCC_CCA_tumor_volcano__down.csv")
+trianDEP<-rbind(trainDEPup,trainDEPdown)
+validDEPup<-read.csv("input_data/RF_input/HCC_CCA_tumor_DIANN2nd_volcano_up.csv")
+validDEPdown<-read.csv("input_data/RF_input/HCC_CCA_tumor_DIANN2nd_volcano_down.csv")
+validDEP<-rbind(validDEPdown,validDEPup)
+trianDEP$X<-data.frame(str_split_fixed(trianDEP$X,"\\|",2))[,1]
+overlapDEP<-merge(trianDEP,validDEP,by="X",all=F)
+overlapDEP<-overlapDEP$X
+overlapDEPname= bitr(overlapDEP, fromType="UNIPROT", toType="SYMBOL", OrgDb="org.Hs.eg.db")
+overlapDEP<-overlapDEPname$SYMBOL
+
+##Prepare  data
+DIANN_mfuzz<-DIANN_matrix10
+row.names(DIANN_mfuzz)<-DIANN_mfuzz$sampleID
+DIANN_mfuzz$label[grep("N",DIANN_mfuzz$label)]<-"N"
+DIANN_mfuzz$label<-gsub("_T","",DIANN_mfuzz$label)
+DIANN_mfuzz<-DIANN_mfuzz[, apply(DIANN_mfuzz,2,function(x) {sum(is.na(x))/nrow(DIANN_mfuzz)}) < 0.9]
+DIANN_mfuzz[is.na(DIANN_mfuzz)]<-0
+RF<-DIANN_mfuzz[-which(DIANN_mfuzz$label %in% c("D","N")),-c(1,3,4)]
+names(RF)<-gsub("\\|","_",names(RF))
+names(RF)<-as.matrix(data.frame(str_split_fixed(names(RF),"_","3"))[1])
+RF2<-RF
+RF2[RF2==0]<-1
+RF3<-data.frame(log2(RF2[,!colnames(RF2)== "label"]))
+name= bitr(names(RF3), fromType="UNIPROT", toType="SYMBOL", OrgDb="org.Hs.eg.db")
+RF4<-data.frame(t(RF3))
+RF4$UNIPROT<-row.names(RF4)
+RF5<-merge(name,RF4,by="UNIPROT",all.y=T,all.x=F)
+RF6<-RF5[-which(duplicated(RF5$UNIPROT)),]
+RF6$SYMBOL[is.na(RF6$SYMBOL)]<-"(uniprot)"
+RF7<-RF6[which(RF6$SYMBOL == "(uniprot)"),]
+RF7$SYMBOL<-paste0(RF7$UNIPROT,RF7$SYMBOL)
+RF8<-RF6[-which(RF6$SYMBOL == "(uniprot)"),]
+RF9<-rbind(RF8,RF7)
+RF10<-RF9[which(duplicated(RF9$SYMBOL)),]
+RF10$SYMBOL<-paste0(RF10$UNIPROT,"_",RF10$SYMBOL)
+RF11<-RF9[-which(duplicated(RF9$SYMBOL)),]
+RF12<-rbind(RF10,RF11)
+RF12$row<-row.names(RF12)
+RF12$row<-as.numeric(RF12$row)
+RF13<-RF12[order(RF12$row),]
+RF14<-RF13[,-c(1,2,ncol(RF13))]
+row.names(RF14)<-RF13$SYMBOL
+RF14<-data.frame(t(RF14))
+###select overlapDEP
+RF15<-RF14[,names(RF14)%in% overlapDEP]
+RF15$label<-RF2$label
+set.seed(2022)
+RF1<- randomForest(as.factor(label) ~ . ,data=RF15,importance=T,ntree=1000,nodesize=1)
+result_RF <- data.frame(importance(RF1,type=1))
+feature<-result_RF %>%  top_n(15, MeanDecreaseAccuracy)
+feature$MeanDecreaseAccuracy<-row.names(feature)
+pdf("20220629_RandomForest_HCC_CCA.pdf")
+varImpPlot(RF1,n.var = 15)
+dev.off()
+
+```
+
+figure 5b,c,d,e,f
+```{r}
+##prepare train test
+test<-DIANN_2nd_9
+test1<-log2(test)
+test1[is.na(test1)]<-0
+testRF3<-test1
+name= bitr(names(testRF3), fromType="UNIPROT", toType="SYMBOL", OrgDb="org.Hs.eg.db")
+testRF4<-data.frame(t(testRF3))
+testRF4$UNIPROT<-row.names(testRF4)
+testRF5<-merge(name,testRF4,by="UNIPROT",all.y=T,all.x=F)
+testRF6<-testRF5[-which(duplicated(testRF5$UNIPROT)),]
+testRF6$SYMBOL[is.na(testRF6$SYMBOL)]<-"(uniprot)"
+testRF7<-testRF6[which(testRF6$SYMBOL == "(uniprot)"),]
+testRF7$SYMBOL<-paste0(testRF7$UNIPROT,testRF7$SYMBOL)
+testRF8<-testRF6[-which(testRF6$SYMBOL == "(uniprot)"),]
+testRF9<-rbind(testRF8,testRF7)
+testRF10<-testRF9[which(duplicated(testRF9$SYMBOL)),]
+testRF10$SYMBOL<-paste0(testRF10$UNIPROT,"_",testRF10$SYMBOL)
+testRF11<-testRF9[-which(duplicated(testRF9$SYMBOL)),]
+testRF12<-rbind(testRF10,testRF11)
+testRF12$row<-row.names(testRF12)
+testRF12$row<-as.numeric(testRF12$row)
+testRF13<-testRF12[order(testRF12$row),]
+testRF14<-testRF13[,-c(1,2,ncol(testRF13))]
+row.names(testRF14)<-testRF13$SYMBOL
+testRF14<-data.frame(t(testRF14))
+test1<-testRF14
+##### KNNimput
+test1[test1==0]<-NA
+test2<-data.frame(t(test1))
+test3<-knnImputation(test2, k = 10, scale = T, meth = "weighAvg", distData = NULL)
+test1<-data.frame(t(test3))
+test2<-test1[,names(test1) %in% feature$MeanDecreaseAccuracy]
+test2$label<-as.matrix(data.frame(str_split_fixed(row.names(test2),"_","3"))[1])
+validsModel<-test2
+
+##### KNNimput
+RF14.1<-data.frame(t(RF14[,!names(RF14)=="label"]))
+RF14.1[RF14.1==0]<-NA
+RF14.2<-knnImputation(RF14.1, k = 10, scale = T, meth = "weighAvg", distData = NULL)
+RF14.3<-data.frame(t(RF14.2))
+RF14.3$label<-RF15$label
+trainsModel<- RF14.3
+trainsModel2<-trainsModel[,feature$MeanDecreaseAccuracy]
+trainsModel2$label<-trainsModel$label
+trainsModel<-trainsModel2
+
+
+
+#####compare data
+library(DMwR)
+trainsModel1<-trainsModel
+validsModel1<-validsModel
+
+##RAW
+library(reshape2)
+validsRaw<-melt(validsModel1, id.vars = c("label"))
+validsRaw$label<-paste0("valids_",validsRaw$label)
+trainsRaw<-melt(trainsModel1, id.vars = c("label"))
+trainsRaw$label<-paste0("trains_",trainsRaw$label)
+compareRaw<-rbind(validsRaw,trainsRaw)
+p1<-ggplot(compareRaw,aes(compareRaw$value,fill=compareRaw$label))+geom_density(alpha=0.3)
+
+##ScaleData
+validsScale<-data.frame(scale(validsModel1[,-16]))
+validsScale[is.na(validsScale)]<-0
+
+validsScale$label<-validsModel1$label
+trainsScale<-data.frame(scale(trainsModel1[,-16]))
+trainsScale[is.na(trainsScale)]<-0
+trainsScale$label<-trainsModel1$label
+
+validsScale1<-melt(validsScale, id.vars = c("label"))
+validsScale1$label<-paste0("valids_",validsModel1$label)
+trainsScale1<-melt(trainsScale, id.vars = c("label"))
+trainsScale1$label<-paste0("trains_",trainsScale1$label)
+compareScale<-rbind(validsScale1,trainsScale1)
+p2<-ggplot(compareScale,aes(compareScale$value,fill=compareScale$label))+geom_density(alpha=0.3)
+
+trainsModel<-trainsScale
+validsModel<-validsScale
+set.seed(2022)
+folds <- createFolds(trainsModel$label,5)
+
+##randomforest
+for (aa in 2:15) {
+accu <- c()
+for (i in aa) {
+feature2 <-data.frame(combn(c( 1:nrow(feature)),i))
+for (m in 1:ncol(feature2)) {
+feature3<-as.numeric(feature2[,m])
+result1<-c(as.matrix(feature[feature3,1]))
+set.seed(2020.3)
+for (k in 1:5) {
+
+fold= as.vector(unlist(folds[1]))
+trains <- data.frame(trainsModel[,result1])
+trains$label<-trainsModel$label
+trains_cross <- data.frame(trains[setdiff(1:dim(trains)[1],fold),])
+test_cross <- data.frame(trains[fold,])
+tmpRF_cross <- randomForest(as.factor(label) ~ . ,data=trains_cross,importance=T,ntree=1000,nodesize=1,proximity=T)
+tmpRF <- randomForest(as.factor(label) ~ . ,data=trains,importance=T,ntree=1000,nodesize=1,proximity=T)
+# predicts<- data.frame(predict(tmpRF,valids,type='prob'))
+# predicts$predicted <- apply(predicts,1,function(v){names(v)[max(v)==v]})
+# predicts$observed <- valids$label
+#  ROC <- roc(predicts$observed, as.numeric(predicts$C))
+#          auc <- as.numeric(ROC[["auc"]])
+#       	 acc <- sum(predicts$predicted==predicts$observed)
+  train_model_predict<-data.frame(tmpRF$votes,tmpRF$predicted, trainsModel$label)
+names(train_model_predict)<-c("C", "H","predicted", "observed" )
+ROC_train_model_predict <- roc(train_model_predict$observed, as.numeric(train_model_predict$C))
+ROC_train_model_predict_auc <- as.numeric(ROC_train_model_predict[["auc"]])
+train_model_predict_cross<-data.frame(tmpRF_cross$votes,tmpRF_cross$predicted, trains_cross$label)
+names(train_model_predict_cross)<-c("C", "H","predicted", "observed" )
+
+ROC_train_model_predict_cross <- roc(train_model_predict_cross$observed, as.numeric(train_model_predict_cross$C))
+ROC_train_model_predict_auc_cross <- as.numeric(ROC_train_model_predict_cross[["auc"]])
+predicts_cross<- data.frame(predict(tmpRF_cross,test_cross,type='prob'))
+predicts_cross$predicted <- apply(predicts_cross,1,function(v){names(v)[max(v)==v]})
+predicts_cross$observed <- test_cross$label
+ ROC_cross <- roc(predicts_cross$observed, as.numeric(predicts_cross$C))
+         auc_cross <- as.numeric(ROC_cross[["auc"]])
+      	 acc_cross <- sum(predicts_cross$predicted==predicts_cross$observed)
+	 
+      	 sum<-c(i,m, k,ROC_train_model_predict_auc,acc_cross/nrow(test_cross),auc_cross,ROC_train_model_predict_auc_cross )
+         accu <- data.frame(rbind(accu,sum))
+         
+}
+}
+}
+names(accu)<-c("i","m","k","train_auc","acc_cross","test_auc_cross","train_auc_cross")
+accu1 <- accu
+accu2<-aggregate(accu1[,-3],by=list(accu1$m,accu1$i),mean)
+}
+
+
+## best feature i=3 m=256 _threshold=0
+for (aa in 1) {
+accu <- c()
+for (i in 3) {
+feature2 <-data.frame(combn(c( 1:nrow(feature)),i))
+for (m in 256) {
+feature3<-as.numeric(feature2[,m])
+result1<-c(as.matrix(feature[feature3,1]))
+set.seed(2020.3)
+trains <- data.frame(trainsModel[,result1])
+trains$label<-trainsModel$label
+valids <- data.frame(validsModel[,result1])
+valids$label <- validsModel$label
+tmpRF <- randomForest(as.factor(label) ~ . ,data=trains,importance=T,ntree=1000,nodesize=1,proximity=T)
+train_model_predict<-data.frame(tmpRF$votes,tmpRF$predicted, trainsModel$label)
+names(train_model_predict)<-c("C", "H","predicted", "observed" )
+ROC_train_model_predict <- roc(train_model_predict$observed, as.numeric(train_model_predict$C))
+ROC_train_model_predict_auc <- as.numeric(ROC_train_model_predict[["auc"]])
+for (t in 0) {
+   predicts<- data.frame(predict(tmpRF,valids,type='prob'))
+   predicts$C<-  predicts$C + t
+   predicts$H<-  predicts$H - t
+   predicts$predicted <- apply(predicts,1,function(v){names(v)[max(v)==v]})
+    predicts$observed <- valids$label
+         ROC <- roc(predicts$observed, as.numeric(predicts$C))
+         auc <- as.numeric(ROC[["auc"]])
+      	 acc <- sum(predicts$predicted==predicts$observed)
+      	 sum<-c(i,m, t,c( acc/51,auc, ROC_train_model_predict_auc))
+         accu <- data.frame(rbind(accu,sum))
+}
+
+predicts<-data.frame(predicts)
+
+
+train_predicts<- data.frame(predict(tmpRF,trains,type='prob'))
+   train_predicts$C<-  train_predicts$C + t
+   train_predicts$H<-  train_predicts$H - t
+   train_predicts$predicted <- apply(train_predicts,1,function(v){names(v)[max(v)==v]})
+    train_predicts$observed <- trains$label
+
+train_predicts<-data.frame(train_predicts)
+
+
+
+}
+}
+names(accu)<-c("i","m","C_threshold","acc","test_auc","train_auc")
+
+
+train_model_predict<-data.frame(tmpRF$votes,tmpRF$predicted, trainsModel$label)
+names(train_model_predict)<-c("C", "H","predicted", "observed" )
+ROC_train_model_predict <- roc(train_model_predict$observed, as.numeric(train_model_predict$C))
+ROC_train_model_predict_auc <- as.numeric(ROC_train_model_predict[["auc"]])
+pdf("ROC_train_model.pdf")
+plot(ROC_train_model_predict,cor="blue",main= ROC_train_model_predict_auc)
+dev.off()
+
+##Confusion matrix
+tmpRF_comfusion<-data.frame(tmpRF$confusion)
+
+sensitivity_tmpRF<-tmpRF_comfusion[1,1]/(tmpRF_comfusion[1,2]+tmpRF_comfusion[1,1])
+specificity_tmpRF<-tmpRF_comfusion[2,2]/(tmpRF_comfusion[2,2]+tmpRF_comfusion[2,1])
+PPV_tmpRF<-tmpRF_comfusion[1,1]/(tmpRF_comfusion[1,1]+tmpRF_comfusion[2,1])
+NPV_tmpRF<-tmpRF_comfusion[2,2]/(tmpRF_comfusion[1,2]+tmpRF_comfusion[2,2])
+train_model_statistics<-data.frame(sensitivity_tmpRF,specificity_tmpRF,PPV_tmpRF,NPV_tmpRF,ROC_train_model_predict_auc)
+names(train_model_statistics)<-c("sensitivity","specificity","PPV","NPV","AUC")
+write.csv(train_model_statistics,"train_model_statistics.csv")
+
+test_comfusion<-data.frame(c(8,1),c(1,17))
+names(test_comfusion)<-c("C","H")
+row.names(test_comfusion)<-c("C","H")
+sensitivity_test<-test_comfusion[1,1]/(test_comfusion[1,2]+test_comfusion[1,1])
+specificity_test<-test_comfusion[2,2]/(test_comfusion[2,2]+test_comfusion[2,1])
+PPV_test<-test_comfusion[1,1]/(test_comfusion[1,1]+test_comfusion[2,1])
+NPV_test<-test_comfusion[2,2]/(test_comfusion[1,2]+test_comfusion[2,2])
+test_model_statistics<-data.frame(sensitivity_test,specificity_test,PPV_test,NPV_test,auc)
+names(test_model_statistics)<-c("sensitivity","specificity","PPV","NPV","AUC")
+write.csv(test_model_statistics,"test_model_statistics.csv")
+
+
+
+##roc
+pdf("test_ROC.pdf")
+plot(ROC,cor="blue",main= auc)
+dev.off()
+ ##point plot valids
+  mean <- apply(valids[,-ncol(valids)],1,mean)
+  data <- data.frame(mean,predicts=predicts$H,sample2=row.names(predicts),type2=predicts$observed )
+  names(data)<-c("mean","predicts","sample2","type2")
+  
+  ge.plot.point <- function(data,sample,value,type,group,title="",xlab="sample",ylab="value"){
+    a <- ggplot(data,aes(x=sample,y=value,group=group,color=group))+ 
+      geom_point()+geom_vline(xintercept = 0.8 ,linetype="dotted")+
+      ggtitle(paste0(title,"_pointplot"))+
+      xlab(xlab)+
+      ylab(ylab)+
+      
+      theme(legend.text = element_text(size = 15,color = "black"),legend.position = 'top',
+            legend.title = element_text(size=15,color="black") ,
+            panel.grid.major =element_blank(),
+            panel.grid.minor = element_blank(),
+            panel.background = element_blank(),
+            axis.line = element_line(colour = "black"))+
+      scale_color_manual(values=c("#FDB462","#BC80BD"))+
+      theme(panel.grid =element_blank())+
+      theme(axis.text = element_text(size = 10,color = "black"))+
+      theme(axis.text.x = element_text( hjust = 0.5))+
+      theme(plot.subtitle=element_text(size=30, hjust=0, color="black"))+
+      theme(axis.title.x=element_text(size=17, hjust=0.5, color="black"))+
+      theme(axis.title.y=element_text(size=17, hjust=0.5, color="black"))+  geom_text(aes(label=type,vjust = -0.5, hjust = 0.3),size = 2,show.legend = FALSE)
+    ggsave(paste0(title,"_pointplot.pdf"),plot=a,width=4,height=6)
+  }
+  
+  ge.plot.point(data,data$predicts,data$mean,data$sample2,data$type2, "test_PointPlot_","predict value","median")
+ 
+  
+##point plot trains
+mean <- apply(trains[,-ncol(trains)],1,mean)
+data <- data.frame(mean,predicts=train_predicts$H,sample2=row.names(train_predicts),type2=train_predicts$observed )
+names(data)<-c("mean","predicts","sample2","type2")
+ge.plot.point <- function(data,sample,value,type,group,title="",xlab="sample",ylab="value"){
+    a <- ggplot(data,aes(x=sample,y=value,group=group,color=group))+ 
+      geom_point()+geom_vline(xintercept = 0.8 ,linetype="dotted")+
+      ggtitle(paste0(title,"_pointplot"))+
+      xlab(xlab)+
+      ylab(ylab)+
+      
+      theme(legend.text = element_text(size = 15,color = "black"),legend.position = 'top',
+            legend.title = element_text(size=15,color="black") ,
+            panel.grid.major =element_blank(),
+            panel.grid.minor = element_blank(),
+            panel.background = element_blank(),
+            axis.line = element_line(colour = "black"))+
+      scale_color_manual(values=c("#FDB462","#BC80BD"))+
+      theme(panel.grid =element_blank())+
+      theme(axis.text = element_text(size = 10,color = "black"))+
+      theme(axis.text.x = element_text( hjust = 0.5))+
+      theme(plot.subtitle=element_text(size=30, hjust=0, color="black"))+
+      theme(axis.title.x=element_text(size=17, hjust=0.5, color="black"))+
+      theme(axis.title.y=element_text(size=17, hjust=0.5, color="black"))+  geom_text(aes(label=type,vjust = -0.5, hjust = 0.3),size = 2,show.legend = FALSE)
+    ggsave(paste0(title,"_pointplot.pdf"),plot=a,width=4,height=6)
+  }
+ge.plot.point(data,data$predicts,data$mean,data$sample2,data$type2, "train_PointPlot_","predict value","median")
+ 
+  
+}
+
+```
+
+figureS5
+```{r heatmap for 2data set GSEA pathways}
+library(dplyr)
+library(org.Hs.eg.db)
+library(clusterProfiler)
+library(pheatmap)
+library(RColorBrewer)
+HCC_1st<-read.delim("input_data/GSEA_result/HCC_CCA_GSEA/gsea_report_for_HCC_1650268783776.tsv")
+CCA_1st<-read.delim("input_data/GSEA_result/HCC_CCA_GSEA/gsea_report_for_CCA_1650268783776.tsv")
+HCC_1st<-HCC_1st %>%  top_n(5, HCC_1st$NES)
+CCA_1st<-CCA_1st %>%  top_n(5, -CCA_1st$NES)
+HCC_CCA_1st<-rbind(HCC_1st,CCA_1st)
+HCC_CCA_1st$cluster<-"HCC_CCA_1st"
+# HCC_CCA_1st<-HCC_CCA_1st[HCC_CCA_1st$NOM.p.val< 0.05,]
+HCC_2nd<-read.delim("input_data/GSEA_result/HCC_DIANN_2nd/gsea_report_for_HCC_1650438550757.tsv")
+CCA_2nd<-read.delim("input_data/GSEA_result/HCC_DIANN_2nd/gsea_report_for_CCA_1650438550757.tsv")
+HCC_2nd<-HCC_2nd %>%  top_n(5, HCC_2nd$NES)
+CCA_2nd<-CCA_2nd %>%  top_n(5, -CCA_2nd$NES)
+HCC_CCA_2nd<-rbind(HCC_2nd,CCA_2nd)
+HCC_CCA_2nd$cluster<-"HCC_CCA_2nd"
+# HCC_CCA_2nd<-HCC_CCA_2nd[HCC_CCA_2nd$NOM.p.val< 0.05,]
+GSEA<-rbind(HCC_CCA_1st,HCC_CCA_2nd)
+GSEA2<-GSEA[,c("NAME","NES","cluster")]
+
+###prepare regulated proteins
+HCC_CCA_1st_vol_up<-read.csv("input_data/RF_input/HCC_CCA_tumor_volcano_up.csv")
+HCC_CCA_1st_vol_down<-read.csv("input_data/RF_input/HCC_CCA_tumor_volcano__down.csv")
+HCC_CCA_1st_vol<-rbind(HCC_CCA_1st_vol_up,HCC_CCA_1st_vol_down)
+HCC_CCA_1st_vol_protein<-data.frame(str_split_fixed(HCC_CCA_1st_vol$X,"\\|",2))
+HCC_CCA_1st_vol_protein2 = bitr(HCC_CCA_1st_vol_protein$X1, fromType="UNIPROT", toType="SYMBOL", OrgDb="org.Hs.eg.db")
+HCC_CCA_1st_vol$UNIPROT<-HCC_CCA_1st_vol_protein$X1
+HCC_CCA_1st_vol2<-merge(HCC_CCA_1st_vol_protein2,HCC_CCA_1st_vol,by="UNIPROT",all.y=T,all.x=T)
+HCC_CCA_1st_vol3<-HCC_CCA_1st_vol2[,!names(HCC_CCA_1st_vol2) %in% c("fd","P_value","P_value_adjust")]
+
+HCC_CCA_2nd_vol_up<-read.csv("input_data/RF_input/HCC_CCA_tumor_DIANN2nd_volcano_up.csv")
+HCC_CCA_2nd_vol_down<-read.csv("input_data/RF_input/HCC_CCA_tumor_DIANN2nd_volcano_down.csv")
+HCC_CCA_2nd_vol<-rbind(HCC_CCA_2nd_vol_up,HCC_CCA_2nd_vol_down)
+HCC_CCA_2nd_vol_protein<-data.frame(str_split_fixed(HCC_CCA_2nd_vol$X,"\\|",2))
+HCC_CCA_2nd_vol_protein2 = bitr(HCC_CCA_2nd_vol_protein$X1, fromType="UNIPROT", toType="SYMBOL", OrgDb="org.Hs.eg.db")
+HCC_CCA_2nd_vol$UNIPROT<-HCC_CCA_2nd_vol_protein$X1
+HCC_CCA_2nd_vol2<-merge(HCC_CCA_2nd_vol_protein2,HCC_CCA_2nd_vol,by="UNIPROT",all.y=T,all.x=T)
+HCC_CCA_2nd_vol3<-HCC_CCA_2nd_vol2[,!names(HCC_CCA_2nd_vol2) %in% c("fd","P_value","P_value_adjust")]
+
+#######vol portein
+Vol2nd<-HCC_CCA_2nd_vol3
+Vol1st<-HCC_CCA_1st_vol3
+
+### prepare proteins
+HCC_CCA_1st_GSEA_protein<-data.frame("protein","pathway","NES")
+names(HCC_CCA_1st_GSEA_protein)<-c("protein","pathway","NES")
+HCC_CCA_1st_GSEA_protein<-HCC_CCA_1st_GSEA_protein[-1,]
+HCC_CCA_1st<-GSEA2[GSEA2$cluster == "HCC_CCA_1st",]
+HCC_CCA_1st$NES[HCC_CCA_1st$NES > 0]<-"up"
+HCC_CCA_1st$NES[HCC_CCA_1st$NES < 0]<- "down"
+for (m in unique(HCC_CCA_1st$NES)) {
+ HCC_CCA_1st1<-HCC_CCA_1st[HCC_CCA_1st$NES == m,]
+for (i in HCC_CCA_1st1$NAME ) {
+protein<-read.delim(paste0("input_data/GSEA_result/HCC_CCA_GSEA/",i,".tsv"))
+protein<-protein[protein$CORE.ENRICHMENT=="Yes",]
+protein1<-data.frame(protein$SYMBOL,i,m)
+names(protein1)<-c("protein","pathway","NES")
+HCC_CCA_1st_GSEA_protein<-rbind(HCC_CCA_1st_GSEA_protein,protein1)
+}
+}
+library(reshape2)
+HCC_CCA_1st_GSEA_protein_up<-HCC_CCA_1st_GSEA_protein[HCC_CCA_1st_GSEA_protein $NES == "up",-3]
+HCC_CCA_1st_GSEA_protein_up$value<-HCC_CCA_1st_GSEA_protein_up$pathway
+HCC_CCA_1st_GSEA_protein_up$value<-factor(HCC_CCA_1st_GSEA_protein_up$value,levels = c(unique(HCC_CCA_1st_GSEA_protein_up$value)),labels = c(seq(1,length(unique(HCC_CCA_1st_GSEA_protein_up$value)),1)))
+HCC_CCA_1st_GSEA_protein_up$value<-as.numeric(HCC_CCA_1st_GSEA_protein_up$value)
+HCC_CCA_1st_GSEA_protein_up2<-dcast(HCC_CCA_1st_GSEA_protein_up, value+pathway~ protein )
+HCC_CCA_1st_GSEA_protein_up2[HCC_CCA_1st_GSEA_protein_up2==0]<-NA
+HCC_CCA_1st_GSEA_protein_up3<-HCC_CCA_1st_GSEA_protein_up2[-c(1:2)]
+HCC_CCA_1st_GSEA_protein_up3[!is.na(HCC_CCA_1st_GSEA_protein_up3)]<- 1
+HCC_CCA_1st_GSEA_protein_up4<-apply(HCC_CCA_1st_GSEA_protein_up3, 2,function(x){ x * HCC_CCA_1st_GSEA_protein_up2$value })
+row.names(HCC_CCA_1st_GSEA_protein_up4)<-HCC_CCA_1st_GSEA_protein_up2$pathway
+HCC_CCA_1st_GSEA_protein_up4[is.na(HCC_CCA_1st_GSEA_protein_up4)]<-0
+HCC_CCA_1st_GSEA_protein_up5<-data.frame(t(HCC_CCA_1st_GSEA_protein_up4))
+HCC_CCA_1st_GSEA_protein_down<-HCC_CCA_1st_GSEA_protein[HCC_CCA_1st_GSEA_protein $NES == "down",-3]
+HCC_CCA_1st_GSEA_protein_down$value<-HCC_CCA_1st_GSEA_protein_down$pathway
+HCC_CCA_1st_GSEA_protein_down$value<-factor(HCC_CCA_1st_GSEA_protein_down$value,levels = c(unique(HCC_CCA_1st_GSEA_protein_down$value)),labels = c(seq(1,length(unique(HCC_CCA_1st_GSEA_protein_down$value)),1)))
+HCC_CCA_1st_GSEA_protein_down$value<-as.numeric(HCC_CCA_1st_GSEA_protein_down$value)
+HCC_CCA_1st_GSEA_protein_down2<-dcast(HCC_CCA_1st_GSEA_protein_down, value+pathway~ protein )
+HCC_CCA_1st_GSEA_protein_down2[HCC_CCA_1st_GSEA_protein_down2==0]<-NA
+HCC_CCA_1st_GSEA_protein_down3<-HCC_CCA_1st_GSEA_protein_down2[-c(1:2)]
+HCC_CCA_1st_GSEA_protein_down3[!is.na(HCC_CCA_1st_GSEA_protein_down3)]<- 1
+HCC_CCA_1st_GSEA_protein_down4<-apply(HCC_CCA_1st_GSEA_protein_down3, 2,function(x){ x * HCC_CCA_1st_GSEA_protein_down2$value })
+row.names(HCC_CCA_1st_GSEA_protein_down4)<-HCC_CCA_1st_GSEA_protein_down2$pathway
+HCC_CCA_1st_GSEA_protein_down4[is.na(HCC_CCA_1st_GSEA_protein_down4)]<-0
+HCC_CCA_1st_GSEA_protein_down5<-data.frame(t(HCC_CCA_1st_GSEA_protein_down4))
+
+
+
+HCC_CCA_2nd_GSEA_protein<-data.frame("protein","pathway","NES")
+names(HCC_CCA_2nd_GSEA_protein)<-c("protein","pathway","NES")
+HCC_CCA_2nd_GSEA_protein<-HCC_CCA_2nd_GSEA_protein[-1,]
+HCC_CCA_2nd<-GSEA2[GSEA2$cluster == "HCC_CCA_2nd",]
+HCC_CCA_2nd$NES[HCC_CCA_2nd$NES > 0]<-"up"
+HCC_CCA_2nd$NES[HCC_CCA_2nd$NES < 0]<- "down"
+for (m in unique(HCC_CCA_2nd$NES)) {
+ HCC_CCA_2nd1<-HCC_CCA_2nd[HCC_CCA_2nd$NES == m,]
+for (i in HCC_CCA_2nd1$NAME ) {
+protein<-read.delim(paste0("input_data/GSEA_result/HCC_DIANN_2nd/",i,".tsv"))
+protein<-protein[protein$CORE.ENRICHMENT=="Yes",]
+protein1<-data.frame(protein$SYMBOL,i,m)
+names(protein1)<-c("protein","pathway","NES")
+HCC_CCA_2nd_GSEA_protein<-rbind(HCC_CCA_2nd_GSEA_protein,protein1)
+}
+}
+library(reshape2)
+HCC_CCA_2nd_GSEA_protein_up<-HCC_CCA_2nd_GSEA_protein[HCC_CCA_2nd_GSEA_protein $NES == "up",-3]
+HCC_CCA_2nd_GSEA_protein_up$value<-HCC_CCA_2nd_GSEA_protein_up$pathway
+HCC_CCA_2nd_GSEA_protein_up$value<-factor(HCC_CCA_2nd_GSEA_protein_up$value,levels = c(unique(HCC_CCA_2nd_GSEA_protein_up$value)),labels = c(seq(1,length(unique(HCC_CCA_2nd_GSEA_protein_up$value)),1)))
+HCC_CCA_2nd_GSEA_protein_up$value<-as.numeric(HCC_CCA_2nd_GSEA_protein_up$value)
+HCC_CCA_2nd_GSEA_protein_up2<-dcast(HCC_CCA_2nd_GSEA_protein_up, value+pathway~ protein )
+HCC_CCA_2nd_GSEA_protein_up2[HCC_CCA_2nd_GSEA_protein_up2==0]<-NA
+HCC_CCA_2nd_GSEA_protein_up3<-HCC_CCA_2nd_GSEA_protein_up2[-c(1:2)]
+HCC_CCA_2nd_GSEA_protein_up3[!is.na(HCC_CCA_2nd_GSEA_protein_up3)]<- 1
+HCC_CCA_2nd_GSEA_protein_up4<-apply(HCC_CCA_2nd_GSEA_protein_up3, 2,function(x){ x * HCC_CCA_2nd_GSEA_protein_up2$value })
+row.names(HCC_CCA_2nd_GSEA_protein_up4)<-HCC_CCA_2nd_GSEA_protein_up2$pathway
+HCC_CCA_2nd_GSEA_protein_up4[is.na(HCC_CCA_2nd_GSEA_protein_up4)]<-0
+HCC_CCA_2nd_GSEA_protein_up5<-data.frame(t(HCC_CCA_2nd_GSEA_protein_up4))
+HCC_CCA_2nd_GSEA_protein_down<-HCC_CCA_2nd_GSEA_protein[HCC_CCA_2nd_GSEA_protein $NES == "down",-3]
+HCC_CCA_2nd_GSEA_protein_down$value<-HCC_CCA_2nd_GSEA_protein_down$pathway
+HCC_CCA_2nd_GSEA_protein_down$value<-factor(HCC_CCA_2nd_GSEA_protein_down$value,levels = c(unique(HCC_CCA_2nd_GSEA_protein_down$value)),labels = c(seq(1,length(unique(HCC_CCA_2nd_GSEA_protein_down$value)),1)))
+HCC_CCA_2nd_GSEA_protein_down$value<-as.numeric(HCC_CCA_2nd_GSEA_protein_down$value)
+HCC_CCA_2nd_GSEA_protein_down2<-dcast(HCC_CCA_2nd_GSEA_protein_down, value+pathway~ protein )
+HCC_CCA_2nd_GSEA_protein_down2[HCC_CCA_2nd_GSEA_protein_down2==0]<-NA
+HCC_CCA_2nd_GSEA_protein_down3<-HCC_CCA_2nd_GSEA_protein_down2[-c(1:2)]
+HCC_CCA_2nd_GSEA_protein_down3[!is.na(HCC_CCA_2nd_GSEA_protein_down3)]<- 1
+HCC_CCA_2nd_GSEA_protein_down4<-apply(HCC_CCA_2nd_GSEA_protein_down3, 2,function(x){ x * HCC_CCA_2nd_GSEA_protein_down2$value })
+row.names(HCC_CCA_2nd_GSEA_protein_down4)<-HCC_CCA_2nd_GSEA_protein_down2$pathway
+HCC_CCA_2nd_GSEA_protein_down4[is.na(HCC_CCA_2nd_GSEA_protein_down4)]<-0
+HCC_CCA_2nd_GSEA_protein_down5<-data.frame(t(HCC_CCA_2nd_GSEA_protein_down4))
+
+
+
+####  2nd_prot_up_down
+####  1st_prot_up_down
+GSEA1st_up<-HCC_CCA_1st_GSEA_protein_up5
+GSEA1st_down<-HCC_CCA_1st_GSEA_protein_down5
+GSEA2nd_up<-HCC_CCA_2nd_GSEA_protein_up5
+GSEA2nd_down<-HCC_CCA_2nd_GSEA_protein_down5
+#######vol portein
+Vol2nd<-HCC_CCA_2nd_vol3
+Vol1st<-HCC_CCA_1st_vol3
+
+###heatmap
+GSEA1st_up$SYMBOL<-row.names(GSEA1st_up)
+heatmap1st_up<-merge(GSEA1st_up,Vol1st[,-c(1,3)], by="SYMBOL", all=F)
+heatmap1st_up[76,1]<-"MOCS2_A"
+heatmap1st_up[77,1]<-"MOCS2_B"
+heatmap1st_up1<-heatmap1st_up[,-1]
+row.names(heatmap1st_up1)<-heatmap1st_up$SYMBOL
+heatmap1st_up2<-data.frame(t(heatmap1st_up1[,!names(heatmap1st_up1) %in% names(GSEA1st_up)]))
+pathway1st_up2<-data.frame(t(heatmap1st_up1[,names(heatmap1st_up1) %in% names(GSEA1st_up)]))
+heatmap1st_up2$label<-as.matrix(data.frame(str_split_fixed(row.names(heatmap1st_up2),"_","3"))[1])
+annotation_col<- data.frame(type = factor(heatmap1st_up2$label,levels = c("H", "C")), row.names = row.names(heatmap1st_up2))
+type_color <- c( brewer.pal(8,"Set1")[1:2])
+names(type_color) <-  c("H", "C")
+ann_colors <- list(type=type_color)
+colors0 = c( brewer.pal(11,"Blues")[9:4], brewer.pal(11,"Blues")[1],brewer.pal(11,"Reds")[2], brewer.pal(11,"Reds")[4:9])
+colors<-colorRampPalette(colors0)(10000)
+df2<-data.frame(t(heatmap1st_up2[,!colnames(heatmap1st_up2)== "label"]),check.names = F)
+df3<-log2(df2)
+df3[df3<0]<-NA
+df3[is.na(df3)]<-min(df3,na.rm = T)
+up_1st_venn<-df3
+
+aa<-pheatmap(df3,scale="row",color = colors, annotation_col = annotation_col,annotation_colors = ann_colors, fontsize_col = 2, cluster_rows = T, cluster_cols = F,show_rownames =T, show_colnames =T ,fontsize = 3,cellwidth=3,cellheight=2.5,filename = paste0("heatmap1st_up.pdf"))
+# heatmap_pathway1[heatmap_pathway1==0]
+
+par(new=TRUE)
+pathway1st_up3<-data.frame(t(pathway1st_up2))
+colors= c( brewer.pal(11,"Dark2"))[1:6]
+df6<-df3[aa$tree_row$order,]
+pathway1st_up4<-pathway1st_up3[c(row.names(df6)),]
+a<-pheatmap(pathway1st_up4,color = colors, fontsize_col = 2, cluster_rows = F, cluster_cols = F,show_rownames =T, show_colnames =T ,fontsize = 3,cellwidth=3,cellheight=2.5,filename = paste0("pathway1st_up.pdf"))
+dev.off()
+########################################
+GSEA2nd_down$SYMBOL<-row.names(GSEA2nd_down)
+heatmap2nd_down<-merge(GSEA2nd_down,Vol2nd[,-c(1,3)], by="SYMBOL", all=F)
+heatmap2nd_down1<-heatmap2nd_down[,-1]
+row.names(heatmap2nd_down1)<-heatmap2nd_down$SYMBOL
+heatmap2nd_down2<-data.frame(t(heatmap2nd_down1[,!names(heatmap2nd_down1) %in% names(GSEA2nd_down)]))
+pathway2nd_down2<-data.frame(t(heatmap2nd_down1[,names(heatmap2nd_down1) %in% names(GSEA2nd_down)]))
+heatmap2nd_down2$label<-as.matrix(data.frame(str_split_fixed(row.names(heatmap2nd_down2),"_","3"))[1])
+annotation_col<- data.frame(type = factor(heatmap2nd_down2$label,levels = c("H", "C")), row.names = row.names(heatmap2nd_down2))
+type_color <- c( brewer.pal(8,"Set1")[1:2])
+names(type_color) <-  c("H", "C")
+ann_colors <- list(type=type_color)
+colors0 = c( brewer.pal(11,"Blues")[9:4], brewer.pal(11,"Blues")[1],brewer.pal(11,"Reds")[2], brewer.pal(11,"Reds")[4:9])
+colors<-colorRampPalette(colors0)(10000)
+df2<-data.frame(t(heatmap2nd_down2[,!colnames(heatmap2nd_down2)== "label"]),check.names = F)
+df3<-log2(df2)
+df3[df3<0]<-NA
+df3[is.na(df3)]<-min(df3,na.rm = T)
+aa<-pheatmap(df3,scale="row",color = colors, annotation_col = annotation_col,annotation_colors = ann_colors, fontsize_col = 2, cluster_rows = T, cluster_cols = F,show_rownames =T, show_colnames =T ,fontsize = 3,cellwidth=3,cellheight=2.5,filename = paste0("heatmap2nd_down.pdf"))
+# heatmap_pathway1[heatmap_pathway1==0]
+
+par(new=TRUE)
+pathway2nd_down3<-data.frame(t(pathway2nd_down2))
+colors= c( brewer.pal(11,"Dark2"))[1:6]
+df6<-df3[aa$tree_row$order,]
+pathway2nd_down4<-pathway2nd_down3[c(row.names(df6)),]
+a<-pheatmap(pathway2nd_down4,color = colors, fontsize_col = 2, cluster_rows = F, cluster_cols = F,show_rownames =T, show_colnames =T ,fontsize = 3,cellwidth=3,cellheight=2.5,filename = paste0("pathway2nd_down.pdf"))
+dev.off()
+######################
+GSEA2nd_up$SYMBOL<-row.names(GSEA2nd_up)
+heatmap2nd_up<-merge(GSEA2nd_up,Vol2nd[,-c(1,3)], by="SYMBOL", all=F)
+heatmap2nd_up[76,1]<-"MOCS2_A"
+heatmap2nd_up[77,1]<-"MOCS2_B"
+heatmap2nd_up1<-heatmap2nd_up[,-1]
+row.names(heatmap2nd_up1)<-heatmap2nd_up$SYMBOL
+heatmap2nd_up2<-data.frame(t(heatmap2nd_up1[,!names(heatmap2nd_up1) %in% names(GSEA2nd_up)]))
+pathway2nd_up2<-data.frame(t(heatmap2nd_up1[,names(heatmap2nd_up1) %in% names(GSEA2nd_up)]))
+heatmap2nd_up2$label<-as.matrix(data.frame(str_split_fixed(row.names(heatmap2nd_up2),"_","3"))[1])
+annotation_col<- data.frame(type = factor(heatmap2nd_up2$label,levels = c("H", "C")), row.names = row.names(heatmap2nd_up2))
+type_color <- c( brewer.pal(8,"Set1")[1:2])
+names(type_color) <-  c("H", "C")
+ann_colors <- list(type=type_color)
+colors0 = c( brewer.pal(11,"Blues")[9:4], brewer.pal(11,"Blues")[1],brewer.pal(11,"Reds")[2], brewer.pal(11,"Reds")[4:9])
+colors<-colorRampPalette(colors0)(10000)
+df2<-data.frame(t(heatmap2nd_up2[,!colnames(heatmap2nd_up2)== "label"]),check.names = F)
+df3<-log2(df2)
+df3[df3<0]<-NA
+df3[is.na(df3)]<-min(df3,na.rm = T)
+up_2nd_venn<-df3
+aa<-pheatmap(df3,scale="row",color = colors, annotation_col = annotation_col,annotation_colors = ann_colors, fontsize_col = 2, cluster_rows = T, cluster_cols = F,show_rownames =T, show_colnames =T ,fontsize = 3,cellwidth=3,cellheight=2.5,filename = paste0("heatmap2nd_up.pdf"))
+
+pathway2nd_up3<-data.frame(t(pathway2nd_up2))
+colors= c( brewer.pal(11,"Dark2"))[1:6]
+df6<-df3[aa$tree_row$order,]
+pathway2nd_up4<-pathway2nd_up3[c(row.names(df6)),]
+a<-pheatmap(pathway2nd_up4,color = colors, fontsize_col = 2, cluster_rows = F, cluster_cols = F,show_rownames =T, show_colnames =T ,fontsize = 3,cellwidth=3,cellheight=2.5,filename = paste0("pathway2nd_up.pdf"))
+
+
+####venn 1st 2nd up
+library(Vennerable)
+up_1st_venn
+up_2nd_venn
+pdf("2dataset_GSEA_5pathway_up_1st_2nd_venn.pdf")
+data<-Venn(list("up_1st"=row.names(up_1st_venn),"up_2nd"=row.names(up_2nd_venn)))
+a<-plot(data,doWeight=T)
+dev.off()
+
+```
+

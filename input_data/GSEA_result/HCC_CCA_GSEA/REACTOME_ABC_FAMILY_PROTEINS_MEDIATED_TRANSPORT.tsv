@@ -1,0 +1,75 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ABCB8	ATP binding cassette subfamily B member 8 [Source:HGNC Symbol;Acc:HGNC:49]	34	0.7934025526046753	0.023768574	Yes	
+row_1	PEX19	peroxisomal biogenesis factor 19 [Source:HGNC Symbol;Acc:HGNC:9713]	49	0.7693115472793579	0.049821872	Yes	
+row_2	ABCC2	ATP binding cassette subfamily C member 2 [Source:HGNC Symbol;Acc:HGNC:53]	71	0.7373244166374207	0.07359011	Yes	
+row_3	ABCD3	ATP binding cassette subfamily D member 3 [Source:HGNC Symbol;Acc:HGNC:67]	171	0.6602581143379211	0.08216286	Yes	
+row_4	OS9	OS9 endoplasmic reticulum lectin [Source:HGNC Symbol;Acc:HGNC:16994]	376	0.5839239954948425	0.071287416	Yes	
+row_5	ABCB4	ATP binding cassette subfamily B member 4 [Source:HGNC Symbol;Acc:HGNC:45]	490	0.5488383769989014	0.07354642	Yes	
+row_6	ABCC6	ATP binding cassette subfamily C member 6 [Source:HGNC Symbol;Acc:HGNC:57]	492	0.5482988357543945	0.093538	Yes	
+row_7	PSMC2	proteasome 26S subunit, ATPase 2 [Source:HGNC Symbol;Acc:HGNC:9548]	497	0.5470684766769409	0.11300886	Yes	
+row_8	PSMA6	proteasome 20S subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:9535]	558	0.527972400188446	0.12290172	Yes	
+row_9	PSMA7	proteasome 20S subunit alpha 7 [Source:HGNC Symbol;Acc:HGNC:9536]	715	0.4935697317123413	0.11631393	Yes	
+row_10	SEL1L	SEL1L adaptor subunit of ERAD E3 ubiquitin ligase [Source:HGNC Symbol;Acc:HGNC:10717]	718	0.49352848529815674	0.13413419	Yes	
+row_11	PSMB3	proteasome 20S subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:9540]	749	0.4875580966472626	0.14729694	Yes	
+row_12	ABCA6	ATP binding cassette subfamily A member 6 [Source:HGNC Symbol;Acc:HGNC:36]	756	0.48602020740509033	0.16420725	Yes	
+row_13	PEX3	peroxisomal biogenesis factor 3 [Source:HGNC Symbol;Acc:HGNC:8858]	776	0.48121878504753113	0.17888056	Yes	
+row_14	PSMA3	proteasome 20S subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:9532]	784	0.48018306493759155	0.19541785	Yes	
+row_15	PSME2	proteasome activator subunit 2 [Source:HGNC Symbol;Acc:HGNC:9569]	799	0.47777125239372253	0.21075699	Yes	
+row_16	PSMA5	proteasome 20S subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:9534]	833	0.47060102224349976	0.22282106	Yes	
+row_17	ABCB6	ATP binding cassette subfamily B member 6 (Langereis blood group) [Source:HGNC Symbol;Acc:HGNC:47]	857	0.465507447719574	0.23628296	Yes	
+row_18	PSMB7	proteasome 20S subunit beta 7 [Source:HGNC Symbol;Acc:HGNC:9544]	858	0.4654942452907562	0.25338995	Yes	
+row_19	PSMD4	proteasome 26S subunit, non-ATPase 4 [Source:HGNC Symbol;Acc:HGNC:9561]	860	0.4653370976448059	0.2703327	Yes	
+row_20	PSMC5	proteasome 26S subunit, ATPase 5 [Source:HGNC Symbol;Acc:HGNC:9552]	879	0.46226680278778076	0.28446802	Yes	
+row_21	PSMB4	proteasome 20S subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:9541]	889	0.460785448551178	0.29997543	Yes	
+row_22	PSMF1	proteasome inhibitor subunit 1 [Source:HGNC Symbol;Acc:HGNC:9571]	908	0.45696553587913513	0.31391594	Yes	
+row_23	PSMD3	proteasome 26S subunit, non-ATPase 3 [Source:HGNC Symbol;Acc:HGNC:9560]	957	0.44965729117393494	0.32283276	Yes	
+row_24	ERLIN2	ER lipid raft associated 2 [Source:HGNC Symbol;Acc:HGNC:1356]	976	0.4459364116191864	0.33636793	Yes	
+row_25	PSMA2	proteasome 20S subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:9531]	1001	0.44067156314849854	0.3487586	Yes	
+row_26	PSME1	proteasome activator subunit 1 [Source:HGNC Symbol;Acc:HGNC:9568]	1015	0.43723878264427185	0.36276668	Yes	
+row_27	PSMA1	proteasome 20S subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:9530]	1171	0.4107058644294739	0.35329214	Yes	
+row_28	ABCD1	ATP binding cassette subfamily D member 1 [Source:HGNC Symbol;Acc:HGNC:61]	1207	0.4033508896827698	0.36256772	Yes	
+row_29	DERL1	derlin 1 [Source:HGNC Symbol;Acc:HGNC:28454]	1209	0.4032945930957794	0.37723038	Yes	
+row_30	PSMC3	proteasome 26S subunit, ATPase 3 [Source:HGNC Symbol;Acc:HGNC:9549]	1222	0.4006049633026123	0.39005065	Yes	
+row_31	PSMD8	proteasome 26S subunit, non-ATPase 8 [Source:HGNC Symbol;Acc:HGNC:9566]	1237	0.39832866191864014	0.40247023	Yes	
+row_32	PSMB6	proteasome 20S subunit beta 6 [Source:HGNC Symbol;Acc:HGNC:9543]	1242	0.3972163796424866	0.41643402	Yes	
+row_33	PSMD1	proteasome 26S subunit, non-ATPase 1 [Source:HGNC Symbol;Acc:HGNC:9554]	1246	0.3966294825077057	0.43053472	Yes	
+row_34	ABCB10	ATP binding cassette subfamily B member 10 [Source:HGNC Symbol;Acc:HGNC:41]	1251	0.39514267444610596	0.44442227	Yes	
+row_35	ABCF1	ATP binding cassette subfamily F member 1 [Source:HGNC Symbol;Acc:HGNC:70]	1259	0.3941178023815155	0.45779663	Yes	
+row_36	PSMC4	proteasome 26S subunit, ATPase 4 [Source:HGNC Symbol;Acc:HGNC:9551]	1290	0.38892850279808044	0.46733472	Yes	
+row_37	VCP	valosin containing protein [Source:HGNC Symbol;Acc:HGNC:12666]	1336	0.3822379410266876	0.4742494	Yes	
+row_38	PSMD14	proteasome 26S subunit, non-ATPase 14 [Source:HGNC Symbol;Acc:HGNC:16889]	1364	0.3764677941799164	0.48380503	Yes	
+row_39	RPS27A	ribosomal protein S27a [Source:HGNC Symbol;Acc:HGNC:10417]	1400	0.37205469608306885	0.49193048	Yes	
+row_40	ERLIN1	ER lipid raft associated 1 [Source:HGNC Symbol;Acc:HGNC:16947]	1484	0.3606012463569641	0.49202687	Yes	
+row_41	PSMD11	proteasome 26S subunit, non-ATPase 11 [Source:HGNC Symbol;Acc:HGNC:9556]	1490	0.35974884033203125	0.50445515	Yes	
+row_42	PSMB5	proteasome 20S subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:9542]	1509	0.3572031259536743	0.5147294	Yes	
+row_43	PSMB1	proteasome 20S subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:9537]	1514	0.35679304599761963	0.5272076	Yes	
+row_44	PSMD7	proteasome 26S subunit, non-ATPase 7 [Source:HGNC Symbol;Acc:HGNC:9565]	1524	0.35564038157463074	0.5388509	Yes	
+row_45	PSMA4	proteasome 20S subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:9533]	1557	0.34966397285461426	0.546629	Yes	
+row_46	ABCB7	ATP binding cassette subfamily B member 7 [Source:HGNC Symbol;Acc:HGNC:48]	1573	0.34718871116638184	0.5570107	Yes	
+row_47	PSMD2	proteasome 26S subunit, non-ATPase 2 [Source:HGNC Symbol;Acc:HGNC:9559]	1597	0.34372678399086	0.5659971	Yes	
+row_48	ABCG8	ATP binding cassette subfamily G member 8 [Source:HGNC Symbol;Acc:HGNC:13887]	1702	0.3293444812297821	0.56161624	Yes	
+row_49	PSMC1	proteasome 26S subunit, ATPase 1 [Source:HGNC Symbol;Acc:HGNC:9547]	1705	0.3289460837841034	0.57338804	Yes	
+row_50	ABCC3	ATP binding cassette subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:54]	1708	0.32859012484550476	0.5851468	Yes	
+row_51	PSMD12	proteasome 26S subunit, non-ATPase 12 [Source:HGNC Symbol;Acc:HGNC:9557]	1748	0.3234422504901886	0.5908517	Yes	
+row_52	PSMD10	proteasome 26S subunit, non-ATPase 10 [Source:HGNC Symbol;Acc:HGNC:9555]	1917	0.30154919624328613	0.5753051	No	
+row_53	PSMB2	proteasome 20S subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:9539]	1948	0.29602760076522827	0.58142906	No	
+row_54	DERL2	derlin 2 [Source:HGNC Symbol;Acc:HGNC:17943]	1965	0.29391953349113464	0.5896946	No	
+row_55	PSMC6	proteasome 26S subunit, ATPase 6 [Source:HGNC Symbol;Acc:HGNC:9553]	2113	0.2773926556110382	0.5765888	No	
+row_56	ERLEC1	endoplasmic reticulum lectin 1 [Source:HGNC Symbol;Acc:HGNC:25222]	2182	0.26816532015800476	0.57566565	No	
+row_57	PSMD13	proteasome 26S subunit, non-ATPase 13 [Source:HGNC Symbol;Acc:HGNC:9558]	2201	0.266696572303772	0.58261377	No	
+row_58	EIF2S2	eukaryotic translation initiation factor 2 subunit beta [Source:HGNC Symbol;Acc:HGNC:3266]	2586	0.2194291353225708	0.5298124	No	
+row_59	PSMB8	proteasome 20S subunit beta 8 [Source:HGNC Symbol;Acc:HGNC:9545]	2604	0.21753816306591034	0.5351124	No	
+row_60	PSMD6	proteasome 26S subunit, non-ATPase 6 [Source:HGNC Symbol;Acc:HGNC:9564]	2701	0.20627710223197937	0.5274767	No	
+row_61	ABCB1	ATP binding cassette subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:40]	2751	0.20023973286151886	0.5270689	No	
+row_62	PSME4	proteasome activator subunit 4 [Source:HGNC Symbol;Acc:HGNC:20635]	2784	0.19659000635147095	0.52922153	No	
+row_63	PSMD5	proteasome 26S subunit, non-ATPase 5 [Source:HGNC Symbol;Acc:HGNC:9563]	2860	0.18691930174827576	0.52420306	No	
+row_64	PSMB9	proteasome 20S subunit beta 9 [Source:HGNC Symbol;Acc:HGNC:9546]	3158	0.15425027906894684	0.4827962	No	
+row_65	ABCA8	ATP binding cassette subfamily A member 8 [Source:HGNC Symbol;Acc:HGNC:38]	3354	0.13252569735050201	0.4567583	No	
+row_66	PSMB10	proteasome 20S subunit beta 10 [Source:HGNC Symbol;Acc:HGNC:9538]	3532	0.11039474606513977	0.43276018	No	
+row_67	EIF2S3	eukaryotic translation initiation factor 2 subunit gamma [Source:HGNC Symbol;Acc:HGNC:3267]	4004	0.058906204998493195	0.36026973	No	
+row_68	PSMD9	proteasome 26S subunit, non-ATPase 9 [Source:HGNC Symbol;Acc:HGNC:9567]	4262	0.030031176283955574	0.32063794	No	
+row_69	EIF2S1	eukaryotic translation initiation factor 2 subunit alpha [Source:HGNC Symbol;Acc:HGNC:3265]	4530	9.15368800633587E-5	0.2783208	No	
+row_70	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	5083	-0.0711827278137207	0.19344272	No	
+row_71	PSME3	proteasome activator subunit 3 [Source:HGNC Symbol;Acc:HGNC:9570]	5222	-0.09146667271852493	0.17493062	No	
+row_72	ABCC4	ATP binding cassette subfamily C member 4 [Source:HGNC Symbol;Acc:HGNC:55]	5294	-0.10149172693490982	0.16740671	No	
+row_73	ABCC1	ATP binding cassette subfamily C member 1 [Source:HGNC Symbol;Acc:HGNC:51]	5469	-0.13296973705291748	0.14471371	No	

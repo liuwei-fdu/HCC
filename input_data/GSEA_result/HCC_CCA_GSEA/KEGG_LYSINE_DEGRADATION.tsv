@@ -1,0 +1,29 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HADHA	hydroxyacyl-CoA dehydrogenase trifunctional multienzyme complex subunit alpha [Source:HGNC Symbol;Acc:HGNC:4801]	17	0.8338526487350464	0.0687195	Yes	
+row_1	SETD7	SET domain containing 7, histone lysine methyltransferase [Source:HGNC Symbol;Acc:HGNC:30412]	50	0.7675275206565857	0.12939988	Yes	
+row_2	ALDH9A1	aldehyde dehydrogenase 9 family member A1 [Source:HGNC Symbol;Acc:HGNC:412]	75	0.7303404211997986	0.18815516	Yes	
+row_3	ECHS1	enoyl-CoA hydratase, short chain 1 [Source:HGNC Symbol;Acc:HGNC:3151]	89	0.7146709561347961	0.24729973	Yes	
+row_4	ACAT1	acetyl-CoA acetyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:93]	117	0.6904016733169556	0.30216336	Yes	
+row_5	ALDH3A2	aldehyde dehydrogenase 3 family member A2 [Source:HGNC Symbol;Acc:HGNC:403]	268	0.6175125241279602	0.33143142	Yes	
+row_6	HADH	hydroxyacyl-CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4799]	383	0.5808967351913452	0.36322922	Yes	
+row_7	ALDH7A1	aldehyde dehydrogenase 7 family member A1 [Source:HGNC Symbol;Acc:HGNC:877]	450	0.5606938004493713	0.40085036	Yes	
+row_8	ALDH1B1	aldehyde dehydrogenase 1 family member B1 [Source:HGNC Symbol;Acc:HGNC:407]	586	0.5209389925003052	0.4242101	Yes	
+row_9	PIPOX	pipecolic acid and sarcosine oxidase [Source:HGNC Symbol;Acc:HGNC:17804]	665	0.5043217539787292	0.4551164	Yes	
+row_10	ALDH2	aldehyde dehydrogenase 2 family member [Source:HGNC Symbol;Acc:HGNC:404]	733	0.48984581232070923	0.48651415	Yes	
+row_11	ACAT2	acetyl-CoA acetyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:94]	734	0.48969754576683044	0.52844214	Yes	
+row_12	OGDHL	oxoglutarate dehydrogenase like [Source:HGNC Symbol;Acc:HGNC:25590]	759	0.4854615330696106	0.56623083	Yes	
+row_13	EHHADH	enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:3247]	907	0.45749956369400024	0.5822706	Yes	
+row_14	TMLHE	trimethyllysine hydroxylase, epsilon [Source:HGNC Symbol;Acc:HGNC:18308]	1063	0.43024778366088867	0.5947182	Yes	
+row_15	BBOX1	gamma-butyrobetaine hydroxylase 1 [Source:HGNC Symbol;Acc:HGNC:964]	1092	0.4238221049308777	0.62659997	Yes	
+row_16	DLST	dihydrolipoamide S-succinyltransferase [Source:HGNC Symbol;Acc:HGNC:2911]	1206	0.40335386991500854	0.6433539	Yes	
+row_17	AASS	aminoadipate-semialdehyde synthase [Source:HGNC Symbol;Acc:HGNC:17366]	1266	0.393310546875	0.6677452	Yes	
+row_18	AADAT	aminoadipate aminotransferase [Source:HGNC Symbol;Acc:HGNC:17929]	2231	0.26310381293296814	0.53858054	No	
+row_19	GCDH	glutaryl-CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4189]	2276	0.2573397755622864	0.5536903	No	
+row_20	SETMAR	SET domain and mariner transposase fusion gene [Source:HGNC Symbol;Acc:HGNC:10762]	2900	0.1817908138036728	0.47122222	No	
+row_21	EHMT1	euchromatic histone lysine methyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:24650]	3419	0.12448004633188248	0.4003696	No	
+row_22	OGDH	oxoglutarate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:8124]	3577	0.10483986139297485	0.38464105	No	
+row_23	PLOD2	procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 [Source:HGNC Symbol;Acc:HGNC:9082]	3718	0.09033071994781494	0.3703453	No	
+row_24	PLOD1	procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 [Source:HGNC Symbol;Acc:HGNC:9081]	4171	0.039707109332084656	0.3026199	No	
+row_25	AASDHPPT	aminoadipate-semialdehyde dehydrogenase-phosphopantetheinyl transferase [Source:HGNC Symbol;Acc:HGNC:14235]	5236	-0.09375648200511932	0.14322014	No	
+row_26	SETD1A	SET domain containing 1A, histone lysine methyltransferase [Source:HGNC Symbol;Acc:HGNC:29010]	5717	-0.18086984753608704	0.08317516	No	
+row_27	PLOD3	procollagen-lysine,2-oxoglutarate 5-dioxygenase 3 [Source:HGNC Symbol;Acc:HGNC:9083]	5982	-0.24888433516025543	0.06294257	No	

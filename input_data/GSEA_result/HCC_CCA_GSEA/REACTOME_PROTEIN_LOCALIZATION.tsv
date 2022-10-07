@@ -1,0 +1,132 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ECH1	enoyl-CoA hydratase 1 [Source:HGNC Symbol;Acc:HGNC:3149]	3	0.9206144213676453	0.015847316	Yes	
+row_1	TIMM13	translocase of inner mitochondrial membrane 13 [Source:HGNC Symbol;Acc:HGNC:11816]	24	0.8102839589118958	0.027018785	Yes	
+row_2	SLC25A13	solute carrier family 25 member 13 [Source:HGNC Symbol;Acc:HGNC:10983]	32	0.797166645526886	0.04003695	Yes	
+row_3	PMPCB	peptidase, mitochondrial processing subunit beta [Source:HGNC Symbol;Acc:HGNC:9119]	36	0.7917881608009338	0.053599525	Yes	
+row_4	SLC25A12	solute carrier family 25 member 12 [Source:HGNC Symbol;Acc:HGNC:10982]	40	0.782280445098877	0.06699348	Yes	
+row_5	ECI2	enoyl-CoA delta isomerase 2 [Source:HGNC Symbol;Acc:HGNC:14601]	47	0.7715610265731812	0.07971748	Yes	
+row_6	PEX19	peroxisomal biogenesis factor 19 [Source:HGNC Symbol;Acc:HGNC:9713]	49	0.7693115472793579	0.093201324	Yes	
+row_7	PHYH	phytanoyl-CoA 2-hydroxylase [Source:HGNC Symbol;Acc:HGNC:8940]	59	0.7541366815567017	0.105136454	Yes	
+row_8	CRAT	carnitine O-acetyltransferase [Source:HGNC Symbol;Acc:HGNC:2342]	69	0.7386442422866821	0.11679682	Yes	
+row_9	CROT	carnitine O-octanoyltransferase [Source:HGNC Symbol;Acc:HGNC:2366]	73	0.7343188524246216	0.12934017	Yes	
+row_10	CYB5A	cytochrome b5 type A [Source:HGNC Symbol;Acc:HGNC:2570]	86	0.7173433303833008	0.14014292	Yes	
+row_11	BAAT	bile acid-CoA:amino acid N-acyltransferase [Source:HGNC Symbol;Acc:HGNC:932]	141	0.6745400428771973	0.14346871	Yes	
+row_12	ABCD3	ATP binding cassette subfamily D member 3 [Source:HGNC Symbol;Acc:HGNC:67]	171	0.6602581143379211	0.15053992	Yes	
+row_13	PMPCA	peptidase, mitochondrial processing subunit alpha [Source:HGNC Symbol;Acc:HGNC:18667]	183	0.6546255946159363	0.1603903	Yes	
+row_14	HSPD1	heat shock protein family D (Hsp60) member 1 [Source:HGNC Symbol;Acc:HGNC:5261]	228	0.6343923807144165	0.16460356	Yes	
+row_15	HSPA9	heat shock protein family A (Hsp70) member 9 [Source:HGNC Symbol;Acc:HGNC:5244]	251	0.6271677017211914	0.17220755	Yes	
+row_16	PECR	peroxisomal trans-2-enoyl-CoA reductase [Source:HGNC Symbol;Acc:HGNC:18281]	263	0.6193761825561523	0.18143278	Yes	
+row_17	TIMM50	translocase of inner mitochondrial membrane 50 [Source:HGNC Symbol;Acc:HGNC:23656]	265	0.6187419295310974	0.19224627	Yes	
+row_18	ALDH3A2	aldehyde dehydrogenase 3 family member A2 [Source:HGNC Symbol;Acc:HGNC:403]	268	0.6175125241279602	0.20287801	Yes	
+row_19	TIMM17A	translocase of inner mitochondrial membrane 17A [Source:HGNC Symbol;Acc:HGNC:17315]	288	0.6117584109306335	0.21068856	Yes	
+row_20	VDAC1	voltage dependent anion channel 1 [Source:HGNC Symbol;Acc:HGNC:12669]	293	0.6111610531806946	0.22088775	Yes	
+row_21	SLC27A2	solute carrier family 27 member 2 [Source:HGNC Symbol;Acc:HGNC:10996]	294	0.6109470129013062	0.23172294	Yes	
+row_22	OTC	ornithine carbamoyltransferase [Source:HGNC Symbol;Acc:HGNC:8512]	306	0.607541024684906	0.24073829	Yes	
+row_23	LDHD	lactate dehydrogenase D [Source:HGNC Symbol;Acc:HGNC:19708]	321	0.6019275188446045	0.24917422	Yes	
+row_24	HMGCL	3-hydroxy-3-methylglutaryl-CoA lyase [Source:HGNC Symbol;Acc:HGNC:5005]	336	0.5966185927391052	0.25751603	Yes	
+row_25	SLC25A4	solute carrier family 25 member 4 [Source:HGNC Symbol;Acc:HGNC:10990]	356	0.5902199149131775	0.26494458	Yes	
+row_26	TIMM21	translocase of inner mitochondrial membrane 21 [Source:HGNC Symbol;Acc:HGNC:25010]	369	0.5870983004570007	0.27343744	Yes	
+row_27	ACAA1	acetyl-CoA acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:82]	370	0.5868717432022095	0.28384563	Yes	
+row_28	DDO	D-aspartate oxidase [Source:HGNC Symbol;Acc:HGNC:2727]	375	0.583943247795105	0.2935621	Yes	
+row_29	SCP2	sterol carrier protein 2 [Source:HGNC Symbol;Acc:HGNC:10606]	425	0.568391740322113	0.2958051	Yes	
+row_30	HAO1	hydroxyacid oxidase 1 [Source:HGNC Symbol;Acc:HGNC:4809]	442	0.5632154941558838	0.30323458	Yes	
+row_31	SAMM50	SAMM50 sorting and assembly machinery component [Source:HGNC Symbol;Acc:HGNC:24276]	483	0.5499488115310669	0.30659002	Yes	
+row_32	GSTK1	glutathione S-transferase kappa 1 [Source:HGNC Symbol;Acc:HGNC:16906]	484	0.5496604442596436	0.31633827	Yes	
+row_33	TOMM40	translocase of outer mitochondrial membrane 40 [Source:HGNC Symbol;Acc:HGNC:18001]	489	0.5489537119865417	0.3254342	Yes	
+row_34	TOMM70	translocase of outer mitochondrial membrane 70 [Source:HGNC Symbol;Acc:HGNC:11985]	519	0.5383145213127136	0.33034274	Yes	
+row_35	GNPAT	glyceronephosphate O-acyltransferase [Source:HGNC Symbol;Acc:HGNC:4416]	536	0.5348133444786072	0.33726853	Yes	
+row_36	PEX6	peroxisomal biogenesis factor 6 [Source:HGNC Symbol;Acc:HGNC:8859]	539	0.5342357158660889	0.34642333	Yes	
+row_37	IDH1	isocitrate dehydrogenase (NADP(+)) 1 [Source:HGNC Symbol;Acc:HGNC:5382]	570	0.5254043340682983	0.35094297	Yes	
+row_38	GFER	growth factor, augmenter of liver regeneration [Source:HGNC Symbol;Acc:HGNC:4236]	574	0.5249482989311218	0.3597731	Yes	
+row_39	ACOT8	acyl-CoA thioesterase 8 [Source:HGNC Symbol;Acc:HGNC:15919]	589	0.5207491517066956	0.36676934	Yes	
+row_40	CHCHD4	coiled-coil-helix-coiled-coil-helix domain containing 4 [Source:HGNC Symbol;Acc:HGNC:26467]	636	0.5104029774665833	0.36846372	Yes	
+row_41	ACBD5	acyl-CoA binding domain containing 5 [Source:HGNC Symbol;Acc:HGNC:23338]	639	0.5098921060562134	0.3771868	Yes	
+row_42	EPHX2	epoxide hydrolase 2 [Source:HGNC Symbol;Acc:HGNC:3402]	660	0.5059259533882141	0.38296047	Yes	
+row_43	PIPOX	pipecolic acid and sarcosine oxidase [Source:HGNC Symbol;Acc:HGNC:17804]	665	0.5043217539787292	0.39126486	Yes	
+row_44	ACOX1	acyl-CoA oxidase 1 [Source:HGNC Symbol;Acc:HGNC:119]	696	0.49667733907699585	0.395275	Yes	
+row_45	TIMM8B	translocase of inner mitochondrial membrane 8 homolog B [Source:HGNC Symbol;Acc:HGNC:11818]	698	0.49639245867729187	0.4039186	Yes	
+row_46	NUDT7	nudix hydrolase 7 [Source:HGNC Symbol;Acc:HGNC:8054]	723	0.492117315530777	0.40880758	Yes	
+row_47	DHRS4	dehydrogenase/reductase 4 [Source:HGNC Symbol;Acc:HGNC:16985]	726	0.4915187656879425	0.4172048	Yes	
+row_48	HACL1	2-hydroxyacyl-CoA lyase 1 [Source:HGNC Symbol;Acc:HGNC:17856]	747	0.488136887550354	0.42266294	Yes	
+row_49	VAPA	VAMP associated protein A [Source:HGNC Symbol;Acc:HGNC:12648]	753	0.4867906868457794	0.43049648	Yes	
+row_50	CAT	catalase [Source:HGNC Symbol;Acc:HGNC:1516]	761	0.4840520918369293	0.43796155	Yes	
+row_51	PEX3	peroxisomal biogenesis factor 3 [Source:HGNC Symbol;Acc:HGNC:8858]	776	0.48121878504753113	0.4442567	Yes	
+row_52	TYSND1	trypsin domain containing 1 [Source:HGNC Symbol;Acc:HGNC:28531]	780	0.48081594705581665	0.45230415	Yes	
+row_53	TIMM10	translocase of inner mitochondrial membrane 10 [Source:HGNC Symbol;Acc:HGNC:11814]	791	0.4797186851501465	0.4592125	Yes	
+row_54	ACOX3	acyl-CoA oxidase 3, pristanoyl [Source:HGNC Symbol;Acc:HGNC:121]	792	0.4795133173465729	0.46771672	Yes	
+row_55	TIMM22	translocase of inner mitochondrial membrane 22 [Source:HGNC Symbol;Acc:HGNC:17317]	802	0.47678282856941223	0.47473297	Yes	
+row_56	DAO	D-amino acid oxidase [Source:HGNC Symbol;Acc:HGNC:2671]	813	0.47471892833709717	0.48155266	Yes	
+row_57	CYC1	cytochrome c1 [Source:HGNC Symbol;Acc:HGNC:2579]	817	0.4740842580795288	0.48948073	Yes	
+row_58	AGXT	alanine--glyoxylate and serine--pyruvate aminotransferase [Source:HGNC Symbol;Acc:HGNC:341]	823	0.4729531407356262	0.49706882	Yes	
+row_59	FXN	frataxin [Source:HGNC Symbol;Acc:HGNC:3951]	832	0.4706438481807709	0.50413615	Yes	
+row_60	SGTA	small glutamine rich tetratricopeptide repeat containing alpha [Source:HGNC Symbol;Acc:HGNC:10819]	844	0.46837475895881653	0.51068336	Yes	
+row_61	MTX1	metaxin 1 [Source:HGNC Symbol;Acc:HGNC:7504]	899	0.45961564779281616	0.51019746	Yes	
+row_62	EHHADH	enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:3247]	907	0.45749956369400024	0.5171916	Yes	
+row_63	COA6	cytochrome c oxidase assembly factor 6 [Source:HGNC Symbol;Acc:HGNC:18025]	920	0.4546019434928894	0.5233346	Yes	
+row_64	PXMP4	peroxisomal membrane protein 4 [Source:HGNC Symbol;Acc:HGNC:15920]	922	0.4543151259422302	0.531232	Yes	
+row_65	HSCB	HscB mitochondrial iron-sulfur cluster cochaperone [Source:HGNC Symbol;Acc:HGNC:28913]	925	0.45354703068733215	0.53895575	Yes	
+row_66	ATP5F1B	ATP synthase F1 subunit beta [Source:HGNC Symbol;Acc:HGNC:830]	927	0.4535325765609741	0.54683924	Yes	
+row_67	TOMM22	translocase of outer mitochondrial membrane 22 [Source:HGNC Symbol;Acc:HGNC:18002]	929	0.4534112811088562	0.5547206	Yes	
+row_68	TIMM44	translocase of inner mitochondrial membrane 44 [Source:HGNC Symbol;Acc:HGNC:17316]	973	0.44658780097961426	0.55576307	Yes	
+row_69	ACOT4	acyl-CoA thioesterase 4 [Source:HGNC Symbol;Acc:HGNC:19748]	997	0.4410322308540344	0.55990595	Yes	
+row_70	TIMM8A	translocase of inner mitochondrial membrane 8A [Source:HGNC Symbol;Acc:HGNC:11817]	1010	0.43872928619384766	0.56576747	Yes	
+row_71	DECR2	2,4-dienoyl-CoA reductase 2 [Source:HGNC Symbol;Acc:HGNC:2754]	1048	0.43240800499916077	0.5675182	Yes	
+row_72	ATP5F1A	ATP synthase F1 subunit alpha [Source:HGNC Symbol;Acc:HGNC:823]	1068	0.42934438586235046	0.5720936	Yes	
+row_73	GRPEL1	GrpE like 1, mitochondrial [Source:HGNC Symbol;Acc:HGNC:19696]	1074	0.4277559816837311	0.57888013	Yes	
+row_74	AMACR	alpha-methylacyl-CoA racemase [Source:HGNC Symbol;Acc:HGNC:451]	1124	0.41769179701805115	0.57845044	Yes	
+row_75	PEX5	peroxisomal biogenesis factor 5 [Source:HGNC Symbol;Acc:HGNC:9719]	1140	0.4156275987625122	0.58342236	Yes	
+row_76	MLYCD	malonyl-CoA decarboxylase [Source:HGNC Symbol;Acc:HGNC:7150]	1146	0.41474395990371704	0.58997816	Yes	
+row_77	TIMM9	translocase of inner mitochondrial membrane 9 [Source:HGNC Symbol;Acc:HGNC:11819]	1147	0.41473984718322754	0.5973336	Yes	
+row_78	PXMP2	peroxisomal membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:9716]	1165	0.41113415360450745	0.60190594	Yes	
+row_79	ABCD1	ATP binding cassette subfamily D member 1 [Source:HGNC Symbol;Acc:HGNC:61]	1207	0.4033508896827698	0.6025015	Yes	
+row_80	HSD17B4	hydroxysteroid 17-beta dehydrogenase 4 [Source:HGNC Symbol;Acc:HGNC:5213]	1220	0.40085291862487793	0.6076913	Yes	
+row_81	TIMM10B	translocase of inner mitochondrial membrane 10B [Source:HGNC Symbol;Acc:HGNC:4022]	1286	0.38994893431663513	0.6042104	Yes	
+row_82	SLC25A17	solute carrier family 25 member 17 [Source:HGNC Symbol;Acc:HGNC:10987]	1295	0.38823357224464417	0.60981613	Yes	
+row_83	ATAD1	ATPase family AAA domain containing 1 [Source:HGNC Symbol;Acc:HGNC:25903]	1308	0.38640350103378296	0.61474967	Yes	
+row_84	CHCHD3	coiled-coil-helix-coiled-coil-helix domain containing 3 [Source:HGNC Symbol;Acc:HGNC:21906]	1352	0.3793557584285736	0.61459976	Yes	
+row_85	PEX1	peroxisomal biogenesis factor 1 [Source:HGNC Symbol;Acc:HGNC:8850]	1363	0.37646883726119995	0.61967695	Yes	
+row_86	RPS27A	ribosomal protein S27a [Source:HGNC Symbol;Acc:HGNC:10417]	1400	0.37205469608306885	0.6205172	Yes	
+row_87	ACOT2	acyl-CoA thioesterase 2 [Source:HGNC Symbol;Acc:HGNC:18431]	1533	0.35415738821029663	0.605685	Yes	
+row_88	BAG6	BAG cochaperone 6 [Source:HGNC Symbol;Acc:HGNC:13919]	1547	0.3514091670513153	0.6098379	Yes	
+row_89	ACOX2	acyl-CoA oxidase 2 [Source:HGNC Symbol;Acc:HGNC:120]	1549	0.3510853052139282	0.6159045	Yes	
+row_90	COA4	cytochrome c oxidase assembly factor 4 homolog [Source:HGNC Symbol;Acc:HGNC:24604]	1559	0.3494718670845032	0.62066287	Yes	
+row_91	FIS1	fission, mitochondrial 1 [Source:HGNC Symbol;Acc:HGNC:21689]	1623	0.3400682508945465	0.6166172	Yes	
+row_92	UBL4A	ubiquitin like 4A [Source:HGNC Symbol;Acc:HGNC:12505]	1687	0.3312831521034241	0.6124158	Yes	
+row_93	DNAJC19	DnaJ heat shock protein family (Hsp40) member C19 [Source:HGNC Symbol;Acc:HGNC:30528]	1688	0.3312068581581116	0.61828977	Yes	
+row_94	PEX14	peroxisomal biogenesis factor 14 [Source:HGNC Symbol;Acc:HGNC:8856]	1691	0.33082646131515503	0.6238371	Yes	
+row_95	USP9X	ubiquitin specific peptidase 9 X-linked [Source:HGNC Symbol;Acc:HGNC:12632]	1694	0.3306841552257538	0.6293819	Yes	
+row_96	TOMM5	translocase of outer mitochondrial membrane 5 [Source:HGNC Symbol;Acc:HGNC:31369]	1790	0.3165179491043091	0.6198002	No	
+row_97	IDE	insulin degrading enzyme [Source:HGNC Symbol;Acc:HGNC:5381]	1852	0.3093329966068268	0.6155294	No	
+row_98	COX19	cytochrome c oxidase assembly factor COX19 [Source:HGNC Symbol;Acc:HGNC:28074]	1874	0.30735403299331665	0.6176214	No	
+row_99	BCS1L	BCS1 homolog, ubiquinol-cytochrome c reductase complex chaperone [Source:HGNC Symbol;Acc:HGNC:1020]	1940	0.2981330156326294	0.6125122	No	
+row_100	HAO2	hydroxyacid oxidase 2 [Source:HGNC Symbol;Acc:HGNC:4810]	2118	0.27632978558540344	0.5891019	No	
+row_101	PEX16	peroxisomal biogenesis factor 16 [Source:HGNC Symbol;Acc:HGNC:8857]	2134	0.2745892107486725	0.5915726	No	
+row_102	GET3	guided entry of tail-anchored proteins factor 3, ATPase [Source:HGNC Symbol;Acc:HGNC:752]	2192	0.2671095132827759	0.5871927	No	
+row_103	PEX11B	peroxisomal biogenesis factor 11 beta [Source:HGNC Symbol;Acc:HGNC:8853]	2224	0.26409316062927246	0.586918	No	
+row_104	PAM16	presequence translocase associated motor 16 [Source:HGNC Symbol;Acc:HGNC:29679]	2272	0.25751936435699463	0.5839675	No	
+row_105	SEC61G	SEC61 translocon subunit gamma [Source:HGNC Symbol;Acc:HGNC:18277]	2321	0.25330299139022827	0.5807823	No	
+row_106	GET4	guided entry of tail-anchored proteins factor 4 [Source:HGNC Symbol;Acc:HGNC:21690]	2332	0.252125084400177	0.5836543	No	
+row_107	AGPS	alkylglycerone phosphate synthase [Source:HGNC Symbol;Acc:HGNC:327]	2375	0.24726612865924835	0.5813217	No	
+row_108	COX17	cytochrome c oxidase copper chaperone COX17 [Source:HGNC Symbol;Acc:HGNC:2264]	2413	0.24017596244812012	0.57966316	No	
+row_109	LONP2	lon peptidase 2, peroxisomal [Source:HGNC Symbol;Acc:HGNC:20598]	2431	0.23757915198802948	0.5811575	No	
+row_110	IDH3G	isocitrate dehydrogenase (NAD(+)) 3 non-catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:5386]	2774	0.19756336510181427	0.5299588	No	
+row_111	NUDT19	nudix hydrolase 19 [Source:HGNC Symbol;Acc:HGNC:32036]	2775	0.1974666714668274	0.5334609	No	
+row_112	CMC2	C-X9-C motif containing 2 [Source:HGNC Symbol;Acc:HGNC:24447]	2852	0.18816308677196503	0.5246419	No	
+row_113	TOMM20	translocase of outer mitochondrial membrane 20 [Source:HGNC Symbol;Acc:HGNC:20947]	2906	0.18136540055274963	0.5193811	No	
+row_114	TIMM17B	translocase of inner mitochondrial membrane 17B [Source:HGNC Symbol;Acc:HGNC:17310]	3001	0.171358123421669	0.50738496	No	
+row_115	TOMM6	translocase of outer mitochondrial membrane 6 [Source:HGNC Symbol;Acc:HGNC:34528]	3072	0.16449041664600372	0.4991058	No	
+row_116	PITRM1	pitrilysin metallopeptidase 1 [Source:HGNC Symbol;Acc:HGNC:17663]	3113	0.15876823663711548	0.49552363	No	
+row_117	MTX2	metaxin 2 [Source:HGNC Symbol;Acc:HGNC:7506]	3213	0.1478465497493744	0.48231074	No	
+row_118	SEC61B	SEC61 translocon subunit beta [Source:HGNC Symbol;Acc:HGNC:16993]	3216	0.14743413031101227	0.4846056	No	
+row_119	HMOX1	heme oxygenase 1 [Source:HGNC Symbol;Acc:HGNC:5013]	3301	0.13767875730991364	0.47361165	No	
+row_120	CS	citrate synthase [Source:HGNC Symbol;Acc:HGNC:2422]	3310	0.1367543786764145	0.4747574	No	
+row_121	STX5	syntaxin 5 [Source:HGNC Symbol;Acc:HGNC:11440]	3365	0.13075631856918335	0.46843916	No	
+row_122	CAMLG	calcium modulating ligand [Source:HGNC Symbol;Acc:HGNC:1471]	3747	0.08657535910606384	0.40903407	No	
+row_123	GDAP1	ganglioside induced differentiation associated protein 1 [Source:HGNC Symbol;Acc:HGNC:15968]	4203	0.03675176203250885	0.33690915	No	
+row_124	ZFAND6	zinc finger AN1-type containing 6 [Source:HGNC Symbol;Acc:HGNC:30164]	4298	0.025220375508069992	0.32232127	No	
+row_125	EMD	emerin [Source:HGNC Symbol;Acc:HGNC:3331]	4467	0.007250694558024406	0.29557845	No	
+row_126	VAMP2	vesicle associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:12643]	4620	-0.012437685392796993	0.27148682	No	
+row_127	SLC25A6	solute carrier family 25 member 6 [Source:HGNC Symbol;Acc:HGNC:10992]	4678	-0.018186699599027634	0.26269227	No	
+row_128	MPV17	mitochondrial inner membrane protein MPV17 [Source:HGNC Symbol;Acc:HGNC:7224]	4878	-0.04215449467301369	0.23161006	No	
+row_129	NDUFB8	NADH:ubiquinone oxidoreductase subunit B8 [Source:HGNC Symbol;Acc:HGNC:7703]	5176	-0.0853288397192955	0.18561858	No	
+row_130	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	6285	-0.401461660861969	0.015515241	No	

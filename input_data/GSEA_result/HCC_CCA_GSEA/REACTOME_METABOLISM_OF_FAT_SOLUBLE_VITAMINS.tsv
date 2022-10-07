@@ -1,0 +1,31 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	1	0.9914716482162476	0.08460618	Yes	
+row_1	APOC3	apolipoprotein C3 [Source:HGNC Symbol;Acc:HGNC:610]	21	0.8155373334884644	0.15133795	Yes	
+row_2	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	26	0.807066798210144	0.21970665	Yes	
+row_3	SDC1	syndecan 1 [Source:HGNC Symbol;Acc:HGNC:10658]	74	0.7313722372055054	0.27483556	Yes	
+row_4	RBP4	retinol binding protein 4 [Source:HGNC Symbol;Acc:HGNC:9922]	179	0.6561226844787598	0.31455904	Yes	
+row_5	APOB	apolipoprotein B [Source:HGNC Symbol;Acc:HGNC:603]	238	0.6303860545158386	0.3593229	Yes	
+row_6	RDH11	retinol dehydrogenase 11 [Source:HGNC Symbol;Acc:HGNC:17964]	393	0.578086256980896	0.38450453	Yes	
+row_7	AKR1C1	aldo-keto reductase family 1 member C1 [Source:HGNC Symbol;Acc:HGNC:384]	414	0.5722758769989014	0.43028182	Yes	
+row_8	RETSAT	retinol saturase [Source:HGNC Symbol;Acc:HGNC:25991]	447	0.5610867142677307	0.47321367	Yes	
+row_9	AKR1C3	aldo-keto reductase family 1 member C3 [Source:HGNC Symbol;Acc:HGNC:386]	471	0.5531665086746216	0.51688504	Yes	
+row_10	GPC3	glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451]	487	0.5492708086967468	0.56148255	Yes	
+row_11	TTPA	alpha tocopherol transfer protein [Source:HGNC Symbol;Acc:HGNC:12404]	493	0.5478076934814453	0.6075291	Yes	
+row_12	AKR1C4	aldo-keto reductase family 1 member C4 [Source:HGNC Symbol;Acc:HGNC:387]	582	0.5226102471351624	0.63835675	Yes	
+row_13	AKR1B10	aldo-keto reductase family 1 member B10 [Source:HGNC Symbol;Acc:HGNC:382]	596	0.5191293954849243	0.68069226	Yes	
+row_14	SDC2	syndecan 2 [Source:HGNC Symbol;Acc:HGNC:10659]	1061	0.43059417605400085	0.64446855	No	
+row_15	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	1345	0.3806324601173401	0.63246393	No	
+row_16	BCO2	beta-carotene oxygenase 2 [Source:HGNC Symbol;Acc:HGNC:18503]	2734	0.2015170305967331	0.43121272	No	
+row_17	RBP1	retinol binding protein 1 [Source:HGNC Symbol;Acc:HGNC:9919]	3123	0.15814250707626343	0.38365924	No	
+row_18	GPC6	glypican 6 [Source:HGNC Symbol;Acc:HGNC:4454]	3220	0.14712832868099213	0.38112667	No	
+row_19	APOM	apolipoprotein M [Source:HGNC Symbol;Acc:HGNC:13916]	3515	0.11290531605482101	0.34450188	No	
+row_20	VKORC1L1	vitamin K epoxide reductase complex subunit 1 like 1 [Source:HGNC Symbol;Acc:HGNC:21492]	3586	0.10372943431138992	0.3423516	No	
+row_21	SDC4	syndecan 4 [Source:HGNC Symbol;Acc:HGNC:10661]	4244	0.03211354836821556	0.24168134	No	
+row_22	GPC1	glypican 1 [Source:HGNC Symbol;Acc:HGNC:4449]	4346	0.020340869203209877	0.22752234	No	
+row_23	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4416	0.013333897106349468	0.21780127	No	
+row_24	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	5083	-0.0711827278137207	0.11905451	No	
+row_25	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	5608	-0.15711429715156555	0.050005917	No	
+row_26	TTR	transthyretin [Source:HGNC Symbol;Acc:HGNC:12405]	5758	-0.19082094728946686	0.04286623	No	
+row_27	APOA4	apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602]	5783	-0.19748839735984802	0.055972304	No	
+row_28	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	5834	-0.21139584481716156	0.066174805	No	
+row_29	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	5909	-0.2330743372440338	0.07445292	No	

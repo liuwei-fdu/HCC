@@ -1,0 +1,34 @@
+producer_class	xtools.gsea.Gsea
+producer_timestamp	1650438550757
+param	zip_report	false
+param	num	100
+param	scoring_scheme	weighted
+param	norm	meandiv
+param	out	C:\Users\liuwe\gsea_home\output\apr18
+param	mode	Max_probe
+param	include_only_symbols	true
+param	set_max	500
+param	gmx	D:\onedrive\OneDrive_WU\WORK\KRUK\20200828_diann_result\GSEA\data\c2.cp.v7.2.symbols.gmt
+param	plot_top_x	20
+param	nperm	1000
+param	order	descending
+param	rpt_label	my_analysis
+param	rnd_seed	timestamp
+param	set_min	15
+param	res	D:\onedrive\OneDrive_WU\WORK\HCC\GSEA\HCC_DIANN_2nd\HCC_DIANN_2nd.gct
+param	chip	D:\onedrive\OneDrive_WU\WORK\HCC\GSEA\data\Human_UniProt_IDs_MSigDB.v7.2.chip
+param	create_svgs	false
+param	cls	D:\onedrive\OneDrive_WU\WORK\HCC\GSEA\HCC_DIANN_2nd\HCC_DIANN_2nd-ann.cls#HCC_versus_CCA
+param	sort	real
+param	create_gcts	false
+param	help	false
+param	save_rnd_lists	false
+param	median	false
+param	metric	Signal2Noise
+param	make_sets	true
+param	rnd_type	no_balance
+param	gui	false
+param	permute	phenotype
+param	collapse	Collapse
+
+file	C:\Users\liuwe\gsea_home\output\apr18\my_analysis.Gsea.1650438550757\index.html

@@ -1,0 +1,30 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IRF6	interferon regulatory factor 6 [Source:HGNC Symbol;Acc:HGNC:6121]	1496	0.11559475213289261	-0.32269672	No	
+row_1	HLA-DRB3	major histocompatibility complex, class II, DR beta 3 [Source:HGNC Symbol;Acc:HGNC:4951]	2157	0.004766739904880524	-0.47030443	No	
+row_2	PTPN11	protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]	2178	0.0019884875509887934	-0.47456834	No	
+row_3	TRIM26	tripartite motif containing 26 [Source:HGNC Symbol;Acc:HGNC:12962]	2264	-0.013923841528594494	-0.49206936	No	
+row_4	CAMK2D	calcium/calmodulin dependent protein kinase II delta [Source:HGNC Symbol;Acc:HGNC:1462]	2357	-0.028609618544578552	-0.50947666	No	
+row_5	PRKCD	protein kinase C delta [Source:HGNC Symbol;Acc:HGNC:9399]	2410	-0.03663093224167824	-0.51699585	No	
+row_6	VCAM1	vascular cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:12663]	2801	-0.09484542906284332	-0.5937847	No	
+row_7	HLA-DRB4	major histocompatibility complex, class II, DR beta 4 [Source:HGNC Symbol;Acc:HGNC:4952]	3251	-0.17121116816997528	-0.675159	Yes	
+row_8	TRIM25	tripartite motif containing 25 [Source:HGNC Symbol;Acc:HGNC:12932]	3334	-0.1847735196352005	-0.6726163	Yes	
+row_9	HLA-C	major histocompatibility complex, class I, C [Source:HGNC Symbol;Acc:HGNC:4933]	3420	-0.20206034183502197	-0.66878706	Yes	
+row_10	HLA-DRA	major histocompatibility complex, class II, DR alpha [Source:HGNC Symbol;Acc:HGNC:4947]	3432	-0.2043357938528061	-0.6480893	Yes	
+row_11	GBP6	guanylate binding protein family member 6 [Source:HGNC Symbol;Acc:HGNC:25395]	3602	-0.23693279922008514	-0.6591616	Yes	
+row_12	HLA-G	major histocompatibility complex, class I, G [Source:HGNC Symbol;Acc:HGNC:4964]	3640	-0.24483270943164825	-0.6397086	Yes	
+row_13	B2M	beta-2-microglobulin [Source:HGNC Symbol;Acc:HGNC:914]	3643	-0.24505452811717987	-0.61237407	Yes	
+row_14	HLA-A	major histocompatibility complex, class I, A [Source:HGNC Symbol;Acc:HGNC:4931]	3848	-0.2990070581436157	-0.62426496	Yes	
+row_15	HLA-B	major histocompatibility complex, class I, B [Source:HGNC Symbol;Acc:HGNC:4932]	3855	-0.30048272013664246	-0.59154403	Yes	
+row_16	PTPN1	protein tyrosine phosphatase non-receptor type 1 [Source:HGNC Symbol;Acc:HGNC:9642]	3884	-0.31022411584854126	-0.562657	Yes	
+row_17	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1 [Source:HGNC Symbol;Acc:HGNC:4944]	4091	-0.38552266359329224	-0.56518793	Yes	
+row_18	ICAM1	intercellular adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5344]	4115	-0.39472341537475586	-0.5255983	Yes	
+row_19	GBP1	guanylate binding protein 1 [Source:HGNC Symbol;Acc:HGNC:4182]	4204	-0.4365875720977783	-0.49585256	Yes	
+row_20	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	4248	-0.46201008558273315	-0.45312354	Yes	
+row_21	IFI30	IFI30 lysosomal thiol reductase [Source:HGNC Symbol;Acc:HGNC:5398]	4269	-0.47532421350479126	-0.40372223	Yes	
+row_22	TRIM21	tripartite motif containing 21 [Source:HGNC Symbol;Acc:HGNC:11312]	4314	-0.5166232585906982	-0.35502583	Yes	
+row_23	PML	promyelocytic leukemia [Source:HGNC Symbol;Acc:HGNC:9113]	4317	-0.5190144181251526	-0.29663068	Yes	
+row_24	PTPN6	protein tyrosine phosphatase non-receptor type 6 [Source:HGNC Symbol;Acc:HGNC:9658]	4338	-0.5407134294509888	-0.23981579	Yes	
+row_25	OAS2	2'-5'-oligoadenylate synthetase 2 [Source:HGNC Symbol;Acc:HGNC:8087]	4340	-0.5440479516983032	-0.17835797	Yes	
+row_26	OAS3	2'-5'-oligoadenylate synthetase 3 [Source:HGNC Symbol;Acc:HGNC:8088]	4359	-0.5608172416687012	-0.11881485	Yes	
+row_27	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	4388	-0.6091663241386414	-0.056034748	Yes	
+row_28	GBP2	guanylate binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4183]	4427	-0.6803398132324219	0.012570098	Yes	

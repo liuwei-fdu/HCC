@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PSAT1	phosphoserine aminotransferase 1 [Source:HGNC Symbol;Acc:HGNC:19129]	96	0.7096682190895081	0.0569838	Yes	
+row_1	GCLM	glutamate-cysteine ligase modifier subunit [Source:HGNC Symbol;Acc:HGNC:4312]	185	0.6542945504188538	0.1096014	Yes	
+row_2	SHMT1	serine hydroxymethyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:10850]	198	0.6476067304611206	0.17349315	Yes	
+row_3	PSPH	phosphoserine phosphatase [Source:HGNC Symbol;Acc:HGNC:9577]	328	0.5993658304214478	0.21408293	Yes	
+row_4	AMT	aminomethyltransferase [Source:HGNC Symbol;Acc:HGNC:473]	342	0.5936640501022339	0.2723383	Yes	
+row_5	MAT2B	methionine adenosyltransferase 2B [Source:HGNC Symbol;Acc:HGNC:6905]	380	0.5817806124687195	0.32561186	Yes	
+row_6	MAT1A	methionine adenosyltransferase 1A [Source:HGNC Symbol;Acc:HGNC:6903]	499	0.5466923713684082	0.36258158	Yes	
+row_7	MTR	5-methyltetrahydrofolate-homocysteine methyltransferase [Source:HGNC Symbol;Acc:HGNC:7468]	566	0.5261820554733276	0.40564665	Yes	
+row_8	GCLC	glutamate-cysteine ligase catalytic subunit [Source:HGNC Symbol;Acc:HGNC:4311]	739	0.4890059232711792	0.42826375	Yes	
+row_9	BHMT	betaine--homocysteine S-methyltransferase [Source:HGNC Symbol;Acc:HGNC:1047]	740	0.4889702796936035	0.47792977	Yes	
+row_10	CTH	cystathionine gamma-lyase [Source:HGNC Symbol;Acc:HGNC:2501]	797	0.4790097177028656	0.51777625	Yes	
+row_11	PHGDH	phosphoglycerate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:8923]	947	0.451174795627594	0.5401682	Yes	
+row_12	MTHFD1	methylenetetrahydrofolate dehydrogenase, cyclohydrolase and formyltetrahydrofolate synthetase 1 [Source:HGNC Symbol;Acc:HGNC:7432]	948	0.45117148756980896	0.5859949	Yes	
+row_13	SHMT2	serine hydroxymethyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:10852]	1059	0.43084707856178284	0.61245614	Yes	
+row_14	MAT2A	methionine adenosyltransferase 2A [Source:HGNC Symbol;Acc:HGNC:6904]	1182	0.4088977575302124	0.63480055	Yes	
+row_15	AHCY	adenosylhomocysteinase [Source:HGNC Symbol;Acc:HGNC:343]	1185	0.40821734070777893	0.67594975	Yes	
+row_16	DHFR	dihydrofolate reductase [Source:HGNC Symbol;Acc:HGNC:2861]	1281	0.3906717300415039	0.7006895	Yes	
+row_17	TYMS	thymidylate synthetase [Source:HGNC Symbol;Acc:HGNC:12441]	1850	0.30943018198013306	0.64278287	No	
+row_18	AHCYL1	adenosylhomocysteinase like 1 [Source:HGNC Symbol;Acc:HGNC:344]	2454	0.2357119768857956	0.5718836	No	
+row_19	GSS	glutathione synthetase [Source:HGNC Symbol;Acc:HGNC:4624]	2844	0.18917974829673767	0.52991635	No	
+row_20	AHCYL2	adenosylhomocysteinase like 2 [Source:HGNC Symbol;Acc:HGNC:22204]	3957	0.0647040382027626	0.36159074	No	
+row_21	MTHFR	methylenetetrahydrofolate reductase [Source:HGNC Symbol;Acc:HGNC:7436]	4068	0.050830915570259094	0.34945273	No	
+row_22	MTHFD1L	methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 1 like [Source:HGNC Symbol;Acc:HGNC:21055]	4423	0.012804423458874226	0.29507542	No	
+row_23	DNMT1	DNA methyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:2976]	4496	0.004197191447019577	0.28417742	No	
+row_24	DNMT3A	DNA methyltransferase 3 alpha [Source:HGNC Symbol;Acc:HGNC:2978]	5407	-0.12109045684337616	0.15335014	No	

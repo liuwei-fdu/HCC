@@ -1,0 +1,51 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SEC24A	SEC24 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10703]	63	0.7488740086555481	0.029965192	Yes	
+row_1	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	70	0.7382352352142334	0.06836384	Yes	
+row_2	PRKAB2	protein kinase AMP-activated non-catalytic subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:9379]	109	0.6973652243614197	0.09953132	Yes	
+row_3	SEC31A	SEC31 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:17052]	122	0.6840890645980835	0.1340967	Yes	
+row_4	FASN	fatty acid synthase [Source:HGNC Symbol;Acc:HGNC:3594]	162	0.6633878350257874	0.16329537	Yes	
+row_5	GPAM	glycerol-3-phosphate acyltransferase, mitochondrial [Source:HGNC Symbol;Acc:HGNC:24865]	173	0.658915638923645	0.19683488	Yes	
+row_6	RBP4	retinol binding protein 4 [Source:HGNC Symbol;Acc:HGNC:9922]	179	0.6561226844787598	0.23101503	Yes	
+row_7	SAR1B	secretion associated Ras related GTPase 1B [Source:HGNC Symbol;Acc:HGNC:10535]	186	0.6536380052566528	0.26490486	Yes	
+row_8	PRKAG1	protein kinase AMP-activated non-catalytic subunit gamma 1 [Source:HGNC Symbol;Acc:HGNC:9385]	225	0.6349912881851196	0.29274797	Yes	
+row_9	ACACA	acetyl-CoA carboxylase alpha [Source:HGNC Symbol;Acc:HGNC:84]	301	0.6092742085456848	0.313378	Yes	
+row_10	HMGCS1	3-hydroxy-3-methylglutaryl-CoA synthase 1 [Source:HGNC Symbol;Acc:HGNC:5007]	339	0.594566285610199	0.3392245	Yes	
+row_11	MDH1	malate dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:6970]	473	0.5524457097053528	0.34766734	Yes	
+row_12	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	514	0.5415748953819275	0.37021577	Yes	
+row_13	MVD	mevalonate diphosphate decarboxylase [Source:HGNC Symbol;Acc:HGNC:7529]	532	0.5351137518882751	0.39605162	Yes	
+row_14	SEC23A	Sec23 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10701]	571	0.5253042578697205	0.41804868	Yes	
+row_15	DBI	diazepam binding inhibitor, acyl-CoA binding protein [Source:HGNC Symbol;Acc:HGNC:2690]	624	0.5125160813331604	0.43715355	Yes	
+row_16	SEC13	SEC13 homolog, nuclear pore and COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10697]	680	0.5003717541694641	0.4551374	Yes	
+row_17	PRKAB1	protein kinase AMP-activated non-catalytic subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:9378]	713	0.49393635988235474	0.47641006	Yes	
+row_18	CYP51A1	cytochrome P450 family 51 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2649]	741	0.4888108968734741	0.49819908	Yes	
+row_19	PRKAA1	protein kinase AMP-activated catalytic subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:9376]	873	0.46310389041900635	0.502196	Yes	
+row_20	SEC24B	SEC24 homolog B, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10704]	888	0.4608052372932434	0.52454513	Yes	
+row_21	IDI1	isopentenyl-diphosphate delta isomerase 1 [Source:HGNC Symbol;Acc:HGNC:5387]	903	0.4584725499153137	0.5467699	Yes	
+row_22	FDPS	farnesyl diphosphate synthase [Source:HGNC Symbol;Acc:HGNC:3631]	980	0.4455263018608093	0.5585147	Yes	
+row_23	SCD	stearoyl-CoA desaturase [Source:HGNC Symbol;Acc:HGNC:10571]	1044	0.43295180797576904	0.57164204	Yes	
+row_24	PRKAA2	protein kinase AMP-activated catalytic subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:9377]	1172	0.41048285365104675	0.57346606	Yes	
+row_25	LSS	lanosterol synthase [Source:HGNC Symbol;Acc:HGNC:6708]	1205	0.40370118618011475	0.5899294	Yes	
+row_26	SAR1A	secretion associated Ras related GTPase 1A [Source:HGNC Symbol;Acc:HGNC:10534]	1230	0.3991083800792694	0.6074112	Yes	
+row_27	SQLE	squalene epoxidase [Source:HGNC Symbol;Acc:HGNC:11279]	1582	0.3455246686935425	0.5704028	No	
+row_28	SEC24C	SEC24 homolog C, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10705]	1766	0.3202875256538391	0.55857706	No	
+row_29	ACLY	ATP citrate lyase [Source:HGNC Symbol;Acc:HGNC:115]	1875	0.30719417333602905	0.5578962	No	
+row_30	SCAP	SREBF chaperone [Source:HGNC Symbol;Acc:HGNC:30634]	1978	0.291998028755188	0.55735284	No	
+row_31	MTOR	mechanistic target of rapamycin kinase [Source:HGNC Symbol;Acc:HGNC:3942]	2241	0.2618289589881897	0.5299371	No	
+row_32	HMGCR	3-hydroxy-3-methylglutaryl-CoA reductase [Source:HGNC Symbol;Acc:HGNC:5006]	2247	0.26120397448539734	0.54306906	No	
+row_33	SEC24D	SEC24 homolog D, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10706]	2326	0.2527630627155304	0.54422426	No	
+row_34	FDFT1	farnesyl-diphosphate farnesyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:3629]	2559	0.22290199995040894	0.5194709	No	
+row_35	NFYA	nuclear transcription factor Y subunit alpha [Source:HGNC Symbol;Acc:HGNC:7804]	2578	0.22048629820346832	0.52838	No	
+row_36	SEC23B	SEC23 homolog B, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10702]	3181	0.1522497981786728	0.44143686	No	
+row_37	KPNB1	karyopherin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6400]	3282	0.13933181762695312	0.4330726	No	
+row_38	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	3804	0.08018850535154343	0.35507894	No	
+row_39	MBTPS1	membrane bound transcription factor peptidase, site 1 [Source:HGNC Symbol;Acc:HGNC:15456]	3833	0.07721803337335587	0.3547732	No	
+row_40	GSK3A	glycogen synthase kinase 3 alpha [Source:HGNC Symbol;Acc:HGNC:4616]	4055	0.052664659917354584	0.3226835	No	
+row_41	PIK3CA	phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]	4069	0.05077234283089638	0.3233368	No	
+row_42	CREB1	cAMP responsive element binding protein 1 [Source:HGNC Symbol;Acc:HGNC:2345]	4248	0.03162115067243576	0.29691538	No	
+row_43	LPIN1	lipin 1 [Source:HGNC Symbol;Acc:HGNC:13345]	4302	0.024858467280864716	0.28987142	No	
+row_44	AMFR	autocrine motility factor receptor [Source:HGNC Symbol;Acc:HGNC:463]	4580	-0.007397576700896025	0.24652654	No	
+row_45	SREBF1	sterol regulatory element binding transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:11289]	4868	-0.041367460042238235	0.20341316	No	
+row_46	CAMP	cathelicidin antimicrobial peptide [Source:HGNC Symbol;Acc:HGNC:1472]	5082	-0.07116957753896713	0.17357296	No	
+row_47	ACSS1	acyl-CoA synthetase short chain family member 1 [Source:HGNC Symbol;Acc:HGNC:16091]	5536	-0.14306209981441498	0.109667726	No	
+row_48	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	5608	-0.15711429715156555	0.1068304	No	
+row_49	MED15	mediator complex subunit 15 [Source:HGNC Symbol;Acc:HGNC:14248]	6086	-0.28572964668273926	0.04673931	No	

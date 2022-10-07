@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SHC1	SHC adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:10840]	1474	0.12025047093629837	-0.30273834	No	
+row_1	IRS2	insulin receptor substrate 2 [Source:HGNC Symbol;Acc:HGNC:6126]	1662	0.08562630414962769	-0.3252063	No	
+row_2	PTPN11	protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]	2178	0.0019884875509887934	-0.4400458	No	
+row_3	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	2540	-0.05389563739299774	-0.50865316	No	
+row_4	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	2545	-0.05423496663570404	-0.49726427	No	
+row_5	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	2709	-0.07952772825956345	-0.5157409	No	
+row_6	MAPK14	mitogen-activated protein kinase 14 [Source:HGNC Symbol;Acc:HGNC:6876]	2737	-0.08417627215385437	-0.50271904	No	
+row_7	RELA	RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]	2795	-0.09420573711395264	-0.49414143	No	
+row_8	FES	FES proto-oncogene, tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:3657]	2959	-0.12181967496871948	-0.50303876	No	
+row_9	STAT3	signal transducer and activator of transcription 3 [Source:HGNC Symbol;Acc:HGNC:11364]	2999	-0.1279556006193161	-0.48278722	No	
+row_10	STAT6	signal transducer and activator of transcription 6 [Source:HGNC Symbol;Acc:HGNC:11368]	4034	-0.3656519651412964	-0.63144135	Yes	
+row_11	INPP5D	inositol polyphosphate-5-phosphatase D [Source:HGNC Symbol;Acc:HGNC:6079]	4139	-0.40583691000938416	-0.5628001	Yes	
+row_12	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	4249	-0.4621674120426178	-0.4825192	Yes	
+row_13	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	4299	-0.5004723072052002	-0.3801303	Yes	
+row_14	PTPN6	protein tyrosine phosphatase non-receptor type 6 [Source:HGNC Symbol;Acc:HGNC:9658]	4338	-0.5407134294509888	-0.26616415	Yes	
+row_15	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	4388	-0.6091663241386414	-0.13915579	Yes	
+row_16	FLNA	filamin A [Source:HGNC Symbol;Acc:HGNC:3754]	4433	-0.7072716951370239	0.011193019	Yes	

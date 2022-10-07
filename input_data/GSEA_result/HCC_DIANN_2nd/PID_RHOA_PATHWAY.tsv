@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RDX	radixin [Source:HGNC Symbol;Acc:HGNC:9944]	857	0.2686235010623932	-0.14091071	No	
+row_1	MAP2K4	mitogen-activated protein kinase kinase 4 [Source:HGNC Symbol;Acc:HGNC:6844]	1696	0.07863791286945343	-0.31359607	No	
+row_2	LIMK2	LIM domain kinase 2 [Source:HGNC Symbol;Acc:HGNC:6614]	2025	0.025134963914752007	-0.38225695	No	
+row_3	SRF	serum response factor [Source:HGNC Symbol;Acc:HGNC:11291]	2032	0.024469461292028427	-0.37895983	No	
+row_4	ROCK2	Rho associated coiled-coil containing protein kinase 2 [Source:HGNC Symbol;Acc:HGNC:10252]	2055	0.020863153040409088	-0.37992844	No	
+row_5	DIAPH1	diaphanous related formin 1 [Source:HGNC Symbol;Acc:HGNC:2876]	2570	-0.057699497789144516	-0.4840526	No	
+row_6	CDC42	cell division cycle 42 [Source:HGNC Symbol;Acc:HGNC:1736]	3200	-0.16160500049591064	-0.5942169	No	
+row_7	RHOA	ras homolog family member A [Source:HGNC Symbol;Acc:HGNC:667]	3416	-0.20156019926071167	-0.6041246	No	
+row_8	PPP1R12A	protein phosphatase 1 regulatory subunit 12A [Source:HGNC Symbol;Acc:HGNC:7618]	3658	-0.2466956377029419	-0.61129344	Yes	
+row_9	ROCK1	Rho associated coiled-coil containing protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:10251]	3903	-0.3155460059642792	-0.60607743	Yes	
+row_10	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	4127	-0.40042057633399963	-0.58006495	Yes	
+row_11	VCL	vinculin [Source:HGNC Symbol;Acc:HGNC:12665]	4251	-0.46226051449775696	-0.51993906	Yes	
+row_12	EZR	ezrin [Source:HGNC Symbol;Acc:HGNC:12691]	4308	-0.507451057434082	-0.43624458	Yes	
+row_13	PKN1	protein kinase N1 [Source:HGNC Symbol;Acc:HGNC:9405]	4342	-0.5446467399597168	-0.34034753	Yes	
+row_14	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	4344	-0.5496487021446228	-0.23633833	Yes	
+row_15	TLN1	talin 1 [Source:HGNC Symbol;Acc:HGNC:11845]	4421	-0.6702097058296204	-0.12625621	Yes	
+row_16	MSN	moesin [Source:HGNC Symbol;Acc:HGNC:7373]	4443	-0.7377930879592896	0.008954645	Yes	

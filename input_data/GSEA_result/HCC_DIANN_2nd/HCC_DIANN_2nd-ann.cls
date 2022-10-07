@@ -1,0 +1,4 @@
+51	2	1																																																
+#CCA	HCC																																																	
+CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	CCA	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC	HCC
+C_b10_2	C_b11_2	C_b12_11	C_b14_3	C_b17_10	C_b17_4	C_b18_7	C_b19_12	C_b21_6	C_b22_6	C_b22_8	C_b23_8	C_b24_3	C_b5_13	C_b6_6	C_b7_6	C_b8_4	H_b10_3	H_b10_4	H_b11_3	H_b11_4	H_b12_12	H_b12_13	H_b14_4	H_b14_5	H_b17_11	H_b17_12	H_b17_5	H_b17_6	H_b18_8	H_b18_9	H_b19_13	H_b19_14	H_b21_7	H_b21_9	H_b22_10	H_b22_11	H_b22_7	H_b22_9	H_b23_10	H_b23_9	H_b24_4	H_b24_5	H_b5_14	H_b5_15	H_b6_7	H_b6_8	H_b7_7	H_b7_8	H_b8_5	H_b8_6

@@ -1,0 +1,42 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PIPOX	pipecolic acid and sarcosine oxidase [Source:HGNC Symbol;Acc:HGNC:17804]	21	0.8854730725288391	0.036336478	Yes	
+row_1	DHRS4	dehydrogenase/reductase 4 [Source:HGNC Symbol;Acc:HGNC:16985]	30	0.8646688461303711	0.07463413	Yes	
+row_2	ACAA1	acetyl-CoA acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:82]	35	0.8568642139434814	0.11347014	Yes	
+row_3	HSD17B4	hydroxysteroid 17-beta dehydrogenase 4 [Source:HGNC Symbol;Acc:HGNC:5213]	37	0.8548938035964966	0.15289	Yes	
+row_4	AGXT	alanine--glyoxylate and serine--pyruvate aminotransferase [Source:HGNC Symbol;Acc:HGNC:341]	55	0.8163315653800964	0.18692039	Yes	
+row_5	PHYH	phytanoyl-CoA 2-hydroxylase [Source:HGNC Symbol;Acc:HGNC:8940]	59	0.8087909817695618	0.22375211	Yes	
+row_6	ACOX2	acyl-CoA oxidase 2 [Source:HGNC Symbol;Acc:HGNC:120]	60	0.8035763502120972	0.26101723	Yes	
+row_7	CAT	catalase [Source:HGNC Symbol;Acc:HGNC:1516]	63	0.7952821254730225	0.2974476	Yes	
+row_8	PECR	peroxisomal trans-2-enoyl-CoA reductase [Source:HGNC Symbol;Acc:HGNC:18281]	64	0.7948645949363708	0.3343087	Yes	
+row_9	ECI2	enoyl-CoA delta isomerase 2 [Source:HGNC Symbol;Acc:HGNC:14601]	69	0.7853850722312927	0.36982995	Yes	
+row_10	HAO1	hydroxyacid oxidase 1 [Source:HGNC Symbol;Acc:HGNC:4809]	82	0.7528010010719299	0.40203953	Yes	
+row_11	DECR2	2,4-dienoyl-CoA reductase 2 [Source:HGNC Symbol;Acc:HGNC:2754]	89	0.7372115850448608	0.43487662	Yes	
+row_12	EPHX2	epoxide hydrolase 2 [Source:HGNC Symbol;Acc:HGNC:3402]	102	0.7226380705833435	0.46568742	Yes	
+row_13	BAAT	bile acid-CoA:amino acid N-acyltransferase [Source:HGNC Symbol;Acc:HGNC:932]	130	0.7005621790885925	0.4920984	Yes	
+row_14	EHHADH	enoyl-CoA hydratase and 3-hydroxyacyl CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:3247]	136	0.6903603076934814	0.52298784	Yes	
+row_15	ECH1	enoyl-CoA hydratase 1 [Source:HGNC Symbol;Acc:HGNC:3149]	147	0.6747581958770752	0.5520284	Yes	
+row_16	CROT	carnitine O-octanoyltransferase [Source:HGNC Symbol;Acc:HGNC:2366]	177	0.6434767246246338	0.57534194	Yes	
+row_17	GSTK1	glutathione S-transferase kappa 1 [Source:HGNC Symbol;Acc:HGNC:16906]	180	0.6418590545654297	0.6046575	Yes	
+row_18	IDH1	isocitrate dehydrogenase (NADP(+)) 1 [Source:HGNC Symbol;Acc:HGNC:5382]	187	0.6294845938682556	0.6324988	Yes	
+row_19	DAO	D-amino acid oxidase [Source:HGNC Symbol;Acc:HGNC:2671]	194	0.6236053109169006	0.6600675	Yes	
+row_20	ACOT2	acyl-CoA thioesterase 2 [Source:HGNC Symbol;Acc:HGNC:18431]	200	0.6201921105384827	0.68770295	Yes	
+row_21	CRAT	carnitine O-acetyltransferase [Source:HGNC Symbol;Acc:HGNC:2342]	204	0.613689124584198	0.715487	Yes	
+row_22	ACOX1	acyl-CoA oxidase 1 [Source:HGNC Symbol;Acc:HGNC:119]	224	0.5973799824714661	0.7389136	Yes	
+row_23	AMACR	alpha-methylacyl-CoA racemase [Source:HGNC Symbol;Acc:HGNC:451]	257	0.5741816163063049	0.7583384	Yes	
+row_24	HACL1	2-hydroxyacyl-CoA lyase 1 [Source:HGNC Symbol;Acc:HGNC:17856]	300	0.5424188375473022	0.7740395	Yes	
+row_25	HMGCL	3-hydroxy-3-methylglutaryl-CoA lyase [Source:HGNC Symbol;Acc:HGNC:5005]	336	0.5180332064628601	0.7901853	Yes	
+row_26	SCP2	sterol carrier protein 2 [Source:HGNC Symbol;Acc:HGNC:10606]	356	0.5047739148139954	0.8093173	Yes	
+row_27	MLYCD	malonyl-CoA decarboxylase [Source:HGNC Symbol;Acc:HGNC:7150]	638	0.36469006538391113	0.7629839	No	
+row_28	ACOT8	acyl-CoA thioesterase 8 [Source:HGNC Symbol;Acc:HGNC:15919]	751	0.3150045573711395	0.75238377	No	
+row_29	PEX1	peroxisomal biogenesis factor 1 [Source:HGNC Symbol;Acc:HGNC:8850]	798	0.2903260886669159	0.75549406	No	
+row_30	ACOT4	acyl-CoA thioesterase 4 [Source:HGNC Symbol;Acc:HGNC:19748]	868	0.26653096079826355	0.7523241	No	
+row_31	PEX14	peroxisomal biogenesis factor 14 [Source:HGNC Symbol;Acc:HGNC:8856]	949	0.23937897384166718	0.74541926	No	
+row_32	ACOX3	acyl-CoA oxidase 3, pristanoyl [Source:HGNC Symbol;Acc:HGNC:121]	1147	0.18373125791549683	0.7096002	No	
+row_33	AGPS	alkylglycerone phosphate synthase [Source:HGNC Symbol;Acc:HGNC:327]	1601	0.09475785493850708	0.6120364	No	
+row_34	PEX5	peroxisomal biogenesis factor 5 [Source:HGNC Symbol;Acc:HGNC:9719]	1688	0.08112012594938278	0.596442	No	
+row_35	USP9X	ubiquitin specific peptidase 9 X-linked [Source:HGNC Symbol;Acc:HGNC:12632]	1725	0.07350671291351318	0.5917481	No	
+row_36	SLC27A2	solute carrier family 27 member 2 [Source:HGNC Symbol;Acc:HGNC:10996]	1823	0.058831389993429184	0.5726443	No	
+row_37	PEX6	peroxisomal biogenesis factor 6 [Source:HGNC Symbol;Acc:HGNC:8859]	2104	0.013079915195703506	0.51023036	No	
+row_38	NUDT19	nudix hydrolase 19 [Source:HGNC Symbol;Acc:HGNC:32036]	2553	-0.05514700710773468	0.411955	No	
+row_39	LONP2	lon peptidase 2, peroxisomal [Source:HGNC Symbol;Acc:HGNC:20598]	3583	-0.2323157787322998	0.19112818	No	
+row_40	IDE	insulin degrading enzyme [Source:HGNC Symbol;Acc:HGNC:5381]	3627	-0.24178366363048553	0.19266252	No	

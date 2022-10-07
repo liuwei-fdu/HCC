@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ITGA6	integrin subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:6142]	3197	0.1504100263118744	-0.46116555	No	
+row_1	ITGA2B	integrin subunit alpha 2b [Source:HGNC Symbol;Acc:HGNC:6138]	3232	0.145086869597435	-0.42700025	No	
+row_2	ITGA5	integrin subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:6141]	3255	0.14190258085727692	-0.39181727	No	
+row_3	ITGB3	integrin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6156]	3455	0.11913364380598068	-0.39063358	No	
+row_4	ITGAX	integrin subunit alpha X [Source:HGNC Symbol;Acc:HGNC:6152]	3462	0.1186075285077095	-0.3592806	No	
+row_5	ITGB2	integrin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6155]	4685	-0.018823374062776566	-0.5460823	No	
+row_6	ITGA4	integrin subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:6140]	4945	-0.050602905452251434	-0.5729823	Yes	
+row_7	ITGB5	integrin subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:6160]	5039	-0.06577195972204208	-0.56968	Yes	
+row_8	ITGAM	integrin subunit alpha M [Source:HGNC Symbol;Acc:HGNC:6149]	5197	-0.08827944844961166	-0.570301	Yes	
+row_9	ITGAV	integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150]	5431	-0.12628154456615448	-0.5725111	Yes	
+row_10	ITGAL	integrin subunit alpha L [Source:HGNC Symbol;Acc:HGNC:6148]	5532	-0.14259521663188934	-0.54939014	Yes	
+row_11	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	5660	-0.16702476143836975	-0.523858	Yes	
+row_12	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	6293	-0.41428908705711365	-0.5103141	Yes	
+row_13	ITGA3	integrin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6139]	6361	-0.562480628490448	-0.3676807	Yes	
+row_14	ITGB4	integrin subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:6158]	6373	-0.6670523285865784	-0.18777837	Yes	
+row_15	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6376	-0.6942473649978638	9.423592E-4	Yes	

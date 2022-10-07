@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GLUD1	glutamate dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:4335]	13	0.9236881732940674	0.07924649	Yes	
+row_1	ALDH4A1	aldehyde dehydrogenase 4 family member A1 [Source:HGNC Symbol;Acc:HGNC:406]	39	0.8486538529396057	0.14912817	Yes	
+row_2	ASL	argininosuccinate lyase [Source:HGNC Symbol;Acc:HGNC:746]	44	0.8302331566810608	0.22207986	Yes	
+row_3	ABAT	4-aminobutyrate aminotransferase [Source:HGNC Symbol;Acc:HGNC:23]	47	0.8225290775299072	0.2947947	Yes	
+row_4	AGXT	alanine--glyoxylate and serine--pyruvate aminotransferase [Source:HGNC Symbol;Acc:HGNC:341]	55	0.8163315653800964	0.36583722	Yes	
+row_5	CPS1	carbamoyl-phosphate synthase 1 [Source:HGNC Symbol;Acc:HGNC:2323]	72	0.7784369587898254	0.43149108	Yes	
+row_6	GOT2	glutamic-oxaloacetic transaminase 2 [Source:HGNC Symbol;Acc:HGNC:4433]	119	0.7082268595695496	0.48417336	Yes	
+row_7	ASS1	argininosuccinate synthase 1 [Source:HGNC Symbol;Acc:HGNC:758]	205	0.6123301982879639	0.5195813	Yes	
+row_8	GOT1	glutamic-oxaloacetic transaminase 1 [Source:HGNC Symbol;Acc:HGNC:4432]	320	0.5277600884437561	0.5409646	Yes	
+row_9	GLUD2	glutamate dehydrogenase 2 [Source:HGNC Symbol;Acc:HGNC:4336]	358	0.5021860003471375	0.5773377	Yes	
+row_10	NIT2	nitrilase family member 2 [Source:HGNC Symbol;Acc:HGNC:29878]	361	0.5010179281234741	0.62145436	Yes	
+row_11	ADSS1	adenylosuccinate synthase 1 [Source:HGNC Symbol;Acc:HGNC:20093]	382	0.4880387485027313	0.6603807	Yes	
+row_12	GPT	glutamic--pyruvic transaminase [Source:HGNC Symbol;Acc:HGNC:4552]	435	0.4543592929840088	0.6891364	Yes	
+row_13	GLUL	glutamate-ammonia ligase [Source:HGNC Symbol;Acc:HGNC:4341]	754	0.3110579550266266	0.6455043	No	
+row_14	AGXT2	alanine--glyoxylate aminotransferase 2 [Source:HGNC Symbol;Acc:HGNC:14412]	1196	0.17346574366092682	0.562055	No	
+row_15	ADSL	adenylosuccinate lyase [Source:HGNC Symbol;Acc:HGNC:291]	1839	0.05628181993961334	0.42311504	No	
+row_16	PPAT	phosphoribosyl pyrophosphate amidotransferase [Source:HGNC Symbol;Acc:HGNC:9238]	1901	0.045459967106580734	0.41348153	No	
+row_17	CAD	carbamoyl-phosphate synthetase 2, aspartate transcarbamylase, and dihydroorotase [Source:HGNC Symbol;Acc:HGNC:1424]	2902	-0.11407064646482468	0.19941278	No	
+row_18	ALDH5A1	aldehyde dehydrogenase 5 family member A1 [Source:HGNC Symbol;Acc:HGNC:408]	2914	-0.11502717435359955	0.20717798	No	
+row_19	GLS	glutaminase [Source:HGNC Symbol;Acc:HGNC:4331]	3690	-0.2552095055580139	0.056111846	No	
+row_20	GFPT1	glutamine--fructose-6-phosphate transaminase 1 [Source:HGNC Symbol;Acc:HGNC:4241]	3730	-0.2651022672653198	0.07094808	No	
+row_21	ASNS	asparagine synthetase (glutamine-hydrolyzing) [Source:HGNC Symbol;Acc:HGNC:753]	3761	-0.274334579706192	0.08862345	No	
+row_22	IL4I1	interleukin 4 induced 1 [Source:HGNC Symbol;Acc:HGNC:19094]	4100	-0.38937443494796753	0.047473233	No	
+row_23	ADSS2	adenylosuccinate synthase 2 [Source:HGNC Symbol;Acc:HGNC:292]	4189	-0.4292009174823761	0.065919355	No	

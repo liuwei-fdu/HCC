@@ -1,0 +1,24 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ITGA6	integrin subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:6142]	3197	0.1504100263118744	-0.48136708	No	
+row_1	COL18A1	collagen type XVIII alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2195]	3215	0.1476275622844696	-0.46312833	No	
+row_2	ITGAV	integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150]	5431	-0.12628154456615448	-0.79351074	Yes	
+row_3	LAMB2	laminin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6487]	5466	-0.13264034688472748	-0.7800679	Yes	
+row_4	LAMA5	laminin subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:6485]	5631	-0.16158650815486908	-0.78296506	Yes	
+row_5	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	5660	-0.16702476143836975	-0.76370823	Yes	
+row_6	NID1	nidogen 1 [Source:HGNC Symbol;Acc:HGNC:7821]	5816	-0.20619158446788788	-0.7588719	Yes	
+row_7	COL4A1	collagen type IV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2202]	5851	-0.21611158549785614	-0.7336052	Yes	
+row_8	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	5909	-0.2330743372440338	-0.70955205	Yes	
+row_9	LAMC1	laminin subunit gamma 1 [Source:HGNC Symbol;Acc:HGNC:6492]	5918	-0.23487910628318787	-0.6775389	Yes	
+row_10	LAMA4	laminin subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:6484]	5997	-0.25199687480926514	-0.6541072	Yes	
+row_11	NID2	nidogen 2 [Source:HGNC Symbol;Acc:HGNC:13389]	6002	-0.25398048758506775	-0.61875933	Yes	
+row_12	COL4A2	collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203]	6070	-0.2804085612297058	-0.58957356	Yes	
+row_13	COL4A3	collagen type IV alpha 3 chain [Source:HGNC Symbol;Acc:HGNC:2204]	6110	-0.2956767678260803	-0.55382246	Yes	
+row_14	LAMA2	laminin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6482]	6118	-0.2982749342918396	-0.5126719	Yes	
+row_15	LAMB1	laminin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6486]	6204	-0.3373664319515228	-0.47824812	Yes	
+row_16	LAMC3	laminin subunit gamma 3 [Source:HGNC Symbol;Acc:HGNC:6494]	6227	-0.35251879692077637	-0.43177232	Yes	
+row_17	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	6293	-0.41428908705711365	-0.38330764	Yes	
+row_18	LAMA3	laminin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6483]	6300	-0.42772966623306274	-0.32366234	Yes	
+row_19	LAMB3	laminin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6490]	6314	-0.447714626789093	-0.26228678	Yes	
+row_20	ITGA3	integrin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6139]	6361	-0.562480628490448	-0.18984309	Yes	
+row_21	ITGB4	integrin subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:6158]	6373	-0.6670523285865784	-0.09708348	Yes	
+row_22	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6376	-0.6942473649978638	9.4345317E-4	Yes	

@@ -1,0 +1,24 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SHC1	SHC adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:10840]	1474	0.12025047093629837	-0.31000233	No	
+row_1	PTK2	protein tyrosine kinase 2 [Source:HGNC Symbol;Acc:HGNC:9611]	1563	0.10339640825986862	-0.31217355	No	
+row_2	MAP2K4	mitogen-activated protein kinase kinase 4 [Source:HGNC Symbol;Acc:HGNC:6844]	1696	0.07863791286945343	-0.3284117	No	
+row_3	PTPN11	protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]	2178	0.0019884875509887934	-0.43589744	No	
+row_4	IKBKG	inhibitor of nuclear factor kappa B kinase regulatory subunit gamma [Source:HGNC Symbol;Acc:HGNC:5961]	2241	-0.010546562261879444	-0.448005	No	
+row_5	VAV1	vav guanine nucleotide exchange factor 1 [Source:HGNC Symbol;Acc:HGNC:12657]	2338	-0.024933716282248497	-0.46529144	No	
+row_6	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	2540	-0.05389563739299774	-0.5011979	No	
+row_7	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	2545	-0.05423496663570404	-0.49288616	No	
+row_8	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	2709	-0.07952772825956345	-0.51592237	No	
+row_9	RELA	RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]	2795	-0.09420573711395264	-0.5189815	No	
+row_10	FYN	FYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4037]	2926	-0.1176118329167366	-0.5281541	No	
+row_11	HRAS	HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]	3307	-0.17993547022342682	-0.5827862	No	
+row_12	PAK2	p21 (RAC1) activated kinase 2 [Source:HGNC Symbol;Acc:HGNC:8591]	3682	-0.25285789370536804	-0.6236921	Yes	
+row_13	LYN	LYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6735]	3878	-0.3071603775024414	-0.6152527	Yes	
+row_14	MAP2K2	mitogen-activated protein kinase kinase 2 [Source:HGNC Symbol;Acc:HGNC:6842]	3977	-0.3398708999156952	-0.5795154	Yes	
+row_15	RASA1	RAS p21 protein activator 1 [Source:HGNC Symbol;Acc:HGNC:9871]	3992	-0.3452596068382263	-0.52403337	Yes	
+row_16	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	4249	-0.4621674120426178	-0.50294995	Yes	
+row_17	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	4299	-0.5004723072052002	-0.42896068	Yes	
+row_18	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	4302	-0.5025738477706909	-0.34407887	Yes	
+row_19	HCLS1	hematopoietic cell-specific Lyn substrate 1 [Source:HGNC Symbol;Acc:HGNC:4844]	4333	-0.5355732440948486	-0.25987083	Yes	
+row_20	LCP2	lymphocyte cytosolic protein 2 [Source:HGNC Symbol;Acc:HGNC:6529]	4351	-0.5543729662895203	-0.16955669	Yes	
+row_21	WIPF1	WAS/WASL interacting protein family member 1 [Source:HGNC Symbol;Acc:HGNC:12736]	4367	-0.57051682472229	-0.07605323	Yes	
+row_22	FCER1G	Fc fragment of IgE receptor Ig [Source:HGNC Symbol;Acc:HGNC:3611]	4378	-0.5997666120529175	0.02353726	Yes	

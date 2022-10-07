@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	1	0.9914716482162476	0.13612026	Yes	
+row_1	APOC3	apolipoprotein C3 [Source:HGNC Symbol;Acc:HGNC:610]	21	0.8155373334884644	0.24523179	Yes	
+row_2	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	26	0.807066798210144	0.35553458	Yes	
+row_3	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	48	0.7697515487670898	0.45803884	Yes	
+row_4	SAR1B	secretion associated Ras related GTPase 1B [Source:HGNC Symbol;Acc:HGNC:10535]	186	0.6536380052566528	0.52636725	Yes	
+row_5	APOB	apolipoprotein B [Source:HGNC Symbol;Acc:HGNC:603]	238	0.6303860545158386	0.60500467	Yes	
+row_6	P4HB	prolyl 4-hydroxylase subunit beta [Source:HGNC Symbol;Acc:HGNC:8548]	274	0.6153411269187927	0.6840868	Yes	
+row_7	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	477	0.5519270896911621	0.7282278	Yes	
+row_8	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	514	0.5415748953819275	0.79701376	Yes	
+row_9	A2M	alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7]	1565	0.34868693351745605	0.68005365	No	
+row_10	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	2361	0.248153418302536	0.5893192	No	
+row_11	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	4350	0.019859179854393005	0.27986297	No	
+row_12	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4416	0.013333897106349468	0.27148843	No	
+row_13	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	5083	-0.0711827278137207	0.17668702	No	
+row_14	APOA4	apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602]	5783	-0.19748839735984802	0.09406412	No	

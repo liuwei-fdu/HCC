@@ -1,0 +1,29 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IRF6	interferon regulatory factor 6 [Source:HGNC Symbol;Acc:HGNC:6121]	1496	0.11559475213289261	-0.32326782	No	
+row_1	PTPN11	protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]	2178	0.0019884875509887934	-0.47588113	No	
+row_2	STAT2	signal transducer and activator of transcription 2 [Source:HGNC Symbol;Acc:HGNC:11363]	2456	-0.04251135140657425	-0.53346246	No	
+row_3	ADAR	adenosine deaminase RNA specific [Source:HGNC Symbol;Acc:HGNC:225]	2731	-0.08349649608135223	-0.585953	No	
+row_4	BST2	bone marrow stromal cell antigen 2 [Source:HGNC Symbol;Acc:HGNC:1119]	2870	-0.10792145133018494	-0.60529023	No	
+row_5	IFIT5	interferon induced protein with tetratricopeptide repeats 5 [Source:HGNC Symbol;Acc:HGNC:13328]	3025	-0.1318008303642273	-0.62564427	No	
+row_6	HLA-C	major histocompatibility complex, class I, C [Source:HGNC Symbol;Acc:HGNC:4933]	3420	-0.20206034183502197	-0.6922855	Yes	
+row_7	PSMB8	proteasome 20S subunit beta 8 [Source:HGNC Symbol;Acc:HGNC:9545]	3451	-0.20793092250823975	-0.67660624	Yes	
+row_8	IFITM3	interferon induced transmembrane protein 3 [Source:HGNC Symbol;Acc:HGNC:5414]	3482	-0.2130749523639679	-0.6603726	Yes	
+row_9	IFIT1	interferon induced protein with tetratricopeptide repeats 1 [Source:HGNC Symbol;Acc:HGNC:5407]	3544	-0.22471657395362854	-0.64984107	Yes	
+row_10	IFIT2	interferon induced protein with tetratricopeptide repeats 2 [Source:HGNC Symbol;Acc:HGNC:5409]	3586	-0.23267649114131927	-0.6339633	Yes	
+row_11	HLA-G	major histocompatibility complex, class I, G [Source:HGNC Symbol;Acc:HGNC:4964]	3640	-0.24483270943164825	-0.6194682	Yes	
+row_12	IFIT3	interferon induced protein with tetratricopeptide repeats 3 [Source:HGNC Symbol;Acc:HGNC:5411]	3666	-0.24774612486362457	-0.5983755	Yes	
+row_13	HLA-A	major histocompatibility complex, class I, A [Source:HGNC Symbol;Acc:HGNC:4931]	3848	-0.2990070581436157	-0.60676664	Yes	
+row_14	HLA-B	major histocompatibility complex, class I, B [Source:HGNC Symbol;Acc:HGNC:4932]	3855	-0.30048272013664246	-0.5757258	Yes	
+row_15	PTPN1	protein tyrosine phosphatase non-receptor type 1 [Source:HGNC Symbol;Acc:HGNC:9642]	3884	-0.31022411584854126	-0.5485721	Yes	
+row_16	IFI35	interferon induced protein 35 [Source:HGNC Symbol;Acc:HGNC:5399]	4147	-0.40937113761901855	-0.5632455	Yes	
+row_17	ABCE1	ATP binding cassette subfamily E member 1 [Source:HGNC Symbol;Acc:HGNC:69]	4179	-0.4265676736831665	-0.52422506	Yes	
+row_18	ISG20	interferon stimulated exonuclease gene 20 [Source:HGNC Symbol;Acc:HGNC:6130]	4183	-0.4276709258556366	-0.4788021	Yes	
+row_19	MX1	MX dynamin like GTPase 1 [Source:HGNC Symbol;Acc:HGNC:7532]	4259	-0.46613550186157227	-0.44539124	Yes	
+row_20	SAMHD1	SAM and HD domain containing deoxynucleoside triphosphate triphosphohydrolase 1 [Source:HGNC Symbol;Acc:HGNC:15925]	4278	-0.4839923679828644	-0.39726394	Yes	
+row_21	ISG15	ISG15 ubiquitin like modifier [Source:HGNC Symbol;Acc:HGNC:4053]	4307	-0.5071337819099426	-0.34888652	Yes	
+row_22	PTPN6	protein tyrosine phosphatase non-receptor type 6 [Source:HGNC Symbol;Acc:HGNC:9658]	4338	-0.5407134294509888	-0.2973386	Yes	
+row_23	OAS2	2'-5'-oligoadenylate synthetase 2 [Source:HGNC Symbol;Acc:HGNC:8087]	4340	-0.5440479516983032	-0.23892316	Yes	
+row_24	OAS3	2'-5'-oligoadenylate synthetase 3 [Source:HGNC Symbol;Acc:HGNC:8088]	4359	-0.5608172416687012	-0.18251534	Yes	
+row_25	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	4388	-0.6091663241386414	-0.123140424	Yes	
+row_26	MX2	MX dynamin like GTPase 2 [Source:HGNC Symbol;Acc:HGNC:7533]	4415	-0.6557632088661194	-0.058294255	Yes	
+row_27	GBP2	guanylate binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4183]	4427	-0.6803398132324219	0.012567134	Yes	

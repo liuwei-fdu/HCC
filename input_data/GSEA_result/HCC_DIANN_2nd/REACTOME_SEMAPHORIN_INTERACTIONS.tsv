@@ -1,0 +1,32 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NRP1	neuropilin 1 [Source:HGNC Symbol;Acc:HGNC:8004]	1095	0.19652986526489258	-0.2217798	No	
+row_1	ARHGAP35	Rho GTPase activating protein 35 [Source:HGNC Symbol;Acc:HGNC:4591]	1266	0.1619693785905838	-0.24007636	No	
+row_2	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	1284	0.15834003686904907	-0.22445954	No	
+row_3	MYH11	myosin heavy chain 11 [Source:HGNC Symbol;Acc:HGNC:7569]	2004	0.028367919847369194	-0.38244188	No	
+row_4	LIMK2	LIM domain kinase 2 [Source:HGNC Symbol;Acc:HGNC:6614]	2025	0.025134963914752007	-0.3838482	No	
+row_5	ROCK2	Rho associated coiled-coil containing protein kinase 2 [Source:HGNC Symbol;Acc:HGNC:10252]	2055	0.020863153040409088	-0.38779995	No	
+row_6	RHOC	ras homolog family member C [Source:HGNC Symbol;Acc:HGNC:669]	2088	0.01741800084710121	-0.39284825	No	
+row_7	GSK3B	glycogen synthase kinase 3 beta [Source:HGNC Symbol;Acc:HGNC:4617]	2103	0.01308167539536953	-0.39438656	No	
+row_8	HSP90AA1	heat shock protein 90 alpha family class A member 1 [Source:HGNC Symbol;Acc:HGNC:5253]	2120	0.011188303120434284	-0.39660642	No	
+row_9	FYN	FYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4037]	2926	-0.1176118329167366	-0.56294787	No	
+row_10	FES	FES proto-oncogene, tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:3657]	2959	-0.12181967496871948	-0.55518204	No	
+row_11	MYH10	myosin heavy chain 10 [Source:HGNC Symbol;Acc:HGNC:7568]	3339	-0.1855594962835312	-0.6175178	Yes	
+row_12	FARP2	FERM, ARH/RhoGEF and pleckstrin domain protein 2 [Source:HGNC Symbol;Acc:HGNC:16460]	3363	-0.1903485804796219	-0.59931976	Yes	
+row_13	PAK1	p21 (RAC1) activated kinase 1 [Source:HGNC Symbol;Acc:HGNC:8590]	3402	-0.19705146551132202	-0.58366746	Yes	
+row_14	RAC1	Rac family small GTPase 1 [Source:HGNC Symbol;Acc:HGNC:9801]	3409	-0.1991828978061676	-0.5605674	Yes	
+row_15	RHOA	ras homolog family member A [Source:HGNC Symbol;Acc:HGNC:667]	3416	-0.20156019926071167	-0.53717554	Yes	
+row_16	CDK5	cyclin dependent kinase 5 [Source:HGNC Symbol;Acc:HGNC:1774]	3509	-0.21747633814811707	-0.53114295	Yes	
+row_17	RRAS	RAS related [Source:HGNC Symbol;Acc:HGNC:10447]	3580	-0.23216573894023895	-0.51836693	Yes	
+row_18	PAK2	p21 (RAC1) activated kinase 2 [Source:HGNC Symbol;Acc:HGNC:8591]	3682	-0.25285789370536804	-0.5100128	Yes	
+row_19	DPYSL3	dihydropyrimidinase like 3 [Source:HGNC Symbol;Acc:HGNC:3015]	3782	-0.27981701493263245	-0.49790058	Yes	
+row_20	DPYSL2	dihydropyrimidinase like 2 [Source:HGNC Symbol;Acc:HGNC:3014]	3886	-0.31076276302337646	-0.4828884	Yes	
+row_21	ROCK1	Rho associated coiled-coil containing protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:10251]	3903	-0.3155460059642792	-0.44775173	Yes	
+row_22	HSP90AB1	heat shock protein 90 alpha family class B member 1 [Source:HGNC Symbol;Acc:HGNC:5258]	4024	-0.35902756452560425	-0.43063322	Yes	
+row_23	MYH14	myosin heavy chain 14 [Source:HGNC Symbol;Acc:HGNC:23212]	4104	-0.3901194632053375	-0.40049127	Yes	
+row_24	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	4127	-0.40042057633399963	-0.3562846	Yes	
+row_25	PTPRC	protein tyrosine phosphatase receptor type C [Source:HGNC Symbol;Acc:HGNC:9666]	4261	-0.4682745337486267	-0.32867664	Yes	
+row_26	MYL9	myosin light chain 9 [Source:HGNC Symbol;Acc:HGNC:15754]	4312	-0.5141746997833252	-0.2767958	Yes	
+row_27	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	4344	-0.5496487021446228	-0.21629417	Yes	
+row_28	MYL6	myosin light chain 6 [Source:HGNC Symbol;Acc:HGNC:7587]	4365	-0.5678201913833618	-0.15109195	Yes	
+row_29	TLN1	talin 1 [Source:HGNC Symbol;Acc:HGNC:11845]	4421	-0.6702097058296204	-0.081182405	Yes	
+row_30	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	4453	-0.7730321884155273	0.0067370585	Yes	

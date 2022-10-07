@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HADHA	hydroxyacyl-CoA dehydrogenase trifunctional multienzyme complex subunit alpha [Source:HGNC Symbol;Acc:HGNC:4801]	2	1.057974934577942	0.084324844	Yes	
+row_1	ACSL1	acyl-CoA synthetase long chain family member 1 [Source:HGNC Symbol;Acc:HGNC:3569]	9	0.9801715612411499	0.1615186	Yes	
+row_2	ACAT1	acetyl-CoA acetyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:93]	42	0.8353894352912903	0.22128169	Yes	
+row_3	ECHS1	enoyl-CoA hydratase, short chain 1 [Source:HGNC Symbol;Acc:HGNC:3151]	67	0.7899194359779358	0.27919507	Yes	
+row_4	ECI1	enoyl-CoA delta isomerase 1 [Source:HGNC Symbol;Acc:HGNC:2703]	78	0.765058696269989	0.33825547	Yes	
+row_5	ACADS	acyl-CoA dehydrogenase short chain [Source:HGNC Symbol;Acc:HGNC:90]	88	0.740122377872467	0.39554194	Yes	
+row_6	DECR1	2,4-dienoyl-CoA reductase 1 [Source:HGNC Symbol;Acc:HGNC:2753]	179	0.6422394514083862	0.42682385	Yes	
+row_7	CRAT	carnitine O-acetyltransferase [Source:HGNC Symbol;Acc:HGNC:2342]	204	0.613689124584198	0.47061628	Yes	
+row_8	GCDH	glutaryl-CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4189]	207	0.6114459037780762	0.5191617	Yes	
+row_9	HADH	hydroxyacyl-CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4799]	210	0.6070460081100464	0.56735456	Yes	
+row_10	ACSL5	acyl-CoA synthetase long chain family member 5 [Source:HGNC Symbol;Acc:HGNC:16526]	234	0.5872265696525574	0.60925084	Yes	
+row_11	ACADM	acyl-CoA dehydrogenase medium chain [Source:HGNC Symbol;Acc:HGNC:89]	271	0.5613688826560974	0.64616036	Yes	
+row_12	ACADVL	acyl-CoA dehydrogenase very long chain [Source:HGNC Symbol;Acc:HGNC:92]	365	0.4976164996623993	0.6651813	Yes	
+row_13	ACSL4	acyl-CoA synthetase long chain family member 4 [Source:HGNC Symbol;Acc:HGNC:3571]	395	0.47619178891181946	0.6968353	Yes	
+row_14	SLC25A20	solute carrier family 25 member 20 [Source:HGNC Symbol;Acc:HGNC:1421]	490	0.42000019550323486	0.70941275	Yes	
+row_15	CPT1A	carnitine palmitoyltransferase 1A [Source:HGNC Symbol;Acc:HGNC:2328]	523	0.4087277948856354	0.7349884	Yes	
+row_16	ACSS2	acyl-CoA synthetase short chain family member 2 [Source:HGNC Symbol;Acc:HGNC:15814]	550	0.39562150835990906	0.7608591	Yes	
+row_17	HADHB	hydroxyacyl-CoA dehydrogenase trifunctional multienzyme complex subunit beta [Source:HGNC Symbol;Acc:HGNC:4803]	572	0.38721466064453125	0.78717726	Yes	
+row_18	GK	glycerol kinase [Source:HGNC Symbol;Acc:HGNC:4289]	945	0.24067282676696777	0.7230538	No	
+row_19	CPT2	carnitine palmitoyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:2330]	1069	0.20407390594482422	0.71182734	No	
+row_20	DLD	dihydrolipoamide dehydrogenase [Source:HGNC Symbol;Acc:HGNC:2898]	1327	0.1510647088289261	0.6663085	No	
+row_21	ACSL3	acyl-CoA synthetase long chain family member 3 [Source:HGNC Symbol;Acc:HGNC:3570]	1789	0.065154068171978	0.5681659	No	
+row_22	TPI1	triosephosphate isomerase 1 [Source:HGNC Symbol;Acc:HGNC:12009]	2388	-0.033945176750421524	0.43680516	No	
+row_23	GPD2	glycerol-3-phosphate dehydrogenase 2 [Source:HGNC Symbol;Acc:HGNC:4456]	4144	-0.4081173837184906	0.07600899	No	

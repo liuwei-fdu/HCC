@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SARDH	sarcosine dehydrogenase [Source:HGNC Symbol;Acc:HGNC:10536]	12	0.9323781132698059	0.10408385	Yes	
+row_1	GLUD1	glutamate dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:4335]	13	0.9236881732940674	0.20985955	Yes	
+row_2	ACY1	aminoacylase 1 [Source:HGNC Symbol;Acc:HGNC:177]	38	0.8510837554931641	0.30194703	Yes	
+row_3	ASL	argininosuccinate lyase [Source:HGNC Symbol;Acc:HGNC:746]	44	0.8302331566810608	0.3959012	Yes	
+row_4	ARG1	arginase 1 [Source:HGNC Symbol;Acc:HGNC:663]	49	0.8219367861747742	0.48912925	Yes	
+row_5	OTC	ornithine carbamoyltransferase [Source:HGNC Symbol;Acc:HGNC:8512]	50	0.8210932612419128	0.58315635	Yes	
+row_6	CPS1	carbamoyl-phosphate synthase 1 [Source:HGNC Symbol;Acc:HGNC:2323]	72	0.7784369587898254	0.66759646	Yes	
+row_7	GATM	glycine amidinotransferase [Source:HGNC Symbol;Acc:HGNC:4175]	106	0.7198721766471863	0.7426431	Yes	
+row_8	ASS1	argininosuccinate synthase 1 [Source:HGNC Symbol;Acc:HGNC:758]	205	0.6123301982879639	0.79082024	Yes	
+row_9	GAMT	guanidinoacetate N-methyltransferase [Source:HGNC Symbol;Acc:HGNC:4136]	431	0.45719456672668457	0.79279494	Yes	
+row_10	PYCR3	pyrroline-5-carboxylate reductase 3 [Source:HGNC Symbol;Acc:HGNC:25846]	1021	0.21708853542804718	0.6857694	No	
+row_11	CKB	creatine kinase B [Source:HGNC Symbol;Acc:HGNC:1991]	1150	0.18346735835075378	0.6781181	No	
+row_12	NAGS	N-acetylglutamate synthase [Source:HGNC Symbol;Acc:HGNC:17996]	1766	0.06930157542228699	0.548347	No	
+row_13	SMS	spermine synthase [Source:HGNC Symbol;Acc:HGNC:11123]	2233	-0.009717701934278011	0.4451159	No	
+row_14	OAT	ornithine aminotransferase [Source:HGNC Symbol;Acc:HGNC:8091]	2234	-0.009948187507689	0.4462551	No	
+row_15	PYCR1	pyrroline-5-carboxylate reductase 1 [Source:HGNC Symbol;Acc:HGNC:9721]	2696	-0.07773647457361221	0.35193267	No	
+row_16	ALDH18A1	aldehyde dehydrogenase 18 family member A1 [Source:HGNC Symbol;Acc:HGNC:9722]	3071	-0.13908913731575012	0.28411657	No	
+row_17	SRM	spermidine synthase [Source:HGNC Symbol;Acc:HGNC:11296]	3774	-0.27792245149612427	0.15875508	No	

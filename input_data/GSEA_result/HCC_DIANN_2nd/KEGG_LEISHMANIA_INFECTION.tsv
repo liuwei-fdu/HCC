@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HLA-DRB3	major histocompatibility complex, class II, DR beta 3 [Source:HGNC Symbol;Acc:HGNC:4951]	2157	0.004766739904880524	-0.48302492	No	
+row_1	ITGA4	integrin subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:6140]	2491	-0.04675149917602539	-0.55173194	No	
+row_2	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	2540	-0.05389563739299774	-0.5556274	No	
+row_3	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	2709	-0.07952772825956345	-0.58316284	No	
+row_4	MAPK14	mitogen-activated protein kinase 14 [Source:HGNC Symbol;Acc:HGNC:6876]	2737	-0.08417627215385437	-0.5784916	No	
+row_5	RELA	RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]	2795	-0.09420573711395264	-0.57926905	No	
+row_6	HLA-DMA	major histocompatibility complex, class II, DM alpha [Source:HGNC Symbol;Acc:HGNC:4934]	2819	-0.09891803562641144	-0.57182276	No	
+row_7	MAPK13	mitogen-activated protein kinase 13 [Source:HGNC Symbol;Acc:HGNC:6875]	3019	-0.13105720281600952	-0.5997434	No	
+row_8	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	3103	-0.14502443373203278	-0.59987557	No	
+row_9	HLA-DRB4	major histocompatibility complex, class II, DR beta 4 [Source:HGNC Symbol;Acc:HGNC:4952]	3251	-0.17121116816997528	-0.611021	No	
+row_10	MYD88	MYD88 innate immune signal transduction adaptor [Source:HGNC Symbol;Acc:HGNC:7562]	3403	-0.19724933803081512	-0.61974573	No	
+row_11	HLA-DRA	major histocompatibility complex, class II, DR alpha [Source:HGNC Symbol;Acc:HGNC:4947]	3432	-0.2043357938528061	-0.5999891	No	
+row_12	CYBA	cytochrome b-245 alpha chain [Source:HGNC Symbol;Acc:HGNC:2577]	3819	-0.2907427251338959	-0.6494923	No	
+row_13	HLA-DQB1	major histocompatibility complex, class II, DQ beta 1 [Source:HGNC Symbol;Acc:HGNC:4944]	4091	-0.38552266359329224	-0.6611348	Yes	
+row_14	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	4127	-0.40042057633399963	-0.61796427	Yes	
+row_15	MARCKSL1	MARCKS like 1 [Source:HGNC Symbol;Acc:HGNC:7142]	4138	-0.40563780069351196	-0.56852365	Yes	
+row_16	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	4299	-0.5004723072052002	-0.54063237	Yes	
+row_17	FCGR3A	Fc fragment of IgG receptor IIIa [Source:HGNC Symbol;Acc:HGNC:3619]	4300	-0.500585675239563	-0.47685218	Yes	
+row_18	PTPN6	protein tyrosine phosphatase non-receptor type 6 [Source:HGNC Symbol;Acc:HGNC:9658]	4338	-0.5407134294509888	-0.41625524	Yes	
+row_19	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	4388	-0.6091663241386414	-0.3496272	Yes	
+row_20	ITGB2	integrin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6155]	4426	-0.6797338128089905	-0.2713175	Yes	
+row_21	NCF2	neutrophil cytosolic factor 2 [Source:HGNC Symbol;Acc:HGNC:7661]	4430	-0.6919474601745605	-0.18382835	Yes	
+row_22	NCF4	neutrophil cytosolic factor 4 [Source:HGNC Symbol;Acc:HGNC:7662]	4448	-0.7590643167495728	-0.09092678	Yes	
+row_23	ITGAM	integrin subunit alpha M [Source:HGNC Symbol;Acc:HGNC:6149]	4454	-0.7734814882278442	0.006502291	Yes	

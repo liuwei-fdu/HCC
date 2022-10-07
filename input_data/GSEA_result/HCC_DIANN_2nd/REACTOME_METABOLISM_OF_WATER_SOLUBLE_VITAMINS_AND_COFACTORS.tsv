@@ -1,0 +1,54 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CYB5A	cytochrome b5 type A [Source:HGNC Symbol;Acc:HGNC:2570]	10	0.9683260917663574	0.04313373	Yes	
+row_1	ALDH1L1	aldehyde dehydrogenase 1 family member L1 [Source:HGNC Symbol;Acc:HGNC:3978]	53	0.8187016248703003	0.072031915	Yes	
+row_2	MMUT	methylmalonyl-CoA mutase [Source:HGNC Symbol;Acc:HGNC:7526]	56	0.8141496181488037	0.10974404	Yes	
+row_3	FASN	fatty acid synthase [Source:HGNC Symbol;Acc:HGNC:3594]	75	0.7702857255935669	0.14178911	Yes	
+row_4	PC	pyruvate carboxylase [Source:HGNC Symbol;Acc:HGNC:8636]	80	0.7532361149787903	0.17619452	Yes	
+row_5	NADK2	NAD kinase 2, mitochondrial [Source:HGNC Symbol;Acc:HGNC:26404]	86	0.7427533864974976	0.20988289	Yes	
+row_6	MTHFD1	methylenetetrahydrofolate dehydrogenase, cyclohydrolase and formyltetrahydrofolate synthetase 1 [Source:HGNC Symbol;Acc:HGNC:7432]	162	0.6620669960975647	0.22399125	Yes	
+row_7	SHMT1	serine hydroxymethyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:10850]	163	0.6609336733818054	0.2549727	Yes	
+row_8	QPRT	quinolinate phosphoribosyltransferase [Source:HGNC Symbol;Acc:HGNC:9755]	174	0.6450119614601135	0.282951	Yes	
+row_9	MTHFS	methenyltetrahydrofolate synthetase [Source:HGNC Symbol;Acc:HGNC:7437]	186	0.629702627658844	0.30998597	Yes	
+row_10	MCCC2	methylcrotonoyl-CoA carboxylase 2 [Source:HGNC Symbol;Acc:HGNC:6937]	188	0.6267517805099487	0.33913943	Yes	
+row_11	PCCA	propionyl-CoA carboxylase subunit alpha [Source:HGNC Symbol;Acc:HGNC:8653]	191	0.6244315505027771	0.3679585	Yes	
+row_12	PCCB	propionyl-CoA carboxylase subunit beta [Source:HGNC Symbol;Acc:HGNC:8654]	192	0.6243968605995178	0.39722726	Yes	
+row_13	GSTO1	glutathione S-transferase omega 1 [Source:HGNC Symbol;Acc:HGNC:13312]	250	0.5783902406692505	0.41147554	Yes	
+row_14	MMAB	metabolism of cobalamin associated B [Source:HGNC Symbol;Acc:HGNC:19331]	260	0.5717589855194092	0.43624574	Yes	
+row_15	PNPO	pyridoxamine 5'-phosphate oxidase [Source:HGNC Symbol;Acc:HGNC:30260]	270	0.561524510383606	0.4605362	Yes	
+row_16	GPHN	gephyrin [Source:HGNC Symbol;Acc:HGNC:15465]	310	0.5334745049476624	0.47674137	Yes	
+row_17	NAPRT	nicotinate phosphoribosyltransferase [Source:HGNC Symbol;Acc:HGNC:30450]	311	0.532684862613678	0.50171113	Yes	
+row_18	CYP8B1	cytochrome P450 family 8 subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:2653]	338	0.5154335498809814	0.52000445	Yes	
+row_19	ACACB	acetyl-CoA carboxylase beta [Source:HGNC Symbol;Acc:HGNC:85]	344	0.5126386284828186	0.5429061	Yes	
+row_20	MCCC1	methylcrotonoyl-CoA carboxylase 1 [Source:HGNC Symbol;Acc:HGNC:6936]	352	0.507698118686676	0.5651248	Yes	
+row_21	NAXD	NAD(P)HX dehydratase [Source:HGNC Symbol;Acc:HGNC:25576]	445	0.44920289516448975	0.56541854	Yes	
+row_22	NT5E	5'-nucleotidase ecto [Source:HGNC Symbol;Acc:HGNC:8021]	564	0.39075055718421936	0.5571045	Yes	
+row_23	NAXE	NAD(P)HX epimerase [Source:HGNC Symbol;Acc:HGNC:18453]	647	0.36147499084472656	0.55554277	Yes	
+row_24	CUBN	cubilin [Source:HGNC Symbol;Acc:HGNC:2548]	695	0.33454030752182007	0.5606173	Yes	
+row_25	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:3356]	696	0.33429887890815735	0.5762877	Yes	
+row_26	AOX1	aldehyde oxidase 1 [Source:HGNC Symbol;Acc:HGNC:553]	753	0.31173262000083923	0.57826203	Yes	
+row_27	COASY	Coenzyme A synthase [Source:HGNC Symbol;Acc:HGNC:29932]	763	0.3074585497379303	0.5906431	Yes	
+row_28	CYB5R3	cytochrome b5 reductase 3 [Source:HGNC Symbol;Acc:HGNC:2873]	799	0.29000726342201233	0.59633833	Yes	
+row_29	SHMT2	serine hydroxymethyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:10852]	813	0.2852395176887512	0.60677516	Yes	
+row_30	FLAD1	flavin adenine dinucleotide synthetase 1 [Source:HGNC Symbol;Acc:HGNC:24671]	851	0.2696608901023865	0.6110653	Yes	
+row_31	MMAA	metabolism of cobalamin associated A [Source:HGNC Symbol;Acc:HGNC:18871]	876	0.26399603486061096	0.6180238	Yes	
+row_32	NFS1	NFS1 cysteine desulfurase [Source:HGNC Symbol;Acc:HGNC:15910]	886	0.25987061858177185	0.6281742	Yes	
+row_33	ACACA	acetyl-CoA carboxylase alpha [Source:HGNC Symbol;Acc:HGNC:84]	898	0.25652316212654114	0.6377163	Yes	
+row_34	NMNAT1	nicotinamide nucleotide adenylyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:17877]	974	0.23238380253314972	0.6316831	No	
+row_35	BST1	bone marrow stromal cell antigen 1 [Source:HGNC Symbol;Acc:HGNC:1118]	1531	0.10902971029281616	0.5113144	No	
+row_36	VNN2	vanin 2 [Source:HGNC Symbol;Acc:HGNC:12706]	1910	0.044326771050691605	0.42808414	No	
+row_37	PPCS	phosphopantothenoylcysteine synthetase [Source:HGNC Symbol;Acc:HGNC:25686]	1948	0.03785831481218338	0.4215085	No	
+row_38	VNN1	vanin 1 [Source:HGNC Symbol;Acc:HGNC:12705]	1972	0.03446941077709198	0.41793355	No	
+row_39	NNMT	nicotinamide N-methyltransferase [Source:HGNC Symbol;Acc:HGNC:7861]	2226	-0.008283264003694057	0.3612241	No	
+row_40	PARP10	poly(ADP-ribose) polymerase family member 10 [Source:HGNC Symbol;Acc:HGNC:25895]	2519	-0.051381517201662064	0.2977333	No	
+row_41	PDZD11	PDZ domain containing 11 [Source:HGNC Symbol;Acc:HGNC:28034]	2808	-0.09652084857225418	0.23726113	No	
+row_42	PTGIS	prostaglandin I2 synthase [Source:HGNC Symbol;Acc:HGNC:9603]	2825	-0.10029632598161697	0.23835163	No	
+row_43	AASDHPPT	aminoadipate-semialdehyde dehydrogenase-phosphopantetheinyl transferase [Source:HGNC Symbol;Acc:HGNC:14235]	2830	-0.10118371993303299	0.24219191	No	
+row_44	PARP9	poly(ADP-ribose) polymerase family member 9 [Source:HGNC Symbol;Acc:HGNC:24118]	2904	-0.11411091685295105	0.23106605	No	
+row_45	NAMPT	nicotinamide phosphoribosyltransferase [Source:HGNC Symbol;Acc:HGNC:30092]	3329	-0.18381142616271973	0.1439928	No	
+row_46	PDXK	pyridoxal kinase [Source:HGNC Symbol;Acc:HGNC:8819]	3567	-0.22903664410114288	0.10124216	No	
+row_47	PARP4	poly(ADP-ribose) polymerase family member 4 [Source:HGNC Symbol;Acc:HGNC:271]	3805	-0.2874094843864441	0.061227765	No	
+row_48	MTHFD1L	methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 1 like [Source:HGNC Symbol;Acc:HGNC:21055]	3856	-0.30074411630630493	0.06404109	No	
+row_49	PARP14	poly(ADP-ribose) polymerase family member 14 [Source:HGNC Symbol;Acc:HGNC:29232]	3918	-0.3214101493358612	0.06534064	No	
+row_50	NADSYN1	NAD synthetase 1 [Source:HGNC Symbol;Acc:HGNC:29832]	3952	-0.33270108699798584	0.07348856	No	
+row_51	SLC2A1	solute carrier family 2 member 1 [Source:HGNC Symbol;Acc:HGNC:11005]	4029	-0.3618685305118561	0.07329936	No	
+row_52	MTR	5-methyltetrahydrofolate-homocysteine methyltransferase [Source:HGNC Symbol;Acc:HGNC:7468]	4393	-0.6172711253166199	0.020311307	No	

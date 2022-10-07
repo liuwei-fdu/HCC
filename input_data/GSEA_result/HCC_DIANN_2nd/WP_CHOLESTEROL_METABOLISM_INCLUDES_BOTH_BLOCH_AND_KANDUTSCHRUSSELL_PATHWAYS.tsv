@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HMGCS2	3-hydroxy-3-methylglutaryl-CoA synthase 2 [Source:HGNC Symbol;Acc:HGNC:5008]	5	1.0357892513275146	0.08336786	Yes	
+row_1	ACSL1	acyl-CoA synthetase long chain family member 1 [Source:HGNC Symbol;Acc:HGNC:3569]	9	0.9801715612411499	0.16264771	Yes	
+row_2	CYP51A1	cytochrome P450 family 51 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2649]	61	0.7964626550674438	0.21617277	Yes	
+row_3	FASN	fatty acid synthase [Source:HGNC Symbol;Acc:HGNC:3594]	75	0.7702857255935669	0.2760885	Yes	
+row_4	CYP27A1	cytochrome P450 family 27 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2605]	79	0.7574195265769958	0.33719838	Yes	
+row_5	DHCR7	7-dehydrocholesterol reductase [Source:HGNC Symbol;Acc:HGNC:2860]	151	0.6692721843719482	0.37586117	Yes	
+row_6	MVK	mevalonate kinase [Source:HGNC Symbol;Acc:HGNC:7530]	172	0.6474679708480835	0.42418802	Yes	
+row_7	ACOT2	acyl-CoA thioesterase 2 [Source:HGNC Symbol;Acc:HGNC:18431]	200	0.6201921105384827	0.46871942	Yes	
+row_8	IDI1	isopentenyl-diphosphate delta isomerase 1 [Source:HGNC Symbol;Acc:HGNC:5387]	202	0.616477906703949	0.51878136	Yes	
+row_9	FDPS	farnesyl diphosphate synthase [Source:HGNC Symbol;Acc:HGNC:3631]	203	0.6148021817207336	0.56893104	Yes	
+row_10	HSD17B7	hydroxysteroid 17-beta dehydrogenase 7 [Source:HGNC Symbol;Acc:HGNC:5215]	324	0.5255740880966187	0.5848783	Yes	
+row_11	PMVK	phosphomevalonate kinase [Source:HGNC Symbol;Acc:HGNC:9141]	325	0.5252358317375183	0.627722	Yes	
+row_12	SCD	stearoyl-CoA desaturase [Source:HGNC Symbol;Acc:HGNC:10571]	357	0.5031454563140869	0.66180843	Yes	
+row_13	ACSL4	acyl-CoA synthetase long chain family member 4 [Source:HGNC Symbol;Acc:HGNC:3571]	395	0.47619178891181946	0.69235003	Yes	
+row_14	LSS	lanosterol synthase [Source:HGNC Symbol;Acc:HGNC:6708]	454	0.44311919808387756	0.7154822	Yes	
+row_15	DHCR24	24-dehydrocholesterol reductase [Source:HGNC Symbol;Acc:HGNC:2859]	534	0.40436142683029175	0.73074114	Yes	
+row_16	TM7SF2	transmembrane 7 superfamily member 2 [Source:HGNC Symbol;Acc:HGNC:11863]	535	0.40346473455429077	0.7636519	Yes	
+row_17	NSDHL	NAD(P) dependent steroid dehydrogenase-like [Source:HGNC Symbol;Acc:HGNC:13398]	562	0.3912079632282257	0.78972936	Yes	
+row_18	MVD	mevalonate diphosphate decarboxylase [Source:HGNC Symbol;Acc:HGNC:7529]	859	0.268444687128067	0.7452141	No	
+row_19	SQLE	squalene epoxidase [Source:HGNC Symbol;Acc:HGNC:11279]	962	0.23488102853298187	0.7414881	No	
+row_20	HMGCS1	3-hydroxy-3-methylglutaryl-CoA synthase 1 [Source:HGNC Symbol;Acc:HGNC:5007]	1006	0.22031289339065552	0.74981135	No	
+row_21	FDFT1	farnesyl-diphosphate farnesyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:3629]	1636	0.08982142060995102	0.6160118	No	
+row_22	ACSL3	acyl-CoA synthetase long chain family member 3 [Source:HGNC Symbol;Acc:HGNC:3570]	1789	0.065154068171978	0.58722275	No	
+row_23	LBR	lamin B receptor [Source:HGNC Symbol;Acc:HGNC:6518]	2148	0.005984337069094181	0.5073878	No	
+row_24	FADS2	fatty acid desaturase 2 [Source:HGNC Symbol;Acc:HGNC:3575]	2518	-0.05130051076412201	0.42878133	No	
+row_25	GGPS1	geranylgeranyl diphosphate synthase 1 [Source:HGNC Symbol;Acc:HGNC:4249]	2650	-0.06999941170215607	0.40509924	No	
+row_26	CYP46A1	cytochrome P450 family 46 subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:2641]	2668	-0.07281702756881714	0.4072247	No	

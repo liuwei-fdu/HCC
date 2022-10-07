@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MYH11	myosin heavy chain 11 [Source:HGNC Symbol;Acc:HGNC:7569]	2004	0.028367919847369194	-0.44169596	No	
+row_1	LIMK2	LIM domain kinase 2 [Source:HGNC Symbol;Acc:HGNC:6614]	2025	0.025134963914752007	-0.44021133	No	
+row_2	ROCK2	Rho associated coiled-coil containing protein kinase 2 [Source:HGNC Symbol;Acc:HGNC:10252]	2055	0.020863153040409088	-0.44175348	No	
+row_3	RHOC	ras homolog family member C [Source:HGNC Symbol;Acc:HGNC:669]	2088	0.01741800084710121	-0.4447838	No	
+row_4	PPP1CB	protein phosphatase 1 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9282]	3330	-0.1843428909778595	-0.6787638	Yes	
+row_5	MYH10	myosin heavy chain 10 [Source:HGNC Symbol;Acc:HGNC:7568]	3339	-0.1855594962835312	-0.6365547	Yes	
+row_6	PAK1	p21 (RAC1) activated kinase 1 [Source:HGNC Symbol;Acc:HGNC:8590]	3402	-0.19705146551132202	-0.6037039	Yes	
+row_7	RHOA	ras homolog family member A [Source:HGNC Symbol;Acc:HGNC:667]	3416	-0.20156019926071167	-0.5588196	Yes	
+row_8	PPP1R12A	protein phosphatase 1 regulatory subunit 12A [Source:HGNC Symbol;Acc:HGNC:7618]	3658	-0.2466956377029419	-0.554251	Yes	
+row_9	ROCK1	Rho associated coiled-coil containing protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:10251]	3903	-0.3155460059642792	-0.5340282	Yes	
+row_10	MYH14	myosin heavy chain 14 [Source:HGNC Symbol;Acc:HGNC:23212]	4104	-0.3901194632053375	-0.48627713	Yes	
+row_11	MYL9	myosin light chain 9 [Source:HGNC Symbol;Acc:HGNC:15754]	4312	-0.5141746997833252	-0.41067687	Yes	
+row_12	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	4344	-0.5496487021446228	-0.28728274	Yes	
+row_13	MYL6	myosin light chain 6 [Source:HGNC Symbol;Acc:HGNC:7587]	4365	-0.5678201913833618	-0.15711847	Yes	
+row_14	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	4453	-0.7730321884155273	0.0067128316	Yes	

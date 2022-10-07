@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	1690	0.08083321899175644	-0.3628505	No	
+row_1	PIN1	peptidylprolyl cis/trans isomerase, NIMA-interacting 1 [Source:HGNC Symbol;Acc:HGNC:8988]	2269	-0.014382876455783844	-0.48946175	No	
+row_2	PRKCD	protein kinase C delta [Source:HGNC Symbol;Acc:HGNC:9399]	2410	-0.03663093224167824	-0.5138506	No	
+row_3	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	2540	-0.05389563739299774	-0.5325081	No	
+row_4	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	2709	-0.07952772825956345	-0.55503744	No	
+row_5	MAPK14	mitogen-activated protein kinase 14 [Source:HGNC Symbol;Acc:HGNC:6876]	2737	-0.08417627215385437	-0.54513574	No	
+row_6	RAC1	Rac family small GTPase 1 [Source:HGNC Symbol;Acc:HGNC:9801]	3409	-0.1991828978061676	-0.65755504	No	
+row_7	PIK3R4	phosphoinositide-3-kinase regulatory subunit 4 [Source:HGNC Symbol;Acc:HGNC:8982]	3661	-0.2468843013048172	-0.66695875	Yes	
+row_8	CYBA	cytochrome b-245 alpha chain [Source:HGNC Symbol;Acc:HGNC:2577]	3819	-0.2907427251338959	-0.6470217	Yes	
+row_9	RAC2	Rac family small GTPase 2 [Source:HGNC Symbol;Acc:HGNC:9802]	4341	-0.5443623065948486	-0.660498	Yes	
+row_10	CYBB	cytochrome b-245 beta chain [Source:HGNC Symbol;Acc:HGNC:2578]	4386	-0.6066023111343384	-0.5554505	Yes	
+row_11	NCF2	neutrophil cytosolic factor 2 [Source:HGNC Symbol;Acc:HGNC:7661]	4430	-0.6919474601745605	-0.43401444	Yes	
+row_12	NCF4	neutrophil cytosolic factor 4 [Source:HGNC Symbol;Acc:HGNC:7662]	4448	-0.7590643167495728	-0.2940483	Yes	
+row_13	S100A8	S100 calcium binding protein A8 [Source:HGNC Symbol;Acc:HGNC:10498]	4449	-0.7602069973945618	-0.15006177	Yes	
+row_14	S100A9	S100 calcium binding protein A9 [Source:HGNC Symbol;Acc:HGNC:10499]	4467	-0.8312690258026123	0.0035802447	Yes	

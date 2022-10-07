@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HNF4A	hepatocyte nuclear factor 4 alpha [Source:HGNC Symbol;Acc:HGNC:5024]	5	0.9068062901496887	0.079339996	Yes	
+row_1	PKLR	pyruvate kinase L/R [Source:HGNC Symbol;Acc:HGNC:9020]	8	0.8772775530815125	0.1565428	Yes	
+row_2	ALAS1	5'-aminolevulinate synthase 1 [Source:HGNC Symbol;Acc:HGNC:396]	30	0.7991124391555786	0.2238495	Yes	
+row_3	ALDOB	aldolase, fructose-bisphosphate B [Source:HGNC Symbol;Acc:HGNC:417]	191	0.6509752869606018	0.2561975	Yes	
+row_4	BDH1	3-hydroxybutyrate dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:1027]	213	0.6397937536239624	0.3094266	Yes	
+row_5	ACADM	acyl-CoA dehydrogenase medium chain [Source:HGNC Symbol;Acc:HGNC:89]	219	0.6368504762649536	0.36491293	Yes	
+row_6	HMGCS1	3-hydroxy-3-methylglutaryl-CoA synthase 1 [Source:HGNC Symbol;Acc:HGNC:5007]	339	0.594566285610199	0.39872715	Yes	
+row_7	HADH	hydroxyacyl-CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4799]	383	0.5808967351913452	0.44329074	Yes	
+row_8	ACADVL	acyl-CoA dehydrogenase very long chain [Source:HGNC Symbol;Acc:HGNC:92]	411	0.5737519264221191	0.4897403	Yes	
+row_9	SLC2A2	solute carrier family 2 member 2 [Source:HGNC Symbol;Acc:HGNC:11006]	510	0.5420947670936584	0.52222204	Yes	
+row_10	TFRC	transferrin receptor [Source:HGNC Symbol;Acc:HGNC:11763]	883	0.46155938506126404	0.5044787	Yes	
+row_11	IGFBP1	insulin like growth factor binding protein 1 [Source:HGNC Symbol;Acc:HGNC:5469]	1029	0.43557435274124146	0.5201535	Yes	
+row_12	HNF1A	HNF1 homeobox A [Source:HGNC Symbol;Acc:HGNC:11621]	1036	0.43457457423210144	0.55760914	Yes	
+row_13	NR3C1	nuclear receptor subfamily 3 group C member 1 [Source:HGNC Symbol;Acc:HGNC:7978]	1085	0.42484593391418457	0.5875972	Yes	
+row_14	AFP	alpha fetoprotein [Source:HGNC Symbol;Acc:HGNC:317]	1094	0.4236212968826294	0.6237703	Yes	
+row_15	CEBPA	CCAAT enhancer binding protein alpha [Source:HGNC Symbol;Acc:HGNC:1833]	1296	0.38817116618156433	0.626446	Yes	
+row_16	CPT1A	carnitine palmitoyltransferase 1A [Source:HGNC Symbol;Acc:HGNC:2328]	1412	0.37049245834350586	0.6410901	Yes	
+row_17	F2	coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]	1744	0.3235483169555664	0.61760247	No	
+row_18	GCK	glucokinase [Source:HGNC Symbol;Acc:HGNC:4195]	2049	0.28481215238571167	0.59494007	No	
+row_19	TAT	tyrosine aminotransferase [Source:HGNC Symbol;Acc:HGNC:11573]	2255	0.26032114028930664	0.5856894	No	
+row_20	PCK1	phosphoenolpyruvate carboxykinase 1 [Source:HGNC Symbol;Acc:HGNC:8724]	2623	0.21590569615364075	0.5470264	No	
+row_21	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	3804	0.08018850535154343	0.36846063	No	
+row_22	CREB1	cAMP responsive element binding protein 1 [Source:HGNC Symbol;Acc:HGNC:2345]	4248	0.03162115067243576	0.3015568	No	
+row_23	CEBPB	CCAAT enhancer binding protein beta [Source:HGNC Symbol;Acc:HGNC:1834]	4291	0.0259352196007967	0.29724053	No	
+row_24	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	5083	-0.0711827278137207	0.179081	No	
+row_25	NF1	neurofibromin 1 [Source:HGNC Symbol;Acc:HGNC:7765]	5226	-0.09186180680990219	0.16485694	No	
+row_26	TTR	transthyretin [Source:HGNC Symbol;Acc:HGNC:12405]	5758	-0.19082094728946686	0.098175034	No	

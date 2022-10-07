@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	P4HB	prolyl 4-hydroxylase subunit beta [Source:HGNC Symbol;Acc:HGNC:8548]	333	0.5194727778434753	-9.818216E-4	No	
+row_1	PPIB	peptidylprolyl isomerase B [Source:HGNC Symbol;Acc:HGNC:9255]	760	0.3081815242767334	-0.052693434	No	
+row_2	MIA3	MIA SH3 domain ER export factor 3 [Source:HGNC Symbol;Acc:HGNC:24008]	787	0.29553312063217163	-0.016670326	No	
+row_3	BMP1	bone morphogenetic protein 1 [Source:HGNC Symbol;Acc:HGNC:1067]	1460	0.1225314512848854	-0.1497249	No	
+row_4	FKBP10	FKBP prolyl isomerase 10 [Source:HGNC Symbol;Acc:HGNC:18169]	2611	-0.06408371031284332	-0.39803764	No	
+row_5	SERPINF1	serpin family F member 1 [Source:HGNC Symbol;Acc:HGNC:8824]	4046	-0.3695753216743469	-0.66666126	Yes	
+row_6	COL1A1	collagen type I alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2197]	4089	-0.3851621747016907	-0.6215293	Yes	
+row_7	PLOD2	procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 [Source:HGNC Symbol;Acc:HGNC:9082]	4103	-0.38989511132240295	-0.5692366	Yes	
+row_8	COL1A2	collagen type I alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2198]	4161	-0.41584524512290955	-0.52311766	Yes	
+row_9	CRTAP	cartilage associated protein [Source:HGNC Symbol;Acc:HGNC:2379]	4192	-0.43033674359321594	-0.468904	Yes	
+row_10	P4HA1	prolyl 4-hydroxylase subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:8546]	4263	-0.4702349901199341	-0.417994	Yes	
+row_11	P3H1	prolyl 3-hydroxylase 1 [Source:HGNC Symbol;Acc:HGNC:19316]	4286	-0.48965364694595337	-0.3535916	Yes	
+row_12	SERPINH1	serpin family H member 1 [Source:HGNC Symbol;Acc:HGNC:1546]	4356	-0.5571449995040894	-0.29015285	Yes	
+row_13	P4HA2	prolyl 4-hydroxylase subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:8547]	4385	-0.6064345836639404	-0.2105592	Yes	
+row_14	PLOD1	procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 [Source:HGNC Symbol;Acc:HGNC:9081]	4444	-0.7420539855957031	-0.11847867	Yes	
+row_15	COLGALT1	collagen beta(1-O)galactosyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:26182]	4475	-0.8968897461891174	0.0017906459	Yes	
